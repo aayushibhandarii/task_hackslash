@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BUDDHIST MONUMENTS AT SANCHI</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Buddhist Monuments at Sanchi
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        On a hill overlooking the plain and about 40 km from Bhopal, the site of Sanchi comprises a group of Buddhist monuments (monolithic pillars, palaces, temples and monasteries) all in different states of conservation most of which date back to the 2nd and 1st centuries B.C. 
+                        It is the oldest Buddhist sanctuary in existence and was a major Buddhist centre in India until the 12th century A.D.<br>
+                        Sanchi Stupa is a Buddhist complex, famous for its Great Stupa, on a hilltop at Sanchi Town in Raisen District of the State of Madhya Pradesh, India. 
+                        It is located, about 23 kilometers from Raisen town, district headquarter and 46 kilometres (29 mi) north-east of Bhopal, capital of Madhya Pradesh.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG" style="object-fit: cover; width: 100%; ">
+        
+                    <h1>
+                        Overview
+                    </h1>
+                    <p>
+                        The monuments at Sanchi today comprise a series of Buddhist monuments starting from the Mauryan Empire period (3rd century BCE), continuing with the Gupta Empire period (5th century CE), and ending around the 12th century CE.
+                    </p>   
+                    <p>
+                        <b>Mauryan Period (3rd century BCE)</b><br>
+                        The "Great Stupa" at Sanchi is the oldest structure and was originally commissioned by the emperor Ashoka the Great of the Maurya Empire in the 3rd century BCE.
+                        Its nucleus was a hemispherical brick structure built over the sacred relics of the Buddha, with a raised terrace encompassing its base, and a railing and stone umbrella on the summit, the chatra, a parasol-like structure symbolizing high rank.
+                        The original Stupa only had about half the diameter of today's stupa, which is the result of enlargement by the Sungas. 
+                        It was covered in brick, in contrast to the stones that now cover it.
+                    </p>       
+                    <p>
+                        <b>Shunga period (2nd century BCE)</b><br>
+                        On the basis of Ashokavadana, it is presumed that the stupa may have been vandalized at one point sometime in the 2nd century BCE, an event some have related to the rise of the Shunga emperor Pushyamitra Shunga who overtook the Mauryan Empire as an army general. 
+                        It has been suggested that Pushyamitra may have destroyed the original stupa, and his son Agnimitra rebuilt it. 
+                        The original brick stupa was covered with stone during the Shunga period.
+                    </p>    
+                    <p>
+                        <b>Satavahana period (1st century BCE - 1st century CE)</b><br>
+                        The Satavahana Empire under Satakarni II conquered eastern Malwa from the Shungas.
+                        This gave the Satavahanas access to the Buddhist site of Sanchi, in which they are credited with the building of the decorated gateways around the original Mauryan Empire and Sunga stupas.
+                        From the 1st century BCE, the highly decorated gateways were built. 
+                        The balustrade and the gateways were also colored.
+                        Later gateways/toranas are generally dated to the 1st century CE.
+                    </p>         
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    On a hill overlooking the plain and about 40 km from Bhopal, the site of Sanchi comprises a group of Buddhist monuments (monolithic pillars, palaces, temples and monasteries) all in different states of conservation most of which date back to the 2nd and 1st centuries B.C. 
+                                                    It is the oldest Buddhist sanctuary in existence and was a major Buddhist centre in India until the 12th century A.D.<br>
+                                                    Sanchi Stupa is a Buddhist complex, famous for its Great Stupa, on a hilltop at Sanchi Town in Raisen District of the State of Madhya Pradesh, India. 
+                                                    It is located, about 23 kilometers from Raisen town, district headquarter and 46 kilometres (29 mi) north-east of Bhopal, capital of Madhya Pradesh.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <h1>
+                                                    Overview
+                                                </h1>
+                                                <p>
+                                                    The monuments at Sanchi today comprise a series of Buddhist monuments starting from the Mauryan Empire period (3rd century BCE), continuing with the Gupta Empire period (5th century CE), and ending around the 12th century CE.
+                                                </p>   
+                                                <p>
+                                                    <b>Mauryan Period (3rd century BCE)</b><br>
+                                                    The "Great Stupa" at Sanchi is the oldest structure and was originally commissioned by the emperor Ashoka the Great of the Maurya Empire in the 3rd century BCE.
+                                                    Its nucleus was a hemispherical brick structure built over the sacred relics of the Buddha, with a raised terrace encompassing its base, and a railing and stone umbrella on the summit, the chatra, a parasol-like structure symbolizing high rank.
+                                                    The original Stupa only had about half the diameter of today's stupa, which is the result of enlargement by the Sungas. 
+                                                    It was covered in brick, in contrast to the stones that now cover it.
+                                                </p>       
+                                                <p>
+                                                    <b>Shunga period (2nd century BCE)</b><br>
+                                                    On the basis of Ashokavadana, it is presumed that the stupa may have been vandalized at one point sometime in the 2nd century BCE, an event some have related to the rise of the Shunga emperor Pushyamitra Shunga who overtook the Mauryan Empire as an army general. 
+                                                    It has been suggested that Pushyamitra may have destroyed the original stupa, and his son Agnimitra rebuilt it. 
+                                                    The original brick stupa was covered with stone during the Shunga period.
+                                                </p>    
+                                                <p>
+                                                    <b>Satavahana period (1st century BCE - 1st century CE)</b><br>
+                                                    The Satavahana Empire under Satakarni II conquered eastern Malwa from the Shungas.
+                                                    This gave the Satavahanas access to the Buddhist site of Sanchi, in which they are credited with the building of the decorated gateways around the original Mauryan Empire and Sunga stupas.
+                                                    From the 1st century BCE, the highly decorated gateways were built. 
+                                                    The balustrade and the gateways were also colored.
+                                                    Later gateways/toranas are generally dated to the 1st century CE.
+                                                </p> `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://th.bing.com/th/id/OIP.DIXq8iaCxpi1RTZvA1GJUAAAAA?rs=1&pid=ImgDetMain"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Buddhist Monuments at Sanchi in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%B8%E0%A5%87%E0%A4%A8%E0%A4%AE%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%B2%E0%A4%AE%E0%A5%8D.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Great Stupa (Stupa No.1), started in the 3rd century BCE</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sanchi_%282%29.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>The southern gateway of the Great Stupa (Stupa 1) at Sanchi</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/North_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4273.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>The northern gateway of the Great Stupa (Stupa 1) at Sanchi</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>The eastern gateway of the Great Stupa (Stupa 1) at Sanchi</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Sanchi_portique_ouest.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The western gateway of the Great Stupa (Stupa 1) at Sanchi</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Sanchi_Stupa_No2.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Stupa No.2</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/003_Front_View_%2833709016166%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Stupa No.3</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Temple_17_-_Buddhist_Monument_-_Sanchi_Hill_2013-02-21_4494.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Buddhist Temple, No.17</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Sanchi_Temple_40.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Sanchi Temple 40</figcaption>
+                                                </figure>
+                                                
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Sanchi_temple_17.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Temple 17</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/A_Seated_Buddha_statue_%28Gupta_temple%29.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>A Seated Buddha statue (Gupta temple).</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Temple_18%2C_Sanchi.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Temple 18 at Sanchi</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

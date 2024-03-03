@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GROUP OF MONUMENTS AT MAHABALIPURAM</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Group of Monuments at Mahabalipuram
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        This group of sanctuaries, founded by the Pallava kings, was carved out of rock along the Coromandel coast in the 7th and 8th centuries. 
+                        It is known especially for its rathas (temples in the form of chariots), mandapas (cave sanctuaries), giant open-air reliefs such as the famous 'Descent of the Ganges', and the temple of Rivage, with thousands of sculptures to the glory of Shiva.
+                    </p>
+                    <img src="https://whc.unesco.org/uploads/thumbs/site_0249_0022-1000-665-20161004160330.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        Although the ancient history of Mahabalipuram is unclear, numismatic and epigraphical evidence and its temples suggest that it was a significant location before the monuments were built. 
+                        It is speculated that it is the seaport of Sopatma mentioned in the 1st-century Periplus of the Erythraean Sea or Ptolemy's port of Melange in his 2nd-century Geographia. 
+                        Another theory posits that the port of Nirppeyarvu mentioned in the Perumpanarrupadai from the late 19th century to early 20th century may be Mahabalipuram or Kanchipuram.<br>
+                        In his Avantisundari Katha, the 7th - 8th century Sanskrit scholar Daṇḍin (who lived in Tamil Nadu and was associated with the Pallava court) praised artists for their repair of a Vishnu sculpture at Mamallapuram.
+                        However, Daṇḍin's authorship of this text is disputed.
+                        The medieval Sanskrit text mentions the Mamallapuram monuments, an early tradition of repairs, and the significance of Vaishnavism.
+                    </p>  
+                    <h2>
+                        About
+                    </h2>
+                    <p>
+                        The monuments are a fusion of religion, culture and legend relating to the Hindu religious pantheon. 
+                        They are expressions through rock or inside boulders, on a grand scale, integrating nature and sculpture. 
+                        The site has about forty monuments, in varying degrees of completion, categorized into five groups:
+                        <ul>
+                            <li><p>Rathas: chariot-shaped temples</p></li>
+                            <li><p>Mandapas: Cave temples</p></li>
+                            <li><p>Rock reliefs</p></li>
+                            <li><p>Structural temples</p></li>
+                            <li><p>Excavations</p></li>
+                        </ul>
+                        <p>
+                            There are ten major rathas, ten mandapas, two rock bas-reliefs and three structural temples.
+                            The monumental plan is based on a square and circle, or stacked squares (producing a rectangle). 
+                            The reliefs, sculptures and architecture incorporate Shaivism, Vaishnavism and Shaktism, with each monument dedicated to a deity or a character in Hindu mythology.
+                            The monuments are a source of many 7th- and 8th-century Sanskrit inscriptions, providing insight into medieval South Indian history, culture, government and religion.
+                        </p>
+                        
+                    </p>          
+                    <p>
+                        <b>Ratha temples</b><br>
+                        The ratha temples, in southern Mahabalipuram, are carved in the shape of chariots. 
+                        Their artists used naturally-occurring blocks of diorite and granite in sand, carving legends in stone.
+                        The best-known are the five monolithic structures projecting above the beach, known as the Five Rathas or the Pandava Rathas. 
+                        In the Mahabharata, the Pandavas are five brothers with a common wife, Draupadi. 
+                        Although the symbolism and grouping of the temples have led to these popular names, they are neither true rathas nor dedicated to the Pandavas; 
+                        they are temples dedicated to deities and concepts of the Shaivi, (Shiva), Vaishnavi (Vishnu) and Shakti (Durga) traditions of Hinduism.<br>
+                        The five-ratha group is on a north - south axis with the Dharmaraja Ratha at the south end, followed by the Bhima, Arjuna and Draupadi Rathas. 
+                        The latter two share a common platform.
+                        There is a lion west of the Arjuna-Draupadi platform, a seated bull on its east and a standing elephant on its southwest. 
+                        The Nakula and Sahadeva Ratha is northwest of Bhima Ratha and southwest of Arjuna Ratha, behind the elephant. 
+                        The cross-sectional axis of the Nakula and Sahadeva Ratha is in the centre of the group.
+                        All the temples have a west entrance except the Nakula-Sahadeva Ratha, which has a south entrance.
+                    </p>  
+                    <p>
+                        <b>Cave Temples</b><br>
+                        Mandapa is a Sanskrit term for a typically square vestibule, pillared hall or pavilion.
+                        It was a space for people to gather socially, usually for ceremonies and rite-of-passage rituals. 
+                        Cells or sanctums would often be included, creating a vihara. 
+                        Mandapas also refer to rock-cut cave temples or shrines, built according to the same concept, and Mamallapuram has many mandapas dated to the 7th and 8th centuries.
+                    </p>
+                    <p>
+                        <b>Rock Reliefs</b><br>
+                        Reliefs are carved on rocks or boulders. 
+                        These include the wall of the Krishna mandapa, where a superstructure was added in front of the relief. 
+                        The best-known rock relief in Mahablipuram is the Descent of the Ganges (also known as Arjuna's Penance or Bhagiratha's Penance), the largest open-air rock relief.
+                    </p>
+                    <p>
+                        <b>Structural Temples</b><br>
+                        The structural (free-standing) temples at Mamallapuram have been built with cut stones as building blocks, rather than carved into a rock (cave temples) or out of a rock (ratha temples). 
+                        Surviving examples, fewer in number and representing a different stage, style and sophistication than the other monuments, are some of best examples of early medieval Tamil Hindu-temple architecture. 
+                        These temples (like other monuments in Mamallapuram) were dedicated to Shiva, Vishnu and Durga, although more Shiva iconography has survived.
+                    </p>
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    This group of sanctuaries, founded by the Pallava kings, was carved out of rock along the Coromandel coast in the 7th and 8th centuries. 
+                                                    It is known especially for its rathas (temples in the form of chariots), mandapas (cave sanctuaries), giant open-air reliefs such as the famous 'Descent of the Ganges', and the temple of Rivage, with thousands of sculptures to the glory of Shiva.
+                                                </p>
+                                                <img src="https://whc.unesco.org/uploads/thumbs/site_0249_0022-1000-665-20161004160330.jpg" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <h2>
+                                                    History
+                                                </h2>
+                                                <p>
+                                                    Although the ancient history of Mahabalipuram is unclear, numismatic and epigraphical evidence and its temples suggest that it was a significant location before the monuments were built. 
+                                                    It is speculated that it is the seaport of Sopatma mentioned in the 1st-century Periplus of the Erythraean Sea or Ptolemy's port of Melange in his 2nd-century Geographia. 
+                                                    Another theory posits that the port of Nirppeyarvu mentioned in the Perumpanarrupadai from the late 19th century to early 20th century may be Mahabalipuram or Kanchipuram.<br>
+                                                    In his Avantisundari Katha, the 7th - 8th century Sanskrit scholar Daṇḍin (who lived in Tamil Nadu and was associated with the Pallava court) praised artists for their repair of a Vishnu sculpture at Mamallapuram.
+                                                    However, Daṇḍin's authorship of this text is disputed.
+                                                    The medieval Sanskrit text mentions the Mamallapuram monuments, an early tradition of repairs, and the significance of Vaishnavism.
+                                                </p>  
+                                                <h2>
+                                                    About
+                                                </h2>
+                                                <p>
+                                                    The monuments are a fusion of religion, culture and legend relating to the Hindu religious pantheon. 
+                                                    They are expressions through rock or inside boulders, on a grand scale, integrating nature and sculpture. 
+                                                    The site has about forty monuments, in varying degrees of completion, categorized into five groups:
+                                                    <ul>
+                                                        <li><p>Rathas: chariot-shaped temples</p></li>
+                                                        <li><p>Mandapas: Cave temples</p></li>
+                                                        <li><p>Rock reliefs</p></li>
+                                                        <li><p>Structural temples</p></li>
+                                                        <li><p>Excavations</p></li>
+                                                    </ul>
+                                                    <p>
+                                                        There are ten major rathas, ten mandapas, two rock bas-reliefs and three structural temples.
+                                                        The monumental plan is based on a square and circle, or stacked squares (producing a rectangle). 
+                                                        The reliefs, sculptures and architecture incorporate Shaivism, Vaishnavism and Shaktism, with each monument dedicated to a deity or a character in Hindu mythology.
+                                                        The monuments are a source of many 7th- and 8th-century Sanskrit inscriptions, providing insight into medieval South Indian history, culture, government and religion.
+                                                    </p>
+                                                    
+                                                </p>          
+                                                <p>
+                                                    <b>Ratha temples</b><br>
+                                                    The ratha temples, in southern Mahabalipuram, are carved in the shape of chariots. 
+                                                    Their artists used naturally-occurring blocks of diorite and granite in sand, carving legends in stone.
+                                                    The best-known are the five monolithic structures projecting above the beach, known as the Five Rathas or the Pandava Rathas. 
+                                                    In the Mahabharata, the Pandavas are five brothers with a common wife, Draupadi. 
+                                                    Although the symbolism and grouping of the temples have led to these popular names, they are neither true rathas nor dedicated to the Pandavas; 
+                                                    they are temples dedicated to deities and concepts of the Shaivi, (Shiva), Vaishnavi (Vishnu) and Shakti (Durga) traditions of Hinduism.<br>
+                                                    The five-ratha group is on a north - south axis with the Dharmaraja Ratha at the south end, followed by the Bhima, Arjuna and Draupadi Rathas. 
+                                                    The latter two share a common platform.
+                                                    There is a lion west of the Arjuna-Draupadi platform, a seated bull on its east and a standing elephant on its southwest. 
+                                                    The Nakula and Sahadeva Ratha is northwest of Bhima Ratha and southwest of Arjuna Ratha, behind the elephant. 
+                                                    The cross-sectional axis of the Nakula and Sahadeva Ratha is in the centre of the group.
+                                                    All the temples have a west entrance except the Nakula-Sahadeva Ratha, which has a south entrance.
+                                                </p>  
+                                                <p>
+                                                    <b>Cave Temples</b><br>
+                                                    Mandapa is a Sanskrit term for a typically square vestibule, pillared hall or pavilion.
+                                                    It was a space for people to gather socially, usually for ceremonies and rite-of-passage rituals. 
+                                                    Cells or sanctums would often be included, creating a vihara. 
+                                                    Mandapas also refer to rock-cut cave temples or shrines, built according to the same concept, and Mamallapuram has many mandapas dated to the 7th and 8th centuries.
+                                                </p>
+                                                <p>
+                                                    <b>Rock Reliefs</b><br>
+                                                    Reliefs are carved on rocks or boulders. 
+                                                    These include the wall of the Krishna mandapa, where a superstructure was added in front of the relief. 
+                                                    The best-known rock relief in Mahablipuram is the Descent of the Ganges (also known as Arjuna's Penance or Bhagiratha's Penance), the largest open-air rock relief.
+                                                </p>
+                                                <p>
+                                                    <b>Structural Temples</b><br>
+                                                    The structural (free-standing) temples at Mamallapuram have been built with cut stones as building blocks, rather than carved into a rock (cave temples) or out of a rock (ratha temples). 
+                                                    Surviving examples, fewer in number and representing a different stage, style and sophistication than the other monuments, are some of best examples of early medieval Tamil Hindu-temple architecture. 
+                                                    These temples (like other monuments in Mamallapuram) were dedicated to Shiva, Vishnu and Durga, although more Shiva iconography has survived.
+                                                </p>`
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://www.worldeasyguides.com/wp-content/uploads/2018/06/Where-is-Mahabalipuram-Temple-on-map-of-India-640x461.jpg"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Mahabalipuram Temple in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0249_0022-1000-665-20161004160330.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Group of Monuments at Mahabalipuram</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Les_temples_monolithes_%28Mahabalipuram%2C_Inde%29_%2813924356674%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The pancha rathas</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Dharmaraja_Ratha_SE_Mahabalipuram_Sep22_A7C_02542.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Exterior of the Dharmaraja Ratha</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Bhima_temple.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Bhima Ratha</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Pancha_Rathas%2C_Pallave_period%2C_ca._630-38_CE%2C_Mahabalipuram_%2835%29_%2837426904666%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Bhima Ratha roof</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Les_temples_monolithes_%28Mahabalipuram%2C_Inde%29_%2813923946483%29.jpg/1280px-Les_temples_monolithes_%28Mahabalipuram%2C_Inde%29_%2813923946483%29.jpg" style="width:100%; height:250px">
+                                                    <figcaption>Reliefs on Arjuna Ratha</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Dharmaraja_Rock_Cut_Throne.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Draupadi Ratha</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Les_temples_monolithes_%28Mahabalipuram%2C_Inde%29_%2813923883405%29.jpg/1280px-Les_temples_monolithes_%28Mahabalipuram%2C_Inde%29_%2813923883405%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Nakula Sahadeva Ratha and its standing elephant</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Ganesha_Ratha_Mahabalipuram_Sep22_A7C_02582.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Ganesha Ratha</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Tirumurthi-Caves-Mahabalipuarm-Chennai-2.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Trimurti cave</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Vsvarahacave.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Varaha cave temple entrance</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Dharmaraja_mandapam%2C_Mahabalipuram.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Dharmaraja cave temple entrance</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Ramanuja-Mandapam-Mahabalipuram-1.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Ramanuja cave entrance</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/01MahabalipuramShoreTemple.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Shore Temple complex</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Mahabalipuram_Temple%2C_India.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Tank, Nandi and two surviving temples</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Mahabalipuram_pano2.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Descent of the Ganges, also known as Arjuna's Penance, is one of the largest rock reliefs in Asia </figcaption>
+                                                </figure>
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CHAMPANER - PAVAGADH ARCHEOLOGICAL PARK</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Champaner - Pavagadh Archeological Park
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        A concentration of largely unexcavated archaeological, historic and living cultural heritage properties cradled in an impressive landscape which includes prehistoric (chalcolithic) sites, a hill fortress of an early Hindu capital, and remains of the 16th-century capital of the state of Gujarat. 
+                        The site also includes, among other vestiges, fortifications, palaces, religious buildings, residential precincts, agricultural structures and water installations, from the 8th to 14th centuries. 
+                        The Kalikamata Temple on top of Pavagadh Hill is considered to be an important shrine, attracting large numbers of pilgrims throughout the year. 
+                        The site is the only complete and unchanged Islamic pre-Mughal city.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Jain_Temple%2C_Pavagadh_%28cropped%29.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        <b>Early history</b><br>
+                        Judging by early archaeological remains and according to records, the area had already been inhabited in the chalcolithic period; however, it remained neglected until approximately 400 AD. 
+                        The history also reports a local legend that the divinity of the hills was derived from the right toe of the goddess Kalika, which had apparently fallen on the hill.
+                        Champaner is named after Champa Bhil, a last Bhil king of Champaner. Champa Bhil built Champaner Fort He also established this city during the rule of Vanraj Chavda of Anhilwad Patan (from 746 to 806 AD).
+                        Champaner was famous for mangoes, sandalwood trees (used then for house building and sword blades), and colourful silks.
+                    </p>   
+                    <p>
+                        <b>Later history</b><br>
+                        The British visited the town of Champaner in 1803, at which time there were only 500 people residing there. 
+                        The old city was in ruins and wildly overgrown. 
+                        They re-founded it and it became a great exporter of silk, with facilities for washing and preparing raw silk. 
+                        However, a cholera epidemic reduced the population to 400 families by 1812. 
+                        When the British finally usurped the area on 13 July 1829, it was almost deserted; efforts at that time to populate the place by inducting cultivators with an incentive of Rs 1260 to develop the lands at that time also failed. 
+                        In 1879, a few Bhil and Naikda tribes resided there, but over the next few years, it became well known in India for its rulers and the monuments left behind by them.
+                    </p> 
+                    <h1>
+                        Geography
+                    </h1>
+                    <p>
+                        The Champaner-Pavagadh heritage site is spread over an area of more than 1,329 hectares (3,280 acres) with a buffer zone of 2,812 hectares (6,950 acres).
+                        In addition to the Primary Heritage Zone of 983.27 hectares (2,429.7 acres), there are several other sites which include: Kabutarkhana, Maqbara, Maqbara Mandvi, Maqbara near Patidar Village, Malik Sandal Ni Vav, Hathikhana, Sindh Mata, Sikander Ka Reuza, Babakhan Ki Dargah, Nau Kuan Sat Vavdi, and Chandrakala Vav. 
+                        The site is 50 kilometres (31 mi) east of Baroda and 42 miles (68 km) south of Godhra, whose history is recorded from the second century AD and which has many religious monuments of Gujarati Sultans (of Turkish descent), Rajputs, and Jains. 
+                        It includes the Palace of Mahmud Begada, grandson of Ahmed Shah, who founded Ahmedabad City, Jama Masjid and other mosques.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `<p>
+                                                A concentration of largely unexcavated archaeological, historic and living cultural heritage properties cradled in an impressive landscape which includes prehistoric (chalcolithic) sites, a hill fortress of an early Hindu capital, and remains of the 16th-century capital of the state of Gujarat. 
+                                                The site also includes, among other vestiges, fortifications, palaces, religious buildings, residential precincts, agricultural structures and water installations, from the 8th to 14th centuries. 
+                                                The Kalikamata Temple on top of Pavagadh Hill is considered to be an important shrine, attracting large numbers of pilgrims throughout the year. 
+                                                The site is the only complete and unchanged Islamic pre-Mughal city.
+                                            </p>
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Jain_Temple%2C_Pavagadh_%28cropped%29.jpg" style="object-fit: cover; width: 100%; ">
+                                
+                                            <h2>
+                                                History
+                                            </h2>
+                                            <p>
+                                                <b>Early history</b><br>
+                                                Judging by early archaeological remains and according to records, the area had already been inhabited in the chalcolithic period; however, it remained neglected until approximately 400 AD. 
+                                                The history also reports a local legend that the divinity of the hills was derived from the right toe of the goddess Kalika, which had apparently fallen on the hill.
+                                                Champaner is named after Champa Bhil, a last Bhil king of Champaner. Champa Bhil built Champaner Fort He also established this city during the rule of Vanraj Chavda of Anhilwad Patan (from 746 to 806 AD).
+                                                Champaner was famous for mangoes, sandalwood trees (used then for house building and sword blades), and colourful silks.
+                                            </p>   
+                                            <p>
+                                                <b>Later history</b><br>
+                                                The British visited the town of Champaner in 1803, at which time there were only 500 people residing there. 
+                                                The old city was in ruins and wildly overgrown. 
+                                                They re-founded it and it became a great exporter of silk, with facilities for washing and preparing raw silk. 
+                                                However, a cholera epidemic reduced the population to 400 families by 1812. 
+                                                When the British finally usurped the area on 13 July 1829, it was almost deserted; efforts at that time to populate the place by inducting cultivators with an incentive of Rs 1260 to develop the lands at that time also failed. 
+                                                In 1879, a few Bhil and Naikda tribes resided there, but over the next few years, it became well known in India for its rulers and the monuments left behind by them.
+                                            </p> 
+                                            <h1>
+                                                Geography
+                                            </h1>
+                                            <p>
+                                                The Champaner-Pavagadh heritage site is spread over an area of more than 1,329 hectares (3,280 acres) with a buffer zone of 2,812 hectares (6,950 acres).
+                                                In addition to the Primary Heritage Zone of 983.27 hectares (2,429.7 acres), there are several other sites which include: Kabutarkhana, Maqbara, Maqbara Mandvi, Maqbara near Patidar Village, Malik Sandal Ni Vav, Hathikhana, Sindh Mata, Sikander Ka Reuza, Babakhan Ki Dargah, Nau Kuan Sat Vavdi, and Chandrakala Vav. 
+                                                The site is 50 kilometres (31 mi) east of Baroda and 42 miles (68 km) south of Godhra, whose history is recorded from the second century AD and which has many religious monuments of Gujarati Sultans (of Turkish descent), Rajputs, and Jains. 
+                                                It includes the Palace of Mahmud Begada, grandson of Ahmed Shah, who founded Ahmedabad City, Jama Masjid and other mosques.
+                                            </p> `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://4.bp.blogspot.com/-zR0zt4fYrTI/Xg1LvFYseCI/AAAAAAAABds/LE6MYYxT_h8OEM4UdWSg4i15k5Xv0XX3wCK4BGAYYCw/w1200-h630-p-k-no-nu/Screen%2BShot%2B2020-01-02%2Bat%2B12.45.09%2Bpm.png"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Champaner- Pavagadh Archeological Park in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Jain_Temple%2C_Pavagadh_%28cropped%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Image of Jain Temple at Pavagadh</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Top_of_Pavadagh_hill.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Pavadagh Hill</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/General_view_of_the_Nagina_Masjid%2C_Champaner.jpg"  style="width:100%; height:250px">
+                                                    <figcaption> Nagina Masjid</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Champaner_eastern_gate.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Eastern fortress gate</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Champaner_citadel_walls.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Citadel walls.</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/CHAMPNER_GUJARAT.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Jami Masjid</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Champaner%2C_Lila_Gumbaj_Ki_Masjid_%289840188055%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Lili Gumbaz Masjid</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Kevda_Masjid_07.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Kevada Masjid</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Sahar_ki_Masjid%2C_champaner%2C_Gujarat.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Sahar ki Masjid</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Kabutarkhana_Pavilion_Champaner_02.JPG  style="width:100%; height:250px">
+                                                    <figcaption>Kabutarkhana Pavilion</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ELEPHANTA CAVES</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Elephanta Caves
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        The 'City of Caves', on an island in the Sea of Oman close to Bombay, contains a collection of rock art linked to the cult of Shiva. 
+                        Here, Indian art has found one of its most perfect expressions, particularly the huge high reliefs in the main cave.<br>
+                        The Elephanta Caves are a collection of cave temples predominantly dedicated to the Hindu god Shiva, which have been designated a UNESCO World Heritage Site.
+                        They are on Elephanta Island, or Gharapuri (literally meaning "the city of caves"), in Mumbai Harbour, 10 kilometres (6.2 mi) east of Mumbai in the Indian state of Mahārāshtra. 
+                        The island, about 2 kilometres (1.2 mi) west of the Jawaharlal Nehru Port, consists of five Hindu caves, a few Buddhist stupa mounds that date back to the 2nd century BCE, and two Buddhist caves with water tanks.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Elephanta_Caves_Panorama.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        The ancient history of the island is unknown in both Hindu or Buddhist records.
+                        Archeological studies have uncovered many remains that suggest the small island had a rich cultural past, with evidence of human settlement by possibly the 2nd century BC. 
+                        The Elephanta site was first occupied by Hinayana Buddhists, before the arrival of the Brahmans to the island, to raise a large stupa to the Buddha with seven smaller stupas around it, probably around the 2nd century BCE.
+                        Coins of the Kshatrapas (Western Satraps) dating to the 4th century CE were found on the island. 
+                        The regional history is first recorded in the Gupta Empire era, but these do not explicitly mention these caves.
+                        This has made the origins and the century in which Elephanta caves were built a subject of a historic dispute. 
+                        They have been variously dated, mostly between from late 5th to late 8th century AD, largely based on the dating of other cave temples in the Deccan region.
+                        Colonial era historians suggested that the caves were built by the Rashtrakutas in 7th century or after, a hypothesis primarily based on some similarities with the Ellora Caves, but this theory has been discredited by later findings.
+                    </p>   
+                    <p>
+                        According to Archaeological Survey of India and UNESCO, the site was settled in ancient times and the cave temples were built between 5th and 6th century.
+                        Contemporary scholars generally place the completion of the temples to the second quarter of the 6th century and as a continuation of the period of artistic flowering in the Gupta Empire era.
+                        These scholars attribute these Cave temples to king Krishnaraja of the Kalachuri dynasty.
+                        The dating to a mid 6th century completion and it being a predominantly Shiva monument built by a Hindu Kalachuri king is based on numismatic evidence, inscriptions, construction style and better dating of other Deccan cave temples including the Ajanta Caves, and the more firm dating of Dandin's Dasakumaracarita.
+                    </p> 
+                    <h2>
+                        Geography
+                    </h2>
+                    <p>
+                        Elephanta Island, or Gharapuri, is about 11 km (6.8 mi) east of the Gateway of India in the Mumbai Harbour and less than 2 km (1.2 mi) west of Jawaharlal Nehru Port. 
+                        The island covers about 10 km2 (3.9 sq mi) at high tide and about 16 km2 (6.2 sq mi) at low tide. 
+                        Gharapuri is a small village on the south side of the island.<br>
+                        The island is 2.4 km (1.5 mi) in length with two hills that rise to a height of about 150 m (490 ft). 
+                        A narrow, deep ravine separates the two hills and runs from north to south. 
+                        On the west, the hill rises gently from the sea and stretches east across the ravine and rises gradually to the extreme east to a height of 173 m (568 ft). 
+                        Forest growth with clusters of mango, tamarind, and karanj trees cover the hills with scattered palm trees. 
+                        The foreshore is made up of sand and mud with mangrove bushes on the fringe. 
+                        Landing quays sit near three small hamlets known as Set Bunder in the north-west, Mora Bunder in the northeast, and Gharapuri or Raj Bunder in the south.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                        The 'City of Caves', on an island in the Sea of Oman close to Bombay, contains a collection of rock art linked to the cult of Shiva. 
+                                                        Here, Indian art has found one of its most perfect expressions, particularly the huge high reliefs in the main cave.<br>
+                                                        The Elephanta Caves are a collection of cave temples predominantly dedicated to the Hindu god Shiva, which have been designated a UNESCO World Heritage Site.
+                                                        They are on Elephanta Island, or Gharapuri (literally meaning "the city of caves"), in Mumbai Harbour, 10 kilometres (6.2 mi) east of Mumbai in the Indian state of Mahārāshtra. 
+                                                        The island, about 2 kilometres (1.2 mi) west of the Jawaharlal Nehru Port, consists of five Hindu caves, a few Buddhist stupa mounds that date back to the 2nd century BCE, and two Buddhist caves with water tanks.
+                                                    </p>
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Elephanta_Caves_Panorama.jpg" style="object-fit: cover; width: 100%; ">
+                                        
+                                                    <h2>
+                                                        History
+                                                    </h2>
+                                                    <p>
+                                                        The ancient history of the island is unknown in both Hindu or Buddhist records.
+                                                        Archeological studies have uncovered many remains that suggest the small island had a rich cultural past, with evidence of human settlement by possibly the 2nd century BC. 
+                                                        The Elephanta site was first occupied by Hinayana Buddhists, before the arrival of the Brahmans to the island, to raise a large stupa to the Buddha with seven smaller stupas around it, probably around the 2nd century BCE.
+                                                        Coins of the Kshatrapas (Western Satraps) dating to the 4th century CE were found on the island. 
+                                                        The regional history is first recorded in the Gupta Empire era, but these do not explicitly mention these caves.
+                                                        This has made the origins and the century in which Elephanta caves were built a subject of a historic dispute. 
+                                                        They have been variously dated, mostly between from late 5th to late 8th century AD, largely based on the dating of other cave temples in the Deccan region.
+                                                        Colonial era historians suggested that the caves were built by the Rashtrakutas in 7th century or after, a hypothesis primarily based on some similarities with the Ellora Caves, but this theory has been discredited by later findings.
+                                                    </p>   
+                                                    <p>
+                                                        According to Archaeological Survey of India and UNESCO, the site was settled in ancient times and the cave temples were built between 5th and 6th century.
+                                                        Contemporary scholars generally place the completion of the temples to the second quarter of the 6th century and as a continuation of the period of artistic flowering in the Gupta Empire era.
+                                                        These scholars attribute these Cave temples to king Krishnaraja of the Kalachuri dynasty.
+                                                        The dating to a mid 6th century completion and it being a predominantly Shiva monument built by a Hindu Kalachuri king is based on numismatic evidence, inscriptions, construction style and better dating of other Deccan cave temples including the Ajanta Caves, and the more firm dating of Dandin's Dasakumaracarita.
+                                                    </p> 
+                                                    <h2>
+                                                        Geography
+                                                    </h2>
+                                                    <p>
+                                                        Elephanta Island, or Gharapuri, is about 11 km (6.8 mi) east of the Gateway of India in the Mumbai Harbour and less than 2 km (1.2 mi) west of Jawaharlal Nehru Port. 
+                                                        The island covers about 10 km2 (3.9 sq mi) at high tide and about 16 km2 (6.2 sq mi) at low tide. 
+                                                        Gharapuri is a small village on the south side of the island.<br>
+                                                        The island is 2.4 km (1.5 mi) in length with two hills that rise to a height of about 150 m (490 ft). 
+                                                        A narrow, deep ravine separates the two hills and runs from north to south. 
+                                                        On the west, the hill rises gently from the sea and stretches east across the ravine and rises gradually to the extreme east to a height of 173 m (568 ft). 
+                                                        Forest growth with clusters of mango, tamarind, and karanj trees cover the hills with scattered palm trees. 
+                                                        The foreshore is made up of sand and mud with mangrove bushes on the fringe. 
+                                                        Landing quays sit near three small hamlets known as Set Bunder in the north-west, Mora Bunder in the northeast, and Gharapuri or Raj Bunder in the south.
+                                                    </p>`
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://cdn.britannica.com/700x450/58/19758-004-594A1109.jpg"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Elephanta Caves in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Elephanta_Caves_in_Maharashtra.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Main entrance, Cave 1</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Elephanta_Caves_Panorama.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Side entrance</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Elephanta_Caves%2C_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Main mandapa and pillars</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Trimurti%2C_Cave_No._1%2C_Elephanta_Caves_-_1.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Trimurti Shiva flanked by the dvarapalas</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Shiva_slaying_Andhaka.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Shiva slaying Andhaka</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Yogishvara_Lord_of_Yoga_Shiva_at_Elephanta_Cave_1.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Shiva as Yogishvara, god of Yoga.</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Grottes_d%27Elephanta_-_Sanctuaire_de_la_grotte_principale.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The smaller east shrine.</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Elephanta_caves3.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Elephanta cave 3</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Elephanta_Caves_in_Elephanta_Island_in_Maharashtra.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Elephanta cave 4</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

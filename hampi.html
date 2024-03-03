@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GROUP OF MONUMENTS AT HAMPI</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Group of Monuments at Hampi
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        The austere, grandiose site of Hampi was the last capital of the last great Hindu Kingdom of Vijayanagar. 
+                        Its fabulously rich princes built Dravidian temples and palaces which won the admiration of travellers between the 14th and 16th centuries. 
+                        Conquered by the Deccan Muslim confederacy in 1565, the city was pillaged over a period of six months before being abandoned.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Hampi_virupaksha_temple.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h1>
+                        History
+                    </h1>
+                    <p>
+                        Hampi was the capital of the Vijayanagara Empire from 1336 to 1565, when it was abandoned.
+                        It was a fortified city. 
+                        Chronicles left by Persian and European travellers, particularly the Portuguese, say that Hampi was a prosperous, wealthy and grand city near the Tungabhadra River, with numerous temples, farms and trading markets. 
+                        By 1500 CE, Hampi-Vijayanagara was the world's second-largest city, after Beijing, and probably India's richest at that time, attracting traders from Persia and Portugal.
+                        The Vijayanagara Empire was defeated by a coalition of Muslim sultanates; its capital was conquered, pillaged and destroyed by Sultanate armies in 1565, after which Hampi remained in ruins.
+                    </p>   
+                    <p>
+                        Emperor Ashoka's Rock Edicts in Nittur and Udegolan—both in Bellary district 269-232 BCE—suggest this region was part of the Maurya Empire during the 3rd century BCE. 
+                        A Brahmi inscription and a terracotta seal dating to about the 2nd century CE have been found during site excavations.
+                        The town is mentioned in Badami Chalukya's inscriptions as Pampapura, dating from between the 6th and 8th centuries.
+                    </p> 
+                    <h1>
+                        Archaeological site
+                    </h1>
+                    <p>
+                        Hampi and its nearby region remained a contested and fought-over region claimed by the local chiefs, the Hyderabad Muslim nizams, the Maratha Hindu kings, and Hyder Ali and his son Tipu Sultan of Mysore through the 18th century.
+                        In 1799, Tipu Sultan was defeated and killed when the British forces and Wadiyar dynasty aligned. 
+                        The region then came under British influence.
+                        The ruins of Hampi were surveyed in 1800 by Scottish Colonel Colin Mackenzie, first Surveyor General of India. 
+                        Mackenzie wrote that the Hampi site was abandoned and only wildlife live there. 
+                        The 19th-century speculative articles by historians who followed Mackenzie blamed the 18th-century armies of Hyder Ali and the Marathas for the damage to the Hampi monuments.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `   <p>
+                                                    The austere, grandiose site of Hampi was the last capital of the last great Hindu Kingdom of Vijayanagar. 
+                                                    Its fabulously rich princes built Dravidian temples and palaces which won the admiration of travellers between the 14th and 16th centuries. 
+                                                    Conquered by the Deccan Muslim confederacy in 1565, the city was pillaged over a period of six months before being abandoned.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Hampi_virupaksha_temple.jpg" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <h1>
+                                                    History
+                                                </h1>
+                                                <p>
+                                                    Hampi was the capital of the Vijayanagara Empire from 1336 to 1565, when it was abandoned.
+                                                    It was a fortified city. 
+                                                    Chronicles left by Persian and European travellers, particularly the Portuguese, say that Hampi was a prosperous, wealthy and grand city near the Tungabhadra River, with numerous temples, farms and trading markets. 
+                                                    By 1500 CE, Hampi-Vijayanagara was the world's second-largest city, after Beijing, and probably India's richest at that time, attracting traders from Persia and Portugal.
+                                                    The Vijayanagara Empire was defeated by a coalition of Muslim sultanates; its capital was conquered, pillaged and destroyed by Sultanate armies in 1565, after which Hampi remained in ruins.
+                                                </p>   
+                                                <p>
+                                                    Emperor Ashoka's Rock Edicts in Nittur and Udegolan—both in Bellary district 269-232 BCE—suggest this region was part of the Maurya Empire during the 3rd century BCE. 
+                                                    A Brahmi inscription and a terracotta seal dating to about the 2nd century CE have been found during site excavations.
+                                                    The town is mentioned in Badami Chalukya's inscriptions as Pampapura, dating from between the 6th and 8th centuries.
+                                                </p> 
+                                                <h1>
+                                                    Archaeological site
+                                                </h1>
+                                                <p>
+                                                    Hampi and its nearby region remained a contested and fought-over region claimed by the local chiefs, the Hyderabad Muslim nizams, the Maratha Hindu kings, and Hyder Ali and his son Tipu Sultan of Mysore through the 18th century.
+                                                    In 1799, Tipu Sultan was defeated and killed when the British forces and Wadiyar dynasty aligned. 
+                                                    The region then came under British influence.
+                                                    The ruins of Hampi were surveyed in 1800 by Scottish Colonel Colin Mackenzie, first Surveyor General of India. 
+                                                    Mackenzie wrote that the Hampi site was abandoned and only wildlife live there. 
+                                                    The 19th-century speculative articles by historians who followed Mackenzie blamed the 18th-century armies of Hyder Ali and the Marathas for the damage to the Hampi monuments.
+                                                </p>  `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://www.wayfaringhumans.com/wp-content/uploads/2019/09/Map-of-Hampi-India.png"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Group of Monuments at Hampi in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Hampi_2.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Hampi is set in a rocky terrain/figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/The_elegant_stone_chariot.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Garuda stone chariot and Vitthala temple gopuram</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Hampi%2C_India%2C_View_of_Hampi_Bazaar_from_Matanga_Hill.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>View of Hampi Bazaar from Matanga Hill</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Hampi%2C_India%2C_Sri_Krishna_Temple%2C_Ancient_ruins_of_Hampi.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Entrance to Sri Krishna Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Hampi%2C_India%2C_Temple_on_top_of_Matanga_Hill.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Temple on top of Matanga Hill</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/6_Sasivekalu_temple_de_Ganesha_Hindu_Hampi_Vijayanagar_Karnataka_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Sasivekalu Ganesha monument</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Hampi%2C_Karnataka%2C_Nov-2018_1.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://en.wikipedia.org/wiki/Hampi#/media/File:Hampi,_Karnataka,_Nov-2018_2.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Hampi%2C_Karnataka%2C_Nov-2018_3.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

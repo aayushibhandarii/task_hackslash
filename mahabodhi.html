@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MAHABODHI TEMPLE COMPLEX AT BODH GAYA</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Mahabodhi Temple Complex at Bodh Gaya 
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        The Mahabodhi Temple Complex is one of the four holy sites related to the life of the Lord Buddha, and particularly to the attainment of Enlightenment. 
+                        The first temple was built by Emperor Asoka in the 3rd century B.C., and the present temple dates from the 5th or 6th centuries. 
+                        It is one of the earliest Buddhist temples built entirely in brick, still standing in India, from the late Gupta period.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mahabodhitemple.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        <b>The Buddha</b><br>
+                        Traditional accounts say that, around 589 BCE, Siddhartha Gautama, a young prince who saw the suffering of the world and wanted to end it, reached the forested banks of the Phalgu river, near the city of Gaya, India. 
+                        There he sat in meditation under a peepul tree (Ficus religiosa or Sacred Fig) which later became known as the Bodhi tree. 
+                        According to Buddhist scriptures, after three days and three nights, Siddharta attained enlightenment and the answers that he had sought. 
+                        In that location, Mahabodhi Temple was built by Emperor Ashoka in around 260 BCE.
+                    </p>   
+                    <p>
+                        <b>Mahabodhi Tree</b><br>
+                        The Bodhi tree at Bodhgaya is directly connected to the life of the historical Buddha, Siddhartha Gautama, who attained enlightenment or omniscient wisdom when he was meditating under it. 
+                        The temple was built directly to the east of the Bodhi tree, supposedly a direct descendant of the original Bodhi Tree.<br>
+                        According to Buddhist mythology, if no Bodhi tree grows at the site, the ground around the Bodhi tree is devoid of all plants for a distance of one royal karīsa. 
+                        Through the ground around the Bodhi tree no being, not even an elephant, can travel.<br>
+                    </p> 
+                    <h1>
+                        Architectural style
+                    </h1>
+                    <p>
+                        Mahabodhi Temple is constructed of brick and is one of the oldest brick structures to have survived in eastern India. 
+                        It is considered to be a fine example of Indian brickwork, and was highly influential in the development of later architectural traditions. 
+                        According to UNESCO, "the present temple is one of the earliest and most imposing structures built entirely in brick from Gupta period" (300 - 600 CE).
+                         Mahabodhi Temple's central tower rises 55 metres (180 ft), and were heavily renovated in the 19th century. 
+                         The central tower is surrounded by four smaller towers, constructed in the same style.<br>
+                         The Mahabodhi Temple is surrounded on all four sides by stone railings, about two metres high. 
+                         The railings reveal two distinct types, both in style as well as the materials used. 
+                         The older ones, made of sandstone, date to about 150 BCE, and the others, constructed from unpolished coarse granite, are believed to be of the Gupta period.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    The Mahabodhi Temple Complex is one of the four holy sites related to the life of the Lord Buddha, and particularly to the attainment of Enlightenment. 
+                                                    The first temple was built by Emperor Asoka in the 3rd century B.C., and the present temple dates from the 5th or 6th centuries. 
+                                                    It is one of the earliest Buddhist temples built entirely in brick, still standing in India, from the late Gupta period.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mahabodhitemple.jpg" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <h2>
+                                                    History
+                                                </h2>
+                                                <p>
+                                                    <b>The Buddha</b><br>
+                                                    Traditional accounts say that, around 589 BCE, Siddhartha Gautama, a young prince who saw the suffering of the world and wanted to end it, reached the forested banks of the Phalgu river, near the city of Gaya, India. 
+                                                    There he sat in meditation under a peepul tree (Ficus religiosa or Sacred Fig) which later became known as the Bodhi tree. 
+                                                    According to Buddhist scriptures, after three days and three nights, Siddharta attained enlightenment and the answers that he had sought. 
+                                                    In that location, Mahabodhi Temple was built by Emperor Ashoka in around 260 BCE.
+                                                </p>   
+                                                <p>
+                                                    <b>Mahabodhi Tree</b><br>
+                                                    The Bodhi tree at Bodhgaya is directly connected to the life of the historical Buddha, Siddhartha Gautama, who attained enlightenment or omniscient wisdom when he was meditating under it. 
+                                                    The temple was built directly to the east of the Bodhi tree, supposedly a direct descendant of the original Bodhi Tree.<br>
+                                                    According to Buddhist mythology, if no Bodhi tree grows at the site, the ground around the Bodhi tree is devoid of all plants for a distance of one royal karīsa. 
+                                                    Through the ground around the Bodhi tree no being, not even an elephant, can travel.<br>
+                                                </p> 
+                                                <h1>
+                                                    Architectural style
+                                                </h1>
+                                                <p>
+                                                    Mahabodhi Temple is constructed of brick and is one of the oldest brick structures to have survived in eastern India. 
+                                                    It is considered to be a fine example of Indian brickwork, and was highly influential in the development of later architectural traditions. 
+                                                    According to UNESCO, "the present temple is one of the earliest and most imposing structures built entirely in brick from Gupta period" (300 - 600 CE).
+                                                    Mahabodhi Temple's central tower rises 55 metres (180 ft), and were heavily renovated in the 19th century. 
+                                                    The central tower is surrounded by four smaller towers, constructed in the same style.<br>
+                                                    The Mahabodhi Temple is surrounded on all four sides by stone railings, about two metres high. 
+                                                    The railings reveal two distinct types, both in style as well as the materials used. 
+                                                    The older ones, made of sandstone, date to about 150 BCE, and the others, constructed from unpolished coarse granite, are believed to be of the Gupta period.
+                                                </p> `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://cdn.britannica.com/s:700x500/38/137638-004-CF75A5D7/Bodh-Gaya-Mahabodhi-temple-India-Bihar-World-2002.jpg"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Mahabodhi Temple Complex at Bodh Gaya  in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mahabodhitemple.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Maha Bodhi Temple, Bodhgaya, India.</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Bodhi_Tree_Distant_View_-_panoramio.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Bodhi Tree</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Bodh_Gaya_railings_Indian_Museum_Calcutta.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Bodh Gaya original railings</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Top_of_Temple.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>top of the temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Maha_Bodhi_Temple_Bodh_Gaya_India_-_panoramio_%2820%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The stupa finial on top of the pyramidal structure</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Mucalinda_protecting_Buddha.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A statue of Mucalinda protecting the Buddha in Mucalinda Lake</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Bodhgaya%2C_Bihar._Buddha_image_in_the_main_temple.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Buddha image in the main temple.</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

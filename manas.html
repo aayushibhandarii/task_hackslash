@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MANAS WILDLIFE SANCTUARY</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Manas Wildlife Sanctuary
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        On a gentle slope in the foothills of the Himalayas, where wooded hills give way to alluvial grasslands and tropical forests, the Manas sanctuary is home to a great variety of wildlife, including many endangered species, such as the tiger, pygmy hog, Indian rhinoceros and Indian elephant.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Herd_of_Elephant_in_Manas.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h1>
+                        History
+                    </h1>
+                    <p>
+                        The Manas National Park was declared a sanctuary on 1 October 1928 with an area of 360 km2 (140 sq mi). 
+                        Manas bio reserve was created in 1973. Prior to the declaration of the sanctuary, it was a reserved forest called Manas R.F. and North Kamrup R.F. 
+                        It was used by the Cooch Behar royal family and Raja of Gauripur as a hunting reserve. 
+                        In 1951 and 1955, the area was increased to 391 km2 (151 sq mi). 
+                        It was declared a World Heritage Site in December 1985 by UNESCO. 
+                        Kahitama R.F. the Kokilabari R.F. and the Panbari R.F. were added in the year 1990 to form the Manas National Park. 
+                        In 1992, UNESCO declared it as a world heritage site in danger due to heavy poaching and terrorist activities. 
+                        On 25 February 2008, the area was increased to 500 km2 (190 sq mi). 
+                        On 21 June 2011, it was removed from the List of World Heritage in Danger and was commended for its efforts in preservation.
+                    </p>   
+                    <h1>
+                        Biomes
+                    </h1>
+                    <p>
+                        There are two major biomes present in Manas:
+                        <ul>
+                            <li>
+                                <p><b>The grassland biomes</b>: pygmy hog, Indian rhinoceros (re-introduced in 2007 after extinction due to heavy poaching during the Bodo uprising), bengal florican, wild Asian buffalo, etc.</p>
+                            </li>
+                            <li>
+                                <p><b>The forest biomes</b> : slow loris, capped langur, wild pig, sambar, great hornbill, Malayan giant squirrel or black giant squirrel, Chinese pangolin etc.</p>
+                            </li>
+                        </ul>
+                    </p>
+                    <h1>
+                        Flora
+                    </h1>     
+                    <p>
+                        <b>Vegetation: </b>The monsoon forests of Manas lie in the Brahmaputra Valley semi-evergreen forests ecoregion.
+                        The combination of Sub-Himalayan Bhabar Terai region with riverine succession leading up to the Himalayan subtropical broadleaf forests makes it one of the richest biodiversity areas in the world.<br>
+                        The main vegetation types are:
+                        <ul>
+                            <li>
+                                <p>Sub-Himalayan light alluvial semi-evergreen forests in the northern parts.</p>
+                            </li>
+                            <li>
+                                <p>East Himalayan mixed moist and dry deciduous forests</p>
+                            </li>
+                            <li>
+                                <p>Low alluvial savanna woodland</p>
+                            </li>
+                            <li>
+                                <p>Assam Valley semi-evergreen alluvial grasslands which cover almost 50% of the park.</p>
+                            </li>
+                        </ul>
+                    </p>   
+                    <h1>
+                        Fauna
+                    </h1>    
+                    <p>
+                        The sanctuary has recorded 55 species of mammals, 380 species of birds, 50 of reptiles, and 3 species of amphibians. 
+                        Out of these wildlife, 21 mammals are India's Schedule I mammals and 31 of them are threatened.<br>
+                        The park is well known for species of rare and endangered wildlife that are not found anywhere else in the world like the Assam roofed turtle, hispid hare, golden langur and pygmy hog.<br>
+                        The Manas hosts more than 450 species of birds.
+                        It has the largest population of the endangered Bengal florican to be found anywhere.
+                    </p>
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    On a gentle slope in the foothills of the Himalayas, where wooded hills give way to alluvial grasslands and tropical forests, the Manas sanctuary is home to a great variety of wildlife, including many endangered species, such as the tiger, pygmy hog, Indian rhinoceros and Indian elephant.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Herd_of_Elephant_in_Manas.jpg" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <h1>
+                                                    History
+                                                </h1>
+                                                <p>
+                                                    The Manas National Park was declared a sanctuary on 1 October 1928 with an area of 360 km2 (140 sq mi). 
+                                                    Manas bio reserve was created in 1973. Prior to the declaration of the sanctuary, it was a reserved forest called Manas R.F. and North Kamrup R.F. 
+                                                    It was used by the Cooch Behar royal family and Raja of Gauripur as a hunting reserve. 
+                                                    In 1951 and 1955, the area was increased to 391 km2 (151 sq mi). 
+                                                    It was declared a World Heritage Site in December 1985 by UNESCO. 
+                                                    Kahitama R.F. the Kokilabari R.F. and the Panbari R.F. were added in the year 1990 to form the Manas National Park. 
+                                                    In 1992, UNESCO declared it as a world heritage site in danger due to heavy poaching and terrorist activities. 
+                                                    On 25 February 2008, the area was increased to 500 km2 (190 sq mi). 
+                                                    On 21 June 2011, it was removed from the List of World Heritage in Danger and was commended for its efforts in preservation.
+                                                </p>   
+                                                <h1>
+                                                    Biomes
+                                                </h1>
+                                                <p>
+                                                    There are two major biomes present in Manas:
+                                                    <ul>
+                                                        <li>
+                                                            <p><b>The grassland biomes</b>: pygmy hog, Indian rhinoceros (re-introduced in 2007 after extinction due to heavy poaching during the Bodo uprising), bengal florican, wild Asian buffalo, etc.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p><b>The forest biomes</b> : slow loris, capped langur, wild pig, sambar, great hornbill, Malayan giant squirrel or black giant squirrel, Chinese pangolin etc.</p>
+                                                        </li>
+                                                    </ul>
+                                                </p>
+                                                <h1>
+                                                    Flora
+                                                </h1>     
+                                                <p>
+                                                    <b>Vegetation: </b>The monsoon forests of Manas lie in the Brahmaputra Valley semi-evergreen forests ecoregion.
+                                                    The combination of Sub-Himalayan Bhabar Terai region with riverine succession leading up to the Himalayan subtropical broadleaf forests makes it one of the richest biodiversity areas in the world.<br>
+                                                    The main vegetation types are:
+                                                    <ul>
+                                                        <li>
+                                                            <p>Sub-Himalayan light alluvial semi-evergreen forests in the northern parts.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>East Himalayan mixed moist and dry deciduous forests</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Low alluvial savanna woodland</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Assam Valley semi-evergreen alluvial grasslands which cover almost 50% of the park.</p>
+                                                        </li>
+                                                    </ul>
+                                                </p>   
+                                                <h1>
+                                                    Fauna
+                                                </h1>    
+                                                <p>
+                                                    The sanctuary has recorded 55 species of mammals, 380 species of birds, 50 of reptiles, and 3 species of amphibians. 
+                                                    Out of these wildlife, 21 mammals are India's Schedule I mammals and 31 of them are threatened.<br>
+                                                    The park is well known for species of rare and endangered wildlife that are not found anywhere else in the world like the Assam roofed turtle, hispid hare, golden langur and pygmy hog.<br>
+                                                    The Manas hosts more than 450 species of birds.
+                                                    It has the largest population of the endangered Bengal florican to be found anywhere.
+                                                </p>`
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://cdn.britannica.com/43/137643-004-F0E4CCC5/Manas-Wildlife-Sanctuary-Assam-India-World-Heritage-1985.jpg"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Manas Wildlife Sanctuary in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Manas_National_Park.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Main entrance of Manas National Park</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0338_0031-1000-750-20151104153012.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Manas_Wildlife_Sanctuary-110508.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Beki River</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0338_0017-1000-1333-20151104153004.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Tephrodornis_gularis.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Tephrodornis gularis</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Jungle_owl_in_manas.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Jungle owl in Manas</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Capped_langur_in_manas.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A capped langur in Manas</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Manas_Wildlife_Sanctuary-118456.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Elephant</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Hog_Deer_in_Manas_National_Park_01.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Hog Deer</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Wildlife_in_Manas.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A reptile of Manas</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Herd_of_Elephant_in_Manas.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Herd of elephants in Manas</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Heard_of_Asian_water_buffalo_in_the_bank_of_Manas_River.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Herd of buffaloes in Manas</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

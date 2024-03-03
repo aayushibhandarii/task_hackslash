@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJANTA CAVES</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Ajanta Caves
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        The first Buddhist cave monuments at Ajanta date from the 2nd and 1st centuries B.C. 
+                        During the Gupta period (5th and 6th centuries A.D.), many more richly decorated caves were added to the original group. 
+                        The paintings and sculptures of Ajanta, considered masterpieces of Buddhist religious art, have had a considerable artistic influence.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Ajanta_viewpoint.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        The Ajanta Caves are generally agreed to have been made in two distinct phases; 
+                        first during the 2nd century BCE to 1st century CE, and second several centuries later.<br>
+                        The caves consist of 36 identifiable foundations,some of them discovered after the original numbering of the caves from 1 through 29. 
+                        The later-identified caves have been suffixed with the letters of the alphabet, such as 15A, identified between originally numbered caves 15 and 16.
+                        The cave numbering is a convention of convenience and does not reflect the chronological order of their construction.
+                    </p>   
+                    <p>
+                       <b>Caves of the first (Satavahana) period</b> <br>
+                       The earliest group consists of caves 9, 10, 12, 13 and 15A. 
+                       The murals in these caves depict stories from the Jatakas.
+                       Later caves reflect the artistic influence of the Gupta period, but there are differing opinions on which century in which the early caves were built.
+                       According to Walter Spink, they were made during the period 100 BCE to 100 CE, probably under the patronage of the Hindu Satavahana dynasty (230 BCE - c. 220 CE) who ruled the region.
+                        Other datings prefer the period of the Maurya Empire (300 BCE to 100 BCE). 
+                        Of these, caves 9 and 10 are stupa containing worship halls of chaitya-griha form, and caves 12, 13, and 15A are vihāras. The first Satavahana period caves lacked figurative sculpture, emphasizing the stupa instead.
+                    </p> 
+                    <p>
+                        <b>Caves of the later or Vākāṭaka period</b><br>
+                        The second phase of construction at the Ajanta Caves site began in the 5th century.
+                        For a long time it was thought that the later caves were made over an extended period from the 4th to the 7th centuries CE, but in recent decades a series of studies by the leading expert on the caves, Walter M. Spink, have argued that most of the work took place over the very brief period from 460 to 480 CE, during the reign of Hindu Emperor Harishena of the Vākāṭaka dynasty.
+                        This view has been criticised by some scholars, but is now broadly accepted by most authors of general books on Indian art, for example, Huntington and Harle.<br>
+                        The second phase is attributed to the theistic Mahāyāna, or Greater Vehicle tradition of Buddhism.
+                        Caves of the second period are 1-8, 11, 14-29, some possibly extensions of earlier caves. 
+                        Caves 19, 26, and 29 are chaitya-grihas, the rest viharas. 
+                        The most elaborate caves were produced in this period, which included some refurbishing and repainting of the early caves.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `  <p>
+                                        The first Buddhist cave monuments at Ajanta date from the 2nd and 1st centuries B.C. 
+                                        During the Gupta period (5th and 6th centuries A.D.), many more richly decorated caves were added to the original group. 
+                                        The paintings and sculptures of Ajanta, considered masterpieces of Buddhist religious art, have had a considerable artistic influence.
+                                    </p>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Ajanta_viewpoint.jpg" style="object-fit: cover; width: 100%; ">
+                        
+                                    <h2>
+                                        History
+                                    </h2>
+                                    <p>
+                                        The Ajanta Caves are generally agreed to have been made in two distinct phases; 
+                                        first during the 2nd century BCE to 1st century CE, and second several centuries later.<br>
+                                        The caves consist of 36 identifiable foundations,some of them discovered after the original numbering of the caves from 1 through 29. 
+                                        The later-identified caves have been suffixed with the letters of the alphabet, such as 15A, identified between originally numbered caves 15 and 16.
+                                        The cave numbering is a convention of convenience and does not reflect the chronological order of their construction.
+                                    </p>   
+                                    <p>
+                                    <b>Caves of the first (Satavahana) period</b> <br>
+                                    The earliest group consists of caves 9, 10, 12, 13 and 15A. 
+                                    The murals in these caves depict stories from the Jatakas.
+                                    Later caves reflect the artistic influence of the Gupta period, but there are differing opinions on which century in which the early caves were built.
+                                    According to Walter Spink, they were made during the period 100 BCE to 100 CE, probably under the patronage of the Hindu Satavahana dynasty (230 BCE - c. 220 CE) who ruled the region.
+                                        Other datings prefer the period of the Maurya Empire (300 BCE to 100 BCE). 
+                                        Of these, caves 9 and 10 are stupa containing worship halls of chaitya-griha form, and caves 12, 13, and 15A are vihāras. The first Satavahana period caves lacked figurative sculpture, emphasizing the stupa instead.
+                                    </p> 
+                                    <p>
+                                        <b>Caves of the later or Vākāṭaka period</b><br>
+                                        The second phase of construction at the Ajanta Caves site began in the 5th century.
+                                        For a long time it was thought that the later caves were made over an extended period from the 4th to the 7th centuries CE, but in recent decades a series of studies by the leading expert on the caves, Walter M. Spink, have argued that most of the work took place over the very brief period from 460 to 480 CE, during the reign of Hindu Emperor Harishena of the Vākāṭaka dynasty.
+                                        This view has been criticised by some scholars, but is now broadly accepted by most authors of general books on Indian art, for example, Huntington and Harle.<br>
+                                        The second phase is attributed to the theistic Mahāyāna, or Greater Vehicle tradition of Buddhism.
+                                        Caves of the second period are 1-8, 11, 14-29, some possibly extensions of earlier caves. 
+                                        Caves 19, 26, and 29 are chaitya-grihas, the rest viharas. 
+                                        The most elaborate caves were produced in this period, which included some refurbishing and repainting of the early caves.
+                                    </p> `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://cdn.britannica.com/37/137637-004-FB22A977/Ajanta-Caves-Maharashtra-India-World-Heritage-site-1983.jpg"  style="width:100%; border-style: solid;>
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Ajanta Caves in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Ajanta_%2863%29.jpg/450px-Ajanta_%2863%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Ajanta Caves</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Ajanta_viewpoint.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Panoramic view of Ajanta Caves from the nearby hill</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Interior_of_Buddhist_chaitya_hall%2C_Cave_XXVI%2C_Ajanta%2C_c.1868.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Interior of Ajanta chaitya hall</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Life_circle_of_Lord_Buddha_-_A_marvel_of_painting_inside_Ajanta_Cave.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Painted ceiling</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/AjantaHoehle1VerandaPanorama.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Front of Cave 1</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/015_Cave_1%2C_Main_Shrine_and_Paintings_%2833470082003%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Cave 1, interior</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Ajanta_Caves_18.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Outside view of Cave 2</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/041_Cave_2%2C_Main_Shrine_and_Ceiling_%2833438141474%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>main hall with shrine, Cave 2</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Ajanta_Cave_4_Exterior.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Exterior view of Cave 4</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/060_Cave_4%2C_Main_Shrine_%2834280369085%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>interior hall of Cave 4</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Ajanta_Cave_6_Outside.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Exterior view of Cave 6, A view of the entrance and two storeys</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Aurangabad_-_Ajanta_Caves_%2857%29.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>External view of Cave 7</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/080_Cave_8%2C_Main_Shrine_and_Reliefs_%2834123127702%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>inside shrine of Cave 7</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Ajanta_Cave_8_exterior_view.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>External view of Cave 8</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Ajanta_Cave_9.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Entrance to the Cave 9 worship hall</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Ajanta_Cave_10_outside_view.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>External view of Cave 10</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Ajanta_caves_aurangabad_14.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>interior hall of Cave 10</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Ajanta_Cave_11_outside_view.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Outside view of Cave 11</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/094_Cave_12%2C_Vihara_Cells_%2834123037202%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Cave 12 hall, with monk cells. Each cell has two stone beds</figcaption>
+                                                </figure>
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

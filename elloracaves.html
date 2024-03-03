@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ELLORA CAVES</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Ellora Caves
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        These 34 monasteries and temples, extending over more than 2 km, were dug side by side in the wall of a high basalt cliff, not far from Aurangabad, in Maharashtra. 
+                        Ellora, with its uninterrupted sequence of monuments dating from A.D. 600 to 1000, brings the civilization of ancient India to life.
+                        Not only is the Ellora complex a unique artistic creation and a technological exploit but, with its sanctuaries devoted to Buddhism, Hinduism and Jainism, it illustrates the spirit of tolerance that was characteristic of ancient India.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Ellora_Caves%2C_India%2C_Kailasanatha_Temple_2.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        The invaluable ensemble of 34 caves at Ellora in the Charanandri hills of western India's Maharashtra State showcases a spirit of co-existence and religious tolerance through the outstanding architectural activities carried out by the followers of three prominent religions: Buddhism, Brahmanism, and Jainism. 
+                        The rock-cut activity was carried out in three phases from the 6th century to the 12th century. 
+                        The earliest caves (caves 1-12), excavated between the 5th and 8th centuries, reflect the Mahayana philosophy of Buddhism then prevalent in this region. 
+                        The Brahmanical group of caves (caves 13-29), including the renowned Kailasa temple (cave 16), was excavated between the 7th and 10th centuries. 
+                        The last phase, between the 9th and 12th centuries, saw the excavation of a group of caves (caves 30-34) reflecting Jaina philosophy.
+                    </p>   
+                    <p>
+                        Amongst the caves of the Buddhist group, Cave 10 (Visvakarma or Sutar-ki-jhopari, the Carpenter's cave), Cave 11, and Cave 12 (Teen Tal, or three-storied monastery, the largest in this category) are particularly important. 
+                        These caves mark the development of the Vajrayana form of Buddhism and represent a host of Buddhist deities. 
+                        The prominent caves of the Brahmanical group are Cave 15 (Dasavatara, or Cave of Ten Incarnations), Cave 16 (Kailasa, the largest monolithic temple), Cave 21 (Ramesvara), and Cave 29 (Dumar Lena). 
+                        Amongst these, Cave 16 is an excellent example of structural innovation, and marks the culmination of rock-cut architecture in India featuring elaborate workmanship and striking proportions. 
+                        The temple is decorated with some of the boldest and finest sculptural compositions to be found in India. 
+                        The sculpture depicting Ravana attempting to lift Mount Kailasa, the abode of Siva, is especially noteworthy. 
+                        The remains of beautiful paintings belonging to different periods are preserved on the ceilings of the front mandapa (pillared hall) of this temple. 
+                        The Jaina group of caves (caves 30 - 34) is exquisitely carved with fine, delicate sculptures, and includes fine paintings dedicated to the Digambara sect. 
+                        Through their art and architecture, the Ellora Caves serve as a window to ancient India, including socio-cultural phenomena, material culture, politics, and lifestyles.
+                    </p> 
+                    <h2>
+                        Chronology
+                    </h2>
+                    <p>
+                        The construction at Ellora has been studied since British colonial rule. 
+                        However, the overlapping styles between the Buddhist, Hindu and Jain caves has made it difficult to establish agreement concerning the chronology of their construction. 
+                        The disputes generally concern: one, whether the Buddhist or Hindu caves were carved first and, two, the relative dating of caves within a particular tradition. 
+                        The broad consensus that has emerged is based on comparing the carving styles at Ellora to other cave temples in the Deccan region that have been dated, textual records of various dynasties, and epigraphical evidence found at various archaeological sites near Ellora and elsewhere in Maharashtra, Madhya Pradesh and Karnataka. 
+                        Geri Hockfield Malandra and other scholars have stated that the Ellora caves had three important building periods: an early Hindu period (~550 to 600 CE), a Buddhist phase (~600 to 730 CE) and a later Hindu and Jain phase (~730 to 950 CE).
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    These 34 monasteries and temples, extending over more than 2 km, were dug side by side in the wall of a high basalt cliff, not far from Aurangabad, in Maharashtra. 
+                                                    Ellora, with its uninterrupted sequence of monuments dating from A.D. 600 to 1000, brings the civilization of ancient India to life.
+                                                    Not only is the Ellora complex a unique artistic creation and a technological exploit but, with its sanctuaries devoted to Buddhism, Hinduism and Jainism, it illustrates the spirit of tolerance that was characteristic of ancient India.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Ellora_Caves%2C_India%2C_Kailasanatha_Temple_2.jpg" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <h2>
+                                                    History
+                                                </h2>
+                                                <p>
+                                                    The invaluable ensemble of 34 caves at Ellora in the Charanandri hills of western India's Maharashtra State showcases a spirit of co-existence and religious tolerance through the outstanding architectural activities carried out by the followers of three prominent religions: Buddhism, Brahmanism, and Jainism. 
+                                                    The rock-cut activity was carried out in three phases from the 6th century to the 12th century. 
+                                                    The earliest caves (caves 1-12), excavated between the 5th and 8th centuries, reflect the Mahayana philosophy of Buddhism then prevalent in this region. 
+                                                    The Brahmanical group of caves (caves 13-29), including the renowned Kailasa temple (cave 16), was excavated between the 7th and 10th centuries. 
+                                                    The last phase, between the 9th and 12th centuries, saw the excavation of a group of caves (caves 30-34) reflecting Jaina philosophy.
+                                                </p>   
+                                                <p>
+                                                    Amongst the caves of the Buddhist group, Cave 10 (Visvakarma or Sutar-ki-jhopari, the Carpenter's cave), Cave 11, and Cave 12 (Teen Tal, or three-storied monastery, the largest in this category) are particularly important. 
+                                                    These caves mark the development of the Vajrayana form of Buddhism and represent a host of Buddhist deities. 
+                                                    The prominent caves of the Brahmanical group are Cave 15 (Dasavatara, or Cave of Ten Incarnations), Cave 16 (Kailasa, the largest monolithic temple), Cave 21 (Ramesvara), and Cave 29 (Dumar Lena). 
+                                                    Amongst these, Cave 16 is an excellent example of structural innovation, and marks the culmination of rock-cut architecture in India featuring elaborate workmanship and striking proportions. 
+                                                    The temple is decorated with some of the boldest and finest sculptural compositions to be found in India. 
+                                                    The sculpture depicting Ravana attempting to lift Mount Kailasa, the abode of Siva, is especially noteworthy. 
+                                                    The remains of beautiful paintings belonging to different periods are preserved on the ceilings of the front mandapa (pillared hall) of this temple. 
+                                                    The Jaina group of caves (caves 30 - 34) is exquisitely carved with fine, delicate sculptures, and includes fine paintings dedicated to the Digambara sect. 
+                                                    Through their art and architecture, the Ellora Caves serve as a window to ancient India, including socio-cultural phenomena, material culture, politics, and lifestyles.
+                                                </p> 
+                                                <h2>
+                                                    Chronology
+                                                </h2>
+                                                <p>
+                                                    The construction at Ellora has been studied since British colonial rule. 
+                                                    However, the overlapping styles between the Buddhist, Hindu and Jain caves has made it difficult to establish agreement concerning the chronology of their construction. 
+                                                    The disputes generally concern: one, whether the Buddhist or Hindu caves were carved first and, two, the relative dating of caves within a particular tradition. 
+                                                    The broad consensus that has emerged is based on comparing the carving styles at Ellora to other cave temples in the Deccan region that have been dated, textual records of various dynasties, and epigraphical evidence found at various archaeological sites near Ellora and elsewhere in Maharashtra, Madhya Pradesh and Karnataka. 
+                                                    Geri Hockfield Malandra and other scholars have stated that the Ellora caves had three important building periods: an early Hindu period (~550 to 600 CE), a Buddhist phase (~600 to 730 CE) and a later Hindu and Jain phase (~730 to 950 CE).
+                                                </p>`
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://th.bing.com/th/id/OIP.sAsYeOqoK47rstJFbJoTLQHaFx?rs=1&pid=ImgDetMain"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Ellora Caves in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://th.bing.com/th/id/OIP.Q-9oBx5Q1iVFIaT1efqdEwHaE8?rs=1&pid=ImgDetMain"  style="width:100%; height:250px">
+                                                    <figcaption>The Ellora Caves</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Ellora_caves%2C_view_from_Cave_29_%28Hindu%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>View from Cave 29</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Stone_Pillar_-_Cave_16.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Stone Pillar at the Kailashanatha Temple (Cave 16)</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Ellora_cave16_001.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Kailasanatha temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/The_Dashavatara%2C_Ellora_cave_no._15.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Vishnu at the Dashavatara Ellora temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Indra_Sabha_Ellora_Temple_Maharashtra_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Shikhar of Indra Sabha</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Ellora_Cave_-_30_%281%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Chhota Kailasha</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Inner_sanctum_with_Mahavira_statue%2C_Ellora_Cave_32.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Indra Sabha</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Ellora_cave34_001.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Goddess Ambika sitting on a lion, Cave 34</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

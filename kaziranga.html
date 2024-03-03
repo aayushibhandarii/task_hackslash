@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KAZIRANGA NATIONAL PARK</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Kaziranga National Park
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        In the heart of Assam, this park is one of the last areas in eastern India undisturbed by a human presence. 
+                        It is inhabited by the world's largest population of one-horned rhinoceroses, as well as many mammals, including tigers, elephants, panthers and bears, and thousands of birds.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Beauty_of_Kaziranga_National_Park.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h1>
+                        History
+                    </h1>
+                    <p>
+                        The history of Kaziranga as a protected area can be traced back to 1904, when Mary Curzon, Baroness Curzon of Kedleston, the wife of the Viceroy of India, Lord Curzon of Kedleston, visited the area.
+                        After failing to see a single-horned rhinoceros, for which the area was renowned, she persuaded her husband to take urgent measures to protect the dwindling species which he did by initiating planning for their protection.
+                        On 1 June 1905, the Kaziranga Proposed Reserve Forest was created with an area of 232 km2 (90 sq mi).<br>
+                        Over the next three years, the park area was extended by 152 km2 (59 sq mi), to the banks of the Brahmaputra River.
+                        In 1908, Kaziranga was designated a "Reserve Forest".<br>
+                        In 1916, it was redesignated the "Kaziranga Game Sanctuary" and remained so till 1938, when hunting was prohibited and visitors were permitted to enter the park. 
+                        In 1934 Kaziranga was changed to Kaziranha.<br>
+                        The Kaziranga Game Sanctuary was renamed the "Kaziranga Wildlife Sanctuary" in 1950 by P. D. Stracey, the forest conservationist, in order to rid the name of hunting connotations.
+                    </p>   
+                    <h1>
+                        Geography
+                    </h1>
+                    <p>
+                        Kaziranga is located between latitudes 26°30' N and 26°45' N, and longitudes 93°08' E to 93°36' E within three districts in the Indian state of Assam—the Kaliabor subdivision of Nagaon district, Bokajan subdivision of Karbi Anglong and the Bokakhat subdivision of Golaghat district.
+                    </p> 
+                    <h1>
+                        Fauna
+                    </h1>
+                    <p>
+                        Kaziranga contains significant breeding populations of 35 mammalian species, of which 15 are threatened as per the IUCN Red List. 
+                        The park has the distinction of being home to the world's largest population of the Indian rhinoceros (2,401), wild water buffalo (1,666) and eastern swamp deer (468).
+                        Significant populations of large herbivores include Indian elephants (1,940), gaur (1300) and sambar (58). Small herbivores include the chital, Indian muntjac, Indian boar and Indian hog deer.
+                        Kaziranga has the largest population of the Wild water buffalo anywhere accounting for about 57% of the world population.
+                        The Indian rhinoceros, royal Bengal tiger, Asian elephant, wild water buffalo and swamp deer are collectively known as 'Big Five' of Kaziranga.<br>
+                        Kaziranga has been identified by Birdlife International as an Important Bird Area.
+                        It is home to a variety of migratory birds, water birds, predators, scavengers, and game birds. 
+                        Birds such as the lesser white-fronted goose, ferruginous duck, Baer's pochard duck and lesser adjutant, greater adjutant, black-necked stork, and Asian openbill stork migrate from Central Asia to the park during winter.
+                        Riverine birds include the Blyth's kingfisher, white-bellied heron, Dalmatian pelican, spot-billed pelican, Nordmann's greenshank, and black-bellied tern. 
+                        Birds of prey include the rare eastern imperial, greater spotted, white-tailed, Pallas's fish eagle, grey-headed fish eagle, and the lesser kestrel.
+                    </p>     
+                    <h1>
+                        Flora
+                    </h1> 
+                    <p>
+                        Four main types of vegetation exist in this park.
+                        These are alluvial inundated grasslands, alluvial savanna woodlands, tropical moist mixed deciduous forests, and tropical semi-evergreen forests. 
+                        Based on Landsat data for 1986, percent coverage by vegetation is: tall grasses 41%, short grasses 11%, open jungle 29%, swamps 4%, rivers and water bodies 8%, and sand 6%.
+                        There are many different aquatic floras in the lakes and ponds, and along the river shores. 
+                        The invasive water hyacinth is very common, often choking the water bodies, but it is cleared during destructive floods.
+                        Another invasive species, Mimosa invisa, which is toxic to herbivores, was cleared by Kaziranga staff with help from the Wildlife Trust of India in 2005.
+                    </p>      
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                        In the heart of Assam, this park is one of the last areas in eastern India undisturbed by a human presence. 
+                                                        It is inhabited by the world's largest population of one-horned rhinoceroses, as well as many mammals, including tigers, elephants, panthers and bears, and thousands of birds.
+                                                    </p>
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Beauty_of_Kaziranga_National_Park.jpg" style="object-fit: cover; width: 100%; ">
+                                        
+                                                    <h1>
+                                                        History
+                                                    </h1>
+                                                    <p>
+                                                        The history of Kaziranga as a protected area can be traced back to 1904, when Mary Curzon, Baroness Curzon of Kedleston, the wife of the Viceroy of India, Lord Curzon of Kedleston, visited the area.
+                                                        After failing to see a single-horned rhinoceros, for which the area was renowned, she persuaded her husband to take urgent measures to protect the dwindling species which he did by initiating planning for their protection.
+                                                        On 1 June 1905, the Kaziranga Proposed Reserve Forest was created with an area of 232 km2 (90 sq mi).<br>
+                                                        Over the next three years, the park area was extended by 152 km2 (59 sq mi), to the banks of the Brahmaputra River.
+                                                        In 1908, Kaziranga was designated a "Reserve Forest".<br>
+                                                        In 1916, it was redesignated the "Kaziranga Game Sanctuary" and remained so till 1938, when hunting was prohibited and visitors were permitted to enter the park. 
+                                                        In 1934 Kaziranga was changed to Kaziranha.<br>
+                                                        The Kaziranga Game Sanctuary was renamed the "Kaziranga Wildlife Sanctuary" in 1950 by P. D. Stracey, the forest conservationist, in order to rid the name of hunting connotations.
+                                                    </p>   
+                                                    <h1>
+                                                        Geography
+                                                    </h1>
+                                                    <p>
+                                                        Kaziranga is located between latitudes 26°30' N and 26°45' N, and longitudes 93°08' E to 93°36' E within three districts in the Indian state of Assam—the Kaliabor subdivision of Nagaon district, Bokajan subdivision of Karbi Anglong and the Bokakhat subdivision of Golaghat district.
+                                                    </p> 
+                                                    <h1>
+                                                        Fauna
+                                                    </h1>
+                                                    <p>
+                                                        Kaziranga contains significant breeding populations of 35 mammalian species, of which 15 are threatened as per the IUCN Red List. 
+                                                        The park has the distinction of being home to the world's largest population of the Indian rhinoceros (2,401), wild water buffalo (1,666) and eastern swamp deer (468).
+                                                        Significant populations of large herbivores include Indian elephants (1,940), gaur (1300) and sambar (58). Small herbivores include the chital, Indian muntjac, Indian boar and Indian hog deer.
+                                                        Kaziranga has the largest population of the Wild water buffalo anywhere accounting for about 57% of the world population.
+                                                        The Indian rhinoceros, royal Bengal tiger, Asian elephant, wild water buffalo and swamp deer are collectively known as 'Big Five' of Kaziranga.<br>
+                                                        Kaziranga has been identified by Birdlife International as an Important Bird Area.
+                                                        It is home to a variety of migratory birds, water birds, predators, scavengers, and game birds. 
+                                                        Birds such as the lesser white-fronted goose, ferruginous duck, Baer's pochard duck and lesser adjutant, greater adjutant, black-necked stork, and Asian openbill stork migrate from Central Asia to the park during winter.
+                                                        Riverine birds include the Blyth's kingfisher, white-bellied heron, Dalmatian pelican, spot-billed pelican, Nordmann's greenshank, and black-bellied tern. 
+                                                        Birds of prey include the rare eastern imperial, greater spotted, white-tailed, Pallas's fish eagle, grey-headed fish eagle, and the lesser kestrel.
+                                                    </p>     
+                                                    <h1>
+                                                        Flora
+                                                    </h1> 
+                                                    <p>
+                                                        Four main types of vegetation exist in this park.
+                                                        These are alluvial inundated grasslands, alluvial savanna woodlands, tropical moist mixed deciduous forests, and tropical semi-evergreen forests. 
+                                                        Based on Landsat data for 1986, percent coverage by vegetation is: tall grasses 41%, short grasses 11%, open jungle 29%, swamps 4%, rivers and water bodies 8%, and sand 6%.
+                                                        There are many different aquatic floras in the lakes and ponds, and along the river shores. 
+                                                        The invasive water hyacinth is very common, often choking the water bodies, but it is cleared during destructive floods.
+                                                        Another invasive species, Mimosa invisa, which is toxic to herbivores, was cleared by Kaziranga staff with help from the Wildlife Trust of India in 2005.
+                                                    </p>`
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://static.prepp.in/public/image/Kaziranga_National_Park_1b135eab5ec79b6277666e034f08b723.png?tr=w-501,h-392,c-force"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Kaziranga National Park in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0337_0009-1000-667-20151104152737.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A board proclaiming the biological heritage of the park</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Assam_014.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Grassland of Kaziranga National Park</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Assam_rhinos.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>One horned Indian rhinos</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Sambar_Deer_during_Flood_at_Kaziranga_National_Park%2C_North_East_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Sambar Deer</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/ROYAL_BENGAL_WITH_HIS_PREY_%28cropped%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Bengal Tiger</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Otter_in_Kaziranga_National_Park.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Otters</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Coracias_affinis%2C_Kaziranga%2C_cropped.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>CAn Indian roller at Kaziranga</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Assam_028_yfb_edit.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Grasslands and deciduous forests of Kaziranga</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Entrance_Kaziranga.JPG" style="width:100%; height:250px">
+                                                    <figcaption>Entrance gate of Kaziranga National Park</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0337_0005-1000-669-20151104152924.jpg" style="width:100%; height:250px">
+                                                    <figcaption>Pond in the Kaziranga National Park</figcaption>
+                                                </figure>
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

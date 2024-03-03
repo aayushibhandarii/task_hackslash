@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RED FORT COMPLEX</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Red Fort Complex
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        The Red Fort Complex was built as the palace fort of Shahjahanabad - the new capital of the fifth Mughal Emperor of India, Shah Jahan. 
+                        Named for its massive enclosing walls of red sandstone, it is adjacent to an older fort, the Salimgarh, built by Islam Shah Suri in 1546, with which it forms the Red Fort Complex. 
+                        The private apartments consist of a row of pavilions connected by a continuous water channel, known as the Nahr-i-Behisht (Stream of Paradise). 
+                        The Red Fort is considered to represent the zenith of Mughal creativity which, under the Shah Jahan, was brought to a new level of refinement. 
+                        The planning of the palace is based on Islamic prototypes, but each pavilion reveals architectural elements typical of Mughal building, reflecting a fusion of Persian, Timurid and Hindu traditions The Red Fort's innovative planning and architectural style, including the garden design, strongly influenced later buildings and gardens in Rajasthan, Delhi, Agra and further afield.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Delhi_fort.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h1>
+                        History
+                    </h1>
+                    <p>
+                        Emperor Shah Jahan commissioned construction of the Red Fort on 12 May 1638, when he decided to shift his capital from Agra to Delhi. 
+                        Originally red and white, Shah Jahan's favourite colours, its design is credited to architect Ustad Ahmad Lahori, who also constructed the Taj Mahal.
+                        The fort lies along the Yamuna River, which fed the moats surrounding most of the walls. 
+                        Construction began in the sacred Islamic month of Muharram, on 13 May 1638.
+                        Supervised by Shah Jahan, it was completed on 6 April 1648.
+                        Unlike other Mughal forts, the Red Fort's boundary walls are asymmetrical to contain the older Salimgarh Fort. 
+                        The fortress-palace was a focal point of the city of Shahjahanabad, which is present-day Old Delhi. Shah Jahan's successor, Aurangzeb, added the Moti Masjid (Pearl Mosque) to the emperor's private quarters, constructing barbicans in front of the two main gates to make the entrance to the palace more circuitous.
+                    </p>   
+                    
+                    <h1>
+                        Architecture
+                    </h1>
+                    <p>
+                        The World Heritage Convention characterises the Red Fort as representing "the zenith of Mughal creativity". 
+                        The fort synthesises Islamic palace structure with local traditions, resulting in a confluence of "Persian, Timurid, and Hindu architecture". 
+                        The fort served as an inspiration for later buildings and gardens across the Indian subcontinent.<br>
+                        The Red Fort has an area of 254.67 acres (103.06 ha) enclosed by 2.41 kilometres (1.50 mi) of defensive walls, punctuated by turrets and bastions that vary in height from 18 metres (59 ft) on the river side to 33 metres (108 ft) on the city side. 
+                        The fort is octagonal, with the north-south axis longer than the east-west axis. 
+                        The marble, floral decorations and the fort's double domes exemplify later Mughal architecture.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `<p>
+                                                The Red Fort Complex was built as the palace fort of Shahjahanabad - the new capital of the fifth Mughal Emperor of India, Shah Jahan. 
+                                                Named for its massive enclosing walls of red sandstone, it is adjacent to an older fort, the Salimgarh, built by Islam Shah Suri in 1546, with which it forms the Red Fort Complex. 
+                                                The private apartments consist of a row of pavilions connected by a continuous water channel, known as the Nahr-i-Behisht (Stream of Paradise). 
+                                                The Red Fort is considered to represent the zenith of Mughal creativity which, under the Shah Jahan, was brought to a new level of refinement. 
+                                                The planning of the palace is based on Islamic prototypes, but each pavilion reveals architectural elements typical of Mughal building, reflecting a fusion of Persian, Timurid and Hindu traditions The Red Fort's innovative planning and architectural style, including the garden design, strongly influenced later buildings and gardens in Rajasthan, Delhi, Agra and further afield.
+                                            </p>
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Delhi_fort.jpg" style="object-fit: cover; width: 100%; ">
+                                
+                                            <h1>
+                                                History
+                                            </h1>
+                                            <p>
+                                                Emperor Shah Jahan commissioned construction of the Red Fort on 12 May 1638, when he decided to shift his capital from Agra to Delhi. 
+                                                Originally red and white, Shah Jahan's favourite colours, its design is credited to architect Ustad Ahmad Lahori, who also constructed the Taj Mahal.
+                                                The fort lies along the Yamuna River, which fed the moats surrounding most of the walls. 
+                                                Construction began in the sacred Islamic month of Muharram, on 13 May 1638.
+                                                Supervised by Shah Jahan, it was completed on 6 April 1648.
+                                                Unlike other Mughal forts, the Red Fort's boundary walls are asymmetrical to contain the older Salimgarh Fort. 
+                                                The fortress-palace was a focal point of the city of Shahjahanabad, which is present-day Old Delhi. Shah Jahan's successor, Aurangzeb, added the Moti Masjid (Pearl Mosque) to the emperor's private quarters, constructing barbicans in front of the two main gates to make the entrance to the palace more circuitous.
+                                            </p>   
+                                            
+                                            <h1>
+                                                Architecture
+                                            </h1>
+                                            <p>
+                                                The World Heritage Convention characterises the Red Fort as representing "the zenith of Mughal creativity". 
+                                                The fort synthesises Islamic palace structure with local traditions, resulting in a confluence of "Persian, Timurid, and Hindu architecture". 
+                                                The fort served as an inspiration for later buildings and gardens across the Indian subcontinent.<br>
+                                                The Red Fort has an area of 254.67 acres (103.06 ha) enclosed by 2.41 kilometres (1.50 mi) of defensive walls, punctuated by turrets and bastions that vary in height from 18 metres (59 ft) on the river side to 33 metres (108 ft) on the city side. 
+                                                The fort is octagonal, with the north-south axis longer than the east-west axis. 
+                                                The marble, floral decorations and the fort's double domes exemplify later Mughal architecture.
+                                            </p> `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://www.researchgate.net/profile/M-Singh-12/publication/346394300/figure/fig1/AS:962248239497216@1606429266036/A-Location-of-Red-Fort-Delhi-B-showing-map-of-Chatta-Chowk-in-Red-Fort-Complex.jpg"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Red Fort Complex in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Red_Fort_as_seen_from_Jama_Masjid%27s_tower.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The walls of Red Fort (in the background) as seen from the top of Jama Masjid's tower</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Rang_Mahal_with_Fountain_-_Western_View_-_Red_Fort_-_Delhi_2014-05-13_3243.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Rang Mahal inside Red Fort</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Diwan-e-Khas-2022.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Inner walls and ceiling of the Diwan-e-Khas</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Red_Fort%2C_New_Delhi_Inside_Map.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Map of Red Fort showing major structures</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Red_Fort_in_Delhi_03-2016_img1.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Delhi Gate</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/20191203_Naubat_Khana%2C_Red_Fort%2C_Delhi_0456_6348_DxO.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Naubat Khana inside Red Fort</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://en.wikipedia.org/wiki/Red_Fort#/media/File:Diwan-i-Aam,_Red_Fort,_Delhi.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>The Diwan-i-Aam audience hall</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Red_Fort_8.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Mumtaz Mahal</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Fuerte_Rojo-Delhi-India69.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Red Zafar Mahal and white Sawan/Bhadon pavilion behind</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

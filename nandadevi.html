@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NANDA DEVI AND VALLEY OF FLOWERS NATIONAL PARK</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Nanda Devi and Valley of Flowers National Parks
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        Nestled high in West Himalaya, India's Valley of Flowers National Park is renowned for its meadows of endemic alpine flowers and outstanding natural beauty. 
+                        This richly diverse area is also home to rare and endangered animals, including the Asiatic black bear, snow leopard, brown bear and blue sheep. 
+                        The gentle landscape of the Valley of Flowers National Park complements the rugged mountain wilderness of Nanda Devi National Park. 
+                        Together they encompass a unique transition zone between the mountain ranges of the Zanskar and Great Himalaya, praised by mountaineers and botanists for over a century and in Hindu mythology for much longer.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Valley_of_flowers.JPG" style="object-fit: cover; width: 100%; ">
+        
+                    <h1>
+                        History
+                    </h1>
+                    <p>
+                        The place was little known to the outside world due to its inaccessibility. 
+                        In 1931, Frank S. Smythe, Eric Shipton and R. L. Holdsworth, all British mountaineers, lost their way while returning from a successful expedition to Mt.Kamet and happened upon the valley, which was full of flowers. 
+                        They were attracted to the beauty of the area and named it the "Valley of Flowers." 
+                        Frank Smythe later authored a book of the same name.<br>
+                        In 1939, Lady Joan Margaret Legge, (21 February 1885 - 4 July 1939) a botanist deputed by the Royal Botanic Gardens, Kew, arrived at the valley to study flowers and while traversing some rocky slopes to collect flowers, she slipped off and died. 
+                        Her sister later visited the valley and erected a memorial near the spot.<br>
+                        Prof. Chandra Prakash Kala, a botanist deputed by the Wildlife Institute of India, carried out a research study on the floristics and conservation of the valley for a decade, beginning in 1993.
+                        He made an inventory of 520 alpine plants exclusively growing in this national park and authored two important books - "The Valley of Flowers - Myth and Reality" and "Ecology and Conservation of the Valley of Flowers National Park, Garhwal Himalaya.
+                    </p>   
+                    <h1>
+                        Location
+                    </h1>
+                    <p>
+                        Getting to the Valley of Flowers requires a trek of about 17 km (10.5 mi). 
+                        The nearest major town is Joshimath in Garhwal, which has convenient road connections from Haridwar and Dehradun, both about 270 km (168 mi) south of Joshimath. 
+                        From Delhi, one can take the train to Haridwar and then travel by bus to Govindghat via Rishikesh. 
+                        Govindghat is approximately 24 km before another important destination of Badrinath. 
+                        It is also possible to drive from Delhi to Govindghat, a distance of about 500 km.
+                    </p>     
+                    <p>
+                        The Valley of Flowers is nestled in the Pushpawati river valley which is in the upper expanses of Bhyundar Ganga river near Joshimath in Garhwal region. 
+                        The lower reaches of Bhyundar Ganga near Gobindghat are known as Bhyundar Valley. 
+                        The Valley of Flowers, which lies between 30° 41' to 30° 48'N and 79° 33' to 79° 46'E, in the Pushpawati valley is 20 km northwest of Nanda Devi National Park across the wide valley of the Bhyundar Ganga. 
+                        It is one of two hanging valleys lying at the head of the Bhyundar valley, the other being the shorter Hemkund valley which runs parallel to Valley of Flowers some 10 km south. 
+                        Valley of Flowers runs east-west approximately 15 km in length with average width of 6 km. 
+                        A small tributary of Pushpawati river originates from Tipra glacier from Gauri Parbat in the east and flows through the Valley of Flowers.
+                    </p>       
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                        Nestled high in West Himalaya, India's Valley of Flowers National Park is renowned for its meadows of endemic alpine flowers and outstanding natural beauty. 
+                                                        This richly diverse area is also home to rare and endangered animals, including the Asiatic black bear, snow leopard, brown bear and blue sheep. 
+                                                        The gentle landscape of the Valley of Flowers National Park complements the rugged mountain wilderness of Nanda Devi National Park. 
+                                                        Together they encompass a unique transition zone between the mountain ranges of the Zanskar and Great Himalaya, praised by mountaineers and botanists for over a century and in Hindu mythology for much longer.
+                                                    </p>
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Valley_of_flowers.JPG" style="object-fit: cover; width: 100%; ">
+                                        
+                                                    <h1>
+                                                        History
+                                                    </h1>
+                                                    <p>
+                                                        The place was little known to the outside world due to its inaccessibility. 
+                                                        In 1931, Frank S. Smythe, Eric Shipton and R. L. Holdsworth, all British mountaineers, lost their way while returning from a successful expedition to Mt.Kamet and happened upon the valley, which was full of flowers. 
+                                                        They were attracted to the beauty of the area and named it the "Valley of Flowers." 
+                                                        Frank Smythe later authored a book of the same name.<br>
+                                                        In 1939, Lady Joan Margaret Legge, (21 February 1885 - 4 July 1939) a botanist deputed by the Royal Botanic Gardens, Kew, arrived at the valley to study flowers and while traversing some rocky slopes to collect flowers, she slipped off and died. 
+                                                        Her sister later visited the valley and erected a memorial near the spot.<br>
+                                                        Prof. Chandra Prakash Kala, a botanist deputed by the Wildlife Institute of India, carried out a research study on the floristics and conservation of the valley for a decade, beginning in 1993.
+                                                        He made an inventory of 520 alpine plants exclusively growing in this national park and authored two important books - "The Valley of Flowers - Myth and Reality" and "Ecology and Conservation of the Valley of Flowers National Park, Garhwal Himalaya.
+                                                    </p>   
+                                                    <h1>
+                                                        Location
+                                                    </h1>
+                                                    <p>
+                                                        Getting to the Valley of Flowers requires a trek of about 17 km (10.5 mi). 
+                                                        The nearest major town is Joshimath in Garhwal, which has convenient road connections from Haridwar and Dehradun, both about 270 km (168 mi) south of Joshimath. 
+                                                        From Delhi, one can take the train to Haridwar and then travel by bus to Govindghat via Rishikesh. 
+                                                        Govindghat is approximately 24 km before another important destination of Badrinath. 
+                                                        It is also possible to drive from Delhi to Govindghat, a distance of about 500 km.
+                                                    </p>     
+                                                    <p>
+                                                        The Valley of Flowers is nestled in the Pushpawati river valley which is in the upper expanses of Bhyundar Ganga river near Joshimath in Garhwal region. 
+                                                        The lower reaches of Bhyundar Ganga near Gobindghat are known as Bhyundar Valley. 
+                                                        The Valley of Flowers, which lies between 30° 41' to 30° 48'N and 79° 33' to 79° 46'E, in the Pushpawati valley is 20 km northwest of Nanda Devi National Park across the wide valley of the Bhyundar Ganga. 
+                                                        It is one of two hanging valleys lying at the head of the Bhyundar valley, the other being the shorter Hemkund valley which runs parallel to Valley of Flowers some 10 km south. 
+                                                        Valley of Flowers runs east-west approximately 15 km in length with average width of 6 km. 
+                                                        A small tributary of Pushpawati river originates from Tipra glacier from Gauri Parbat in the east and flows through the Valley of Flowers.
+                                                    </p>  `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://i0.wp.com/wildhawk.in/wp-content/uploads/2019/05/valley-of-flowers-1-1.jpg?resize=780%2C565&ssl=1"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Nanda Devi and Valley of Flowers National Parks in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Valley-of-flowers-in-Uttarakhand.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>View of the Valley of Flowers</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Vof13082010.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Valley of Flowers, see trek in left-hand side and valley in front.</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Vof1_28.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>One of the streams that cuts the trek route</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Valley_of_flowers.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>A scene from Valley of Flowers</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/National_Park%2C_Flower_Valley.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Flowers blossomed in the valley</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Valley_of_flowers_pic.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/%22Flowers_Blossom_at_Valley_of_Flowers_Chamoli%2C_India%22_61.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/%22Flowers_Blossom_At_valley_of_flowers_Chamoli%2C_India%22_40.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/%22Flowers_Blossom_At_valley_of_flowers_Chamoli%2C_India%22_38.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/%22Flowers_Blossom_at_Valley_of_Flowers_Chamoli%2C_India%22_52.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://en.wikipedia.org/wiki/Valley_of_Flowers_National_Park#/media/File:Valley_of_Flowers,Uttarakhand_02.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Pushpawati_vof2.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Pushpawati River rushing out of the Valley of Flowers.</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/ValleyOfFlowers_purpleflower.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Himalayan bell flower, Campanula latifolia</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/ValleyOfFlowers_MorningDew.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Morning dew on a pink flower, Geranium sp</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/ValleyOfFlowers_MultistoryFlower.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Multi storied flowers, Morina longifolia</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Meadow_Geranium_%28Geranium_pratense%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Meadow Geranium (Geranium pratense)</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Uncia_uncia.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Snow leopard</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

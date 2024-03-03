@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MOUNTAIN RAILWAYS OF INDIA</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Mountain Railways of India
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        Three of the lines, the Darjeeling Himalayan Railway, the Nilgiri Mountain Railway, and the Kalka-Shimla Railway, are collectively designated as a UNESCO World Heritage Site under the name "Mountain Railways of India".
+                        The Darjeeling Himalayan Railway was the first, and is still the most outstanding, example of a hill passenger railway. 
+                        Opened in 1881, its design applies bold and ingenious engineering solutions to the problem of establishing an effective rail link across a mountainous terrain of great beauty. 
+                        The construction of the Nilgiri Mountain Railway, a 46-km long metre-gauge single-track railway in Tamil Nadu State was first proposed in 1854, but due to the difficulty of the mountainous location the work only started in 1891 and was completed in 1908. 
+                        This railway, scaling an elevation of 326 m to 2,203 m, represented the latest technology of the time. 
+                        The Kalka Shimla Railway, a 96-km long, single track working rail link built in the mid-19th century to provide a service to the highland town of Shimla is emblematic of the technical and material efforts to disenclave mountain populations through the railway. 
+                        All three railways are still fully operational.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Nilgiri_Mountain_Train.jpg" style="object-fit: cover; width: 100%; ">
+                    <h1>
+                        Darjeeling Himalayan Railway
+                    </h1>
+                    <p>
+                        The Darjeeling Himalayan Railway, with the nickname "the Toy Train," is a 610 mm (2.00 ft) narrow-gauge railway that links the 88 km (55 mi) between Siliguri and Darjeeling. 
+                        The latter is a major summer hill station and the centre of a flourishing tea-growing district located in West Bengal. 
+                        The route is operated by Indian Railways., and its elevation starts at 100 m (330 ft) in Siliguri and rises to about 2,200 m (7,200 ft) at Darjeeling. 
+                        The highest elevation is at Ghoom station, 2,300 m (7,500 ft).<br>
+                        The town of Siliguri, the start of the railway route, was connected with Calcutta (now Kolkata) via railway in 1878, while the additional journey to Darjeeling required the use of tongas (horse-driven carts) along a dust track.
+                    </p> 
+                    <h1>
+                        Nilgiri Mountain Railway
+                    </h1>  
+                    <p>
+                        The Nilgiri Mountain Railway is a 46 km (29 mi) metre gauge single-line railway. 
+                        It connects the town of Mettupalayam with the hill station of Udagamandalam (Ootacamund). 
+                        The route is located within the state of Tamil Nadu and travels through the Nilgiri Hills, which are popularly known as the Blue Mountains of Southern India. 
+                        The Nilgiri is the only rack railway in India, and it uses an Abt rack system. 
+                        The ABT system requires the use of special steam locomotives. 
+                        The line contains 208 curves, 16 tunnels, and 250 bridges, causing the uphill journey along the route to take about 290 min (4.8 h), while the downhill journey takes 215 min (3.6 h).
+                        The Nilgiri Mountain Railway was declared a UNESCO World Heritage Site in July 2005. 
+                        Initially, the town of Coonoor was the final station on the line, but in September 1908 it was extended to Fernhill followed by Udagmandalam by October 15, 1908.
+                    </p> 
+                    <h1>
+                        Kalka-Shimla Railway
+                    </h1>
+                    <p>
+                        The Kalka-Shimla Railway runs between Kalka and Shimla. 
+                        The railway is 95.66 km (59.44 mi) long, and its gauge is narrow 2 ft 6 in (762 mm).
+                        Shimla is the modern capital of Himachal Pradesh and is at an elevation of 2,205 m (7,234 ft) in the foothills of the Himalayas. 
+                        It became the summer capital of British India in 1864, and it also served as the headquarters of the British Army in India.
+                        Until the railway's construction, the only access to Shimla was by village cartway. 
+                        The railway line was constructed by the Delhi-Ambala-Kalka Railway Company, beginning in 1898 in the Siwalik Hills, and was completed in 1903. 
+                        The Kalka-Shimla Railway joined the Nilgiri and Darjeeling lines as a World Heritage Site in 2008.<br>
+                        The Kalka-Shimla Railway has 103 tunnels and 864 bridges.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `  <p>
+                                                    Three of the lines, the Darjeeling Himalayan Railway, the Nilgiri Mountain Railway, and the Kalka-Shimla Railway, are collectively designated as a UNESCO World Heritage Site under the name "Mountain Railways of India".
+                                                    The Darjeeling Himalayan Railway was the first, and is still the most outstanding, example of a hill passenger railway. 
+                                                    Opened in 1881, its design applies bold and ingenious engineering solutions to the problem of establishing an effective rail link across a mountainous terrain of great beauty. 
+                                                    The construction of the Nilgiri Mountain Railway, a 46-km long metre-gauge single-track railway in Tamil Nadu State was first proposed in 1854, but due to the difficulty of the mountainous location the work only started in 1891 and was completed in 1908. 
+                                                    This railway, scaling an elevation of 326 m to 2,203 m, represented the latest technology of the time. 
+                                                    The Kalka Shimla Railway, a 96-km long, single track working rail link built in the mid-19th century to provide a service to the highland town of Shimla is emblematic of the technical and material efforts to disenclave mountain populations through the railway. 
+                                                    All three railways are still fully operational.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Nilgiri_Mountain_Train.jpg" style="object-fit: cover; width: 100%; ">
+                                                <h1>
+                                                    Darjeeling Himalayan Railway
+                                                </h1>
+                                                <p>
+                                                    The Darjeeling Himalayan Railway, with the nickname "the Toy Train," is a 610 mm (2.00 ft) narrow-gauge railway that links the 88 km (55 mi) between Siliguri and Darjeeling. 
+                                                    The latter is a major summer hill station and the centre of a flourishing tea-growing district located in West Bengal. 
+                                                    The route is operated by Indian Railways., and its elevation starts at 100 m (330 ft) in Siliguri and rises to about 2,200 m (7,200 ft) at Darjeeling. 
+                                                    The highest elevation is at Ghoom station, 2,300 m (7,500 ft).<br>
+                                                    The town of Siliguri, the start of the railway route, was connected with Calcutta (now Kolkata) via railway in 1878, while the additional journey to Darjeeling required the use of tongas (horse-driven carts) along a dust track.
+                                                </p> 
+                                                <h1>
+                                                    Nilgiri Mountain Railway
+                                                </h1>  
+                                                <p>
+                                                    The Nilgiri Mountain Railway is a 46 km (29 mi) metre gauge single-line railway. 
+                                                    It connects the town of Mettupalayam with the hill station of Udagamandalam (Ootacamund). 
+                                                    The route is located within the state of Tamil Nadu and travels through the Nilgiri Hills, which are popularly known as the Blue Mountains of Southern India. 
+                                                    The Nilgiri is the only rack railway in India, and it uses an Abt rack system. 
+                                                    The ABT system requires the use of special steam locomotives. 
+                                                    The line contains 208 curves, 16 tunnels, and 250 bridges, causing the uphill journey along the route to take about 290 min (4.8 h), while the downhill journey takes 215 min (3.6 h).
+                                                    The Nilgiri Mountain Railway was declared a UNESCO World Heritage Site in July 2005. 
+                                                    Initially, the town of Coonoor was the final station on the line, but in September 1908 it was extended to Fernhill followed by Udagmandalam by October 15, 1908.
+                                                </p> 
+                                                <h1>
+                                                    Kalka-Shimla Railway
+                                                </h1>
+                                                <p>
+                                                    The Kalka-Shimla Railway runs between Kalka and Shimla. 
+                                                    The railway is 95.66 km (59.44 mi) long, and its gauge is narrow 2 ft 6 in (762 mm).
+                                                    Shimla is the modern capital of Himachal Pradesh and is at an elevation of 2,205 m (7,234 ft) in the foothills of the Himalayas. 
+                                                    It became the summer capital of British India in 1864, and it also served as the headquarters of the British Army in India.
+                                                    Until the railway's construction, the only access to Shimla was by village cartway. 
+                                                    The railway line was constructed by the Delhi-Ambala-Kalka Railway Company, beginning in 1898 in the Siwalik Hills, and was completed in 1903. 
+                                                    The Kalka-Shimla Railway joined the Nilgiri and Darjeeling lines as a World Heritage Site in 2008.<br>
+                                                    The Kalka-Shimla Railway has 103 tunnels and 864 bridges.
+                                                </p>`
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://th.bing.com/th/id/OIP.wva_SXBRvVmYz74BnI_ULwAAAA?rs=1&pid=ImgDetMain"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Mountain Railways of India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/DarjeelingTrainFruitshopCrop.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Darjeeling Railway</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Darjeelinghimalayanrailway.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A train on the Darjeeling Himalayan Railway</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Darjeeling_Railway_Z_Reverse.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>A Z reverse on the Darjeeling Himalayan Railway</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/KSR_Steam_special_at_Taradevi_05-02-13_56.jpeg"  style="width:100%; height:250px">
+                                                    <figcaption>Kalka-Simla Railway</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/NMR_train_at_Ketti_05-02-26_75.jpeg"  style="width:100%; height:250px">
+                                                    <figcaption>Nilgiri Railway</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Nilgiri_Mountain_Train.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A train on the Nilgiri Mountain Railway</figcaption>
+                                                </figure>
+
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

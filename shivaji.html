@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CHHATRAPATI SHIVAJI TERMINUS</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Chhatrapati Shivaji Terminus
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        The Chhatrapati Shivaji Terminus, formerly known as Victoria Terminus Station, in Mumbai, is an outstanding example of Victorian Gothic Revival architecture in India, blended with themes deriving from Indian traditional architecture. 
+                        The building, designed by the British architect F. W. Stevens, became the symbol of Bombay as the 'Gothic City' and the major international mercantile port of India. 
+                        The terminal was built over 10 years, starting in 1878, according to a High Victorian Gothic design based on late medieval Italian models. 
+                        Its remarkable stone dome, turrets, pointed arches and eccentric ground plan are close to traditional Indian palace architecture. 
+                        It is an outstanding example of the meeting of two cultures, as British architects worked with Indian craftsmen to include Indian architectural tradition and idioms thus forging a new style unique to Bombay.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Chhatrapati_shivaji_terminus%2C_esterno_01.jpg" style="object-fit: cover; width: 100%; ">
+                    
+                    <h1>
+                        History
+                    </h1>
+                    <p>
+                        This famous landmark which has become a symbol of the city, was built as the headquarters of the Great Indian Peninsular Railway<br>
+                        The railway station was built to replace the Bori Bunder railway station, in the Bori Bunder area of Bombay, a prominent port and warehouse area known for its imports and exports. 
+                        Since Bombay became a major port city at the time, a bigger station was built to meet its demands, and was named Victoria Terminus, after the then reigning Empress of India, Queen Victoria. 
+                        The station was designed by Frederick William Stevens, a British engineer architect, attached to the Bombay office of the Indian colonial Public Works Department. 
+                        Work began in 1878. <br>
+                        The station took ten years to complete, the longest for any building of that era in Mumbai.
+                    </p>   
+
+                    <p>
+                        The station has been renamed several times. 
+                        It was built to replace Bori Bunder, the terminus of the Great Indian Peninsula Railway from 1853 to 1888 and was named Victoria Terminus to commemorate the Golden Jubilee of Queen Victoria. 
+                        In 1996, the station was renamed to Chhatrapati Shivaji Terminus in honour of Shivaji, founder of the Maratha Empire.
+                    </p> 
+                    <h1>
+                        Platforms
+                    </h1>
+                    <p>
+                        CSMT has a total of 18 platforms—seven platforms are for suburban EMU trains and eleven platforms (Platform 8 to Platform 18) are for long-distance trains. 
+                        Rajdhani, Duronto, Garib Rath and Tejas Express leave from Platform No. 18. Air-conditioned dormitories were inaugurated at CST on 16 April 2013. 
+                        The facility has 58 beds for men and 20 for women.
+                    </p>            
+                    <h1>
+                        Structure
+                    </h1>
+                    <p>
+                        The station building is designed in the High Victorian Gothic style of architecture. 
+                        The building exhibits a fusion of influences from Victorian Italianate Gothic Revival architecture and classical Indian architecture. 
+                        The skyline, turrets, pointed arches, and eccentric ground plan are close to classical Indian palace architecture. 
+                        Externally, the wood carving, tiles, ornamental iron and brass railings, grills for the ticket offices, the balustrades for the grand staircases and other ornaments were the work of students at the Sir Jamsetjee Jeejebhoy School of Art. 
+                        The station stands as an example of 19th-century railway architectural marvels for its advanced structural and technical solutions. 
+                        The CSMT was constructed using a high level of engineering both in terms of railway and civil engineering. 
+                        It is one of the first and finest products of the use of industrial technology, merged with the Gothic Revival style in India. 
+                        The centrally domed office structure has a 330-foot-long platform connected to a 1,200-foot-long train shed, and its outline provides the skeleton plan for the building. 
+                        CSMT's dome of dovetailed ribs, built without centering, was considered as a novel achievement of the era.
+                    </p>
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `   <p>
+                                                    The Chhatrapati Shivaji Terminus, formerly known as Victoria Terminus Station, in Mumbai, is an outstanding example of Victorian Gothic Revival architecture in India, blended with themes deriving from Indian traditional architecture. 
+                                                    The building, designed by the British architect F. W. Stevens, became the symbol of Bombay as the 'Gothic City' and the major international mercantile port of India. 
+                                                    The terminal was built over 10 years, starting in 1878, according to a High Victorian Gothic design based on late medieval Italian models. 
+                                                    Its remarkable stone dome, turrets, pointed arches and eccentric ground plan are close to traditional Indian palace architecture. 
+                                                    It is an outstanding example of the meeting of two cultures, as British architects worked with Indian craftsmen to include Indian architectural tradition and idioms thus forging a new style unique to Bombay.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Chhatrapati_shivaji_terminus%2C_esterno_01.jpg" style="object-fit: cover; width: 100%; ">
+                                                
+                                                <h1>
+                                                    History
+                                                </h1>
+                                                <p>
+                                                    This famous landmark which has become a symbol of the city, was built as the headquarters of the Great Indian Peninsular Railway<br>
+                                                    The railway station was built to replace the Bori Bunder railway station, in the Bori Bunder area of Bombay, a prominent port and warehouse area known for its imports and exports. 
+                                                    Since Bombay became a major port city at the time, a bigger station was built to meet its demands, and was named Victoria Terminus, after the then reigning Empress of India, Queen Victoria. 
+                                                    The station was designed by Frederick William Stevens, a British engineer architect, attached to the Bombay office of the Indian colonial Public Works Department. 
+                                                    Work began in 1878. <br>
+                                                    The station took ten years to complete, the longest for any building of that era in Mumbai.
+                                                </p>   
+
+                                                <p>
+                                                    The station has been renamed several times. 
+                                                    It was built to replace Bori Bunder, the terminus of the Great Indian Peninsula Railway from 1853 to 1888 and was named Victoria Terminus to commemorate the Golden Jubilee of Queen Victoria. 
+                                                    In 1996, the station was renamed to Chhatrapati Shivaji Terminus in honour of Shivaji, founder of the Maratha Empire.
+                                                </p> 
+                                                <h1>
+                                                    Platforms
+                                                </h1>
+                                                <p>
+                                                    CSMT has a total of 18 platforms—seven platforms are for suburban EMU trains and eleven platforms (Platform 8 to Platform 18) are for long-distance trains. 
+                                                    Rajdhani, Duronto, Garib Rath and Tejas Express leave from Platform No. 18. Air-conditioned dormitories were inaugurated at CST on 16 April 2013. 
+                                                    The facility has 58 beds for men and 20 for women.
+                                                </p>            
+                                                <h1>
+                                                    Structure
+                                                </h1>
+                                                <p>
+                                                    The station building is designed in the High Victorian Gothic style of architecture. 
+                                                    The building exhibits a fusion of influences from Victorian Italianate Gothic Revival architecture and classical Indian architecture. 
+                                                    The skyline, turrets, pointed arches, and eccentric ground plan are close to classical Indian palace architecture. 
+                                                    Externally, the wood carving, tiles, ornamental iron and brass railings, grills for the ticket offices, the balustrades for the grand staircases and other ornaments were the work of students at the Sir Jamsetjee Jeejebhoy School of Art. 
+                                                    The station stands as an example of 19th-century railway architectural marvels for its advanced structural and technical solutions. 
+                                                    The CSMT was constructed using a high level of engineering both in terms of railway and civil engineering. 
+                                                    It is one of the first and finest products of the use of industrial technology, merged with the Gothic Revival style in India. 
+                                                    The centrally domed office structure has a 330-foot-long platform connected to a 1,200-foot-long train shed, and its outline provides the skeleton plan for the building. 
+                                                    CSMT's dome of dovetailed ribs, built without centering, was considered as a novel achievement of the era.
+                                                </p>`
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://th.bing.com/th/id/R.f18c4437288f99be8f70c509b0f943a8?rik=ksmFx98PXFBbMQ&riu=http%3a%2f%2fontheworldmap.com%2findia%2fcity%2fmumbai%2fmumbai-location-on-the-india-map.jpg&ehk=u%2f3AXFajZkJ%2b9fO%2bQJh4sKjFBmCuwFO7mbbEhluzbyc%3d&risl=&pid=ImgRaw&r=0"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Chhatrapati Shivaji Terminus in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Chhatrapati_shivaji_terminus%2C_esterno_01.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Chhatrapati Shivaji Terminus (formerly Victoria Terminus)</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Victoria_Terminus_on_Republic_Day_eve.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Victoria Terminus on Republic Day eve</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Chatrapati_Shivaji_Terminus_%28Victoria_Terminus_Station%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>An evening view of Chhatrapati Shivaji Maharaj Teminus</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/VictoriaTerminusNameBoard.png"  style="width:100%; height:250px">
+                                                    <figcaption>Victoria Terminus, before being renamed to Chhatrapati Shivaji Terminus in 1995</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/VictoriaTerminus1910.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A photo of Victoria Terminus from 1910</figcaption>
+                                                </figure>
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

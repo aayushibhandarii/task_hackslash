@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FATEHPUR SIKRI</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Fatehpur Sikri
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        Built during the second half of the 16th century by the Emperor Akbar, Fatehpur Sikri (the City of Victory) was the capital of the Mughal Empire for only some 10 years. 
+                        The complex of monuments and temples, all in a uniform architectural style, includes one of the largest mosques in India, the Jama Masjid.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Jama_Masjid-Sikri-Fatehpur_Sikri-India0008.JPG" style="object-fit: cover; width: 100%; ">
+                    <p>
+                        Fatehpur Sikri is a town in the Agra District of Uttar Pradesh, India. 
+                        Situated 35.7 kilometres (22.2 mi) from the district headquarters of Agra, Fatehpur Sikri itself was founded as the capital of the Mughal Empire in 1571 by Emperor Akbar, serving this role from 1571 to 1585, when Akbar abandoned it due to a campaign in Punjab and was later completely abandoned in 1610.
+                    </p>
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        Archaeological evidence points to settlement of the region since the Painted Grey Ware period. 
+                        According to historian Syed Ali Nadeem Rezavi, the region flourished under Sunga rule and then under Sikarwar Rajputs, who built a fortress when they controlled the area from 7th to 16th century, until the Battle of Khanwa (1527). 
+                        The area later came under the rule of the Delhi Sultanate and many mosques were built at the place which grew in size during the period of the Khalji dynasty.
+                    </p>   
+                    <p>
+                        Basing his arguments on the excavations by the Archaeological Survey of India (ASI) in 1999 - 2000 at the Chabeli Tila, senior Agra journalist Bhanu Pratap Singh said the antique pieces, statues, and structures all point to a lost "culture and religious site," more than 1,000 years ago. 
+                        "The excavations yielded a rich crop of Jain statues, hundreds of them, including the foundation stone of a temple with the date. 
+                        The statues were a thousand years old of Bhagwan Adi Nath, Bhagwan Rishabh Nath, Bhagwan Mahavir and Jain Yakshinis," said Swarup Chandra Jain, senior leader of the Jain community. 
+                        Historian Sugam Anand states that there is proof of habitation, temples and commercial centres even before Akbar established it as his capital. 
+                        He states that the open space on a ridge was used by Akbar to build his capital.
+                    </p> 
+                    <h2>
+                        Architecture
+                    </h2>
+                    <p>
+                        Fatehpur Sikri sits on a rocky ridge, 3 kilometres (1.9 mi) in length and 1 km (0.62 mi) wide, and the palace city is surrounded by a 6 km (3.7 mi) wall on three sides with the fourth bordered by a lake. 
+                        The city is generally organised around this 40 m high ridge, and falls roughly into the shape of a rhombus. 
+                        The general layout of the ground structures, especially the "continuous and compact pattern of gardens and services and facilities" that characterised the city leads urban archaeologists to conclude that Fatehpur Sikri was built primarily to afford leisure and luxury to its famous residents.<br>
+                        The dynastic architecture of Fatehpur Sikri was modelled on Timurid forms and styles.
+                        The city was built massively and preferably with red sandstone.
+                        Gujarati influences are also seen in its architectural vocabulary and decor of the palaces of Fatehpur Sikri.
+                        The city's architecture reflects both the Hindu and Muslim form of domestic architecture popular in India at the time.
+                        The remarkable preservation of these original spaces allows modern archaeologists to reconstruct scenes of Mughal court life, and to better understand the hierarchy of the city's royal and noble residents.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    Built during the second half of the 16th century by the Emperor Akbar, Fatehpur Sikri (the City of Victory) was the capital of the Mughal Empire for only some 10 years. 
+                                                    The complex of monuments and temples, all in a uniform architectural style, includes one of the largest mosques in India, the Jama Masjid.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Jama_Masjid-Sikri-Fatehpur_Sikri-India0008.JPG" style="object-fit: cover; width: 100%; ">
+                                                <p>
+                                                    Fatehpur Sikri is a town in the Agra District of Uttar Pradesh, India. 
+                                                    Situated 35.7 kilometres (22.2 mi) from the district headquarters of Agra, Fatehpur Sikri itself was founded as the capital of the Mughal Empire in 1571 by Emperor Akbar, serving this role from 1571 to 1585, when Akbar abandoned it due to a campaign in Punjab and was later completely abandoned in 1610.
+                                                </p>
+                                                <h2>
+                                                    History
+                                                </h2>
+                                                <p>
+                                                    Archaeological evidence points to settlement of the region since the Painted Grey Ware period. 
+                                                    According to historian Syed Ali Nadeem Rezavi, the region flourished under Sunga rule and then under Sikarwar Rajputs, who built a fortress when they controlled the area from 7th to 16th century, until the Battle of Khanwa (1527). 
+                                                    The area later came under the rule of the Delhi Sultanate and many mosques were built at the place which grew in size during the period of the Khalji dynasty.
+                                                </p>   
+                                                <p>
+                                                    Basing his arguments on the excavations by the Archaeological Survey of India (ASI) in 1999 - 2000 at the Chabeli Tila, senior Agra journalist Bhanu Pratap Singh said the antique pieces, statues, and structures all point to a lost "culture and religious site," more than 1,000 years ago. 
+                                                    "The excavations yielded a rich crop of Jain statues, hundreds of them, including the foundation stone of a temple with the date. 
+                                                    The statues were a thousand years old of Bhagwan Adi Nath, Bhagwan Rishabh Nath, Bhagwan Mahavir and Jain Yakshinis," said Swarup Chandra Jain, senior leader of the Jain community. 
+                                                    Historian Sugam Anand states that there is proof of habitation, temples and commercial centres even before Akbar established it as his capital. 
+                                                    He states that the open space on a ridge was used by Akbar to build his capital.
+                                                </p> 
+                                                <h2>
+                                                    Architecture
+                                                </h2>
+                                                <p>
+                                                    Fatehpur Sikri sits on a rocky ridge, 3 kilometres (1.9 mi) in length and 1 km (0.62 mi) wide, and the palace city is surrounded by a 6 km (3.7 mi) wall on three sides with the fourth bordered by a lake. 
+                                                    The city is generally organised around this 40 m high ridge, and falls roughly into the shape of a rhombus. 
+                                                    The general layout of the ground structures, especially the "continuous and compact pattern of gardens and services and facilities" that characterised the city leads urban archaeologists to conclude that Fatehpur Sikri was built primarily to afford leisure and luxury to its famous residents.<br>
+                                                    The dynastic architecture of Fatehpur Sikri was modelled on Timurid forms and styles.
+                                                    The city was built massively and preferably with red sandstone.
+                                                    Gujarati influences are also seen in its architectural vocabulary and decor of the palaces of Fatehpur Sikri.
+                                                    The city's architecture reflects both the Hindu and Muslim form of domestic architecture popular in India at the time.
+                                                    The remarkable preservation of these original spaces allows modern archaeologists to reconstruct scenes of Mughal court life, and to better understand the hierarchy of the city's royal and noble residents.
+                                                </p>  `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://th.bing.com/th/id/OIP.MHrpLknBATKM2xiG8y7hbQAAAA?rs=1&pid=ImgDetMain"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Fatehpur Sikri in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Buland Darwaza, the 54-metre-high (177 ft) entrance to Fatehpur Sikri's Jama Masjid</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Fatehpur_Sikri_near_Agra_2016-03_img05.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Buland Darwaza rear view</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Kos_Minar_793.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Kos Minar</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Jama_Masjid-Sikri-Fatehpur_Sikri-India0008.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Jama Masjid, Fatehpur Sikri</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Fatehpur_Sikiri_Salim_Chishti_Tomb_2010.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Tomb of Salim Chishti in Jama Masjid</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Panch_Mahal-Fatehpur-Fatehpur_Sikri_India0014.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Panch Mahal, Fatehpur Sikri</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Hiran_Minar_FatehpurSikri.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Hiran Minar, Fatehpur Sikri</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Fatehpur_Sikri_Fort_166.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>grand gateway of Jodha Bai Maha</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Fatehpur_Sikri_042.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>King's Gate</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Fatehpur_Sikri_120.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Palace of Akbar's favourite consort, Queen Mariam-uz-Zamani</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Fatehpur_Sikri_146.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Mariam-uz-Zamani's kitchen</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Fatehpur_Sikri_175.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Diwan-i-Khas</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Fatehpur_Sikri_163.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Akbar's Harem Complex</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Panoramic_vie_of_Fahpur_Sikri_Palace.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Panoramic view of Fatehpur Sikri Palace</figcaption>
+                                                </figure>
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

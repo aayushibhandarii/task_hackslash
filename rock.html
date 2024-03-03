@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROCK SHELTERS OF BHIMBETKA</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Rock Shelters of Bhimbetka
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        The Rock Shelters of Bhimbetka are in the foothills of the Vindhyan Mountains on the southern edge of the central Indian plateau. 
+                        Within massive sandstone outcrops, above comparatively dense forest, are five clusters of natural rock shelters, displaying paintings that appear to date from the Mesolithic Period right through to the historical period. 
+                        The cultural traditions of the inhabitants of the twenty-one villages adjacent to the site bear a strong resemblance to those represented in the rock paintings.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Rock_Shelter_8%2C_Bhimbetka_02.jpg" style="object-fit: cover; width: 100%; ">
+                    
+                    <h1>
+                        Brief
+                    </h1>
+                    <p>
+                        The Bhimbetka rock shelters are an archaeological site in central India that spans the Paleolithic and Mesolithic periods, as well as the historic period.
+                        It exhibits the earliest traces of human life in India and evidence of the Stone Age starting at the site in Acheulian times.
+                        It is located in the Raisen District in the Indian state of Madhya Pradesh, about 45 kilometres (28 mi) south-east of Bhopal. 
+                        It is a UNESCO World Heritage Site that consists of seven hills and over 750 rock shelters distributed over 10 km (6.2 mi).
+                        At least some of the shelters were inhabited more than 100,000 years ago.
+                    </p>
+                    <h1>
+                        History
+                    </h1>
+                    <p>
+                        W. Kincaid, a British India era official, first mentioned Bhimbetka in a scholarly paper in 1888. 
+                        He relied on the information he gathered from local adivasis (tribals) about Bhojpur lake in the area and referred to Bhimbetka as a Hinduism site.
+                        The first archaeologist to visit a few caves at the site and discover its prehistoric significance was V. S. Wakankar, who saw these rock formations and thought these were similar to those he had seen in Spain and France. 
+                        He visited the area with a team of archaeologists and reported several prehistoric rock shelters in 1957.<br>
+                        It was only in the 1970s that the scale and true significance of the Bhimbetka rock shelters was discovered and reported.
+                        Since then, more than 750 rock shelters have been identified. 
+                        The Bhimbetka group contains 243 of these, while the Lakha Juar group nearby has 178 shelters.
+                    </p>   
+                    
+                    <h1>
+                        Location
+                    </h1>
+                    <p>
+                        The Rock Shelters of Bhimbetka is 45 kilometres south-east of Bhopal and 9 km from Obedullaganj city in the Raisen District of Madhya Pradesh at the southern edge of the Vindhya Range. 
+                        South of these rock shelters are successive ranges of the Satpura hills. 
+                        It is inside the Ratapani Wildlife Sanctuary, embedded in sandstone rocks, in the foothills of the Vindhya Range.
+                        The site consists of seven hills: Vinayaka, Bhonrawali, Bhimbetka, Lakha Juar (east and west), Jhondra and Muni Babaki Pahari.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `  <p>
+                                                    The Rock Shelters of Bhimbetka are in the foothills of the Vindhyan Mountains on the southern edge of the central Indian plateau. 
+                                                    Within massive sandstone outcrops, above comparatively dense forest, are five clusters of natural rock shelters, displaying paintings that appear to date from the Mesolithic Period right through to the historical period. 
+                                                    The cultural traditions of the inhabitants of the twenty-one villages adjacent to the site bear a strong resemblance to those represented in the rock paintings.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Rock_Shelter_8%2C_Bhimbetka_02.jpg" style="object-fit: cover; width: 100%; ">
+                                                
+                                                <h1>
+                                                    Brief
+                                                </h1>
+                                                <p>
+                                                    The Bhimbetka rock shelters are an archaeological site in central India that spans the Paleolithic and Mesolithic periods, as well as the historic period.
+                                                    It exhibits the earliest traces of human life in India and evidence of the Stone Age starting at the site in Acheulian times.
+                                                    It is located in the Raisen District in the Indian state of Madhya Pradesh, about 45 kilometres (28 mi) south-east of Bhopal. 
+                                                    It is a UNESCO World Heritage Site that consists of seven hills and over 750 rock shelters distributed over 10 km (6.2 mi).
+                                                    At least some of the shelters were inhabited more than 100,000 years ago.
+                                                </p>
+                                                <h1>
+                                                    History
+                                                </h1>
+                                                <p>
+                                                    W. Kincaid, a British India era official, first mentioned Bhimbetka in a scholarly paper in 1888. 
+                                                    He relied on the information he gathered from local adivasis (tribals) about Bhojpur lake in the area and referred to Bhimbetka as a Hinduism site.
+                                                    The first archaeologist to visit a few caves at the site and discover its prehistoric significance was V. S. Wakankar, who saw these rock formations and thought these were similar to those he had seen in Spain and France. 
+                                                    He visited the area with a team of archaeologists and reported several prehistoric rock shelters in 1957.<br>
+                                                    It was only in the 1970s that the scale and true significance of the Bhimbetka rock shelters was discovered and reported.
+                                                    Since then, more than 750 rock shelters have been identified. 
+                                                    The Bhimbetka group contains 243 of these, while the Lakha Juar group nearby has 178 shelters.
+                                                </p>   
+                                                
+                                                <h1>
+                                                    Location
+                                                </h1>
+                                                <p>
+                                                    The Rock Shelters of Bhimbetka is 45 kilometres south-east of Bhopal and 9 km from Obedullaganj city in the Raisen District of Madhya Pradesh at the southern edge of the Vindhya Range. 
+                                                    South of these rock shelters are successive ranges of the Satpura hills. 
+                                                    It is inside the Ratapani Wildlife Sanctuary, embedded in sandstone rocks, in the foothills of the Vindhya Range.
+                                                    The site consists of seven hills: Vinayaka, Bhonrawali, Bhimbetka, Lakha Juar (east and west), Jhondra and Muni Babaki Pahari.
+                                                </p>     `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://cdn.britannica.com/92/243192-004-D60CF7D9/Locator-map-Bhimbetka-rock-shelters.jpg"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Rock Shelters of Bhimbetka in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/1_of_the_rock_shelter_caves_at_Bhimbetka%2C_Madhya_Pradesh.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>One of about 750 rock shelter caves at Bhimbetka.</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Entry_to_%22Auditorium_Cave%22.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Auditorium cave</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Bhimbetka_Cave_Paintings.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>People riding horses holding weapons</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Rock_Shelter_at_Bhimbetka.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Man riding elephant</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

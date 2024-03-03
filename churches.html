@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CHURCHES AND CONVENTS OF GOA</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Churches and Convents of Goa
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        The churches and convents of Goa, the former capital of the Portuguese Indies - particularly the Church of Bom Jesus, which contains the tomb of St Francis-Xavier - illustrate the evangelization of Asia. 
+                        These monuments were influential in spreading forms of Manueline, Mannerist and Baroque art in all the countries of Asia where missions were established.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Old_Goa%2C_Se_Cathedral%2C_Panoramic_view.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h1>
+                        History
+                    </h1>
+                    <p>
+                        The city of Goa was founded in the fifteenth century by the Muslim Sultanate of Bijapur as a port on the banks of the Mandovi river. 
+                        The city was taken in 1510 by Afonso de Albuquerque with the help of the Goan Hindu privateer Timoja, remaining continuously under Portuguese rule until the twentieth century. 
+                        The city was recorded as having over 200,000 inhabitants at its peak and was known by the title 'Rome of the East', specifically for its splendid and numerous Catholic religious buildings.
+                    </p>   
+                    <p>
+                        The first converts to Christianity in Goa were native Goan women who married Portuguese men that arrived with Afonso de Albuquerque during the Portuguese conquest of Goa in 1510.
+                        During the mid-16th century, the city of Goa, was the center of Christianization in the East.
+                        Jesuits, Franciscans, Dominicans and other Catholic religious orders settled in Goa from the sixteenth century. 
+                        They used the city as their base for the spread of Catholicism in India. 
+                        The sixteenth and seventeenth centuries were the Golden Age of Goa, which ran a flourishing trade and came to have administrative privileges similar to those of Lisbon.
+                    </p> 
+                    
+                    <p>
+                        In the first two centuries of the Portuguese presence most of the churches and monasteries were erected that still populate the city, earning the admiration of travelers who pass through Goa.
+                        These monuments reflect the cultural exchange and legacy of the Portuguese: while the architectural forms follow the European canon, the internal decoration of altars, altarpieces, paintings and furniture reflect the labour, the work of local artists.
+                        This was made possible by the presence of native Goan artists and labourers, which made it not necessary to import European artists or African slave labour (unlike in contemporary colonial Brazil).
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    The churches and convents of Goa, the former capital of the Portuguese Indies - particularly the Church of Bom Jesus, which contains the tomb of St Francis-Xavier - illustrate the evangelization of Asia. 
+                                                    These monuments were influential in spreading forms of Manueline, Mannerist and Baroque art in all the countries of Asia where missions were established.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Old_Goa%2C_Se_Cathedral%2C_Panoramic_view.jpg" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <h1>
+                                                    History
+                                                </h1>
+                                                <p>
+                                                    The city of Goa was founded in the fifteenth century by the Muslim Sultanate of Bijapur as a port on the banks of the Mandovi river. 
+                                                    The city was taken in 1510 by Afonso de Albuquerque with the help of the Goan Hindu privateer Timoja, remaining continuously under Portuguese rule until the twentieth century. 
+                                                    The city was recorded as having over 200,000 inhabitants at its peak and was known by the title 'Rome of the East', specifically for its splendid and numerous Catholic religious buildings.
+                                                </p>   
+                                                <p>
+                                                    The first converts to Christianity in Goa were native Goan women who married Portuguese men that arrived with Afonso de Albuquerque during the Portuguese conquest of Goa in 1510.
+                                                    During the mid-16th century, the city of Goa, was the center of Christianization in the East.
+                                                    Jesuits, Franciscans, Dominicans and other Catholic religious orders settled in Goa from the sixteenth century. 
+                                                    They used the city as their base for the spread of Catholicism in India. 
+                                                    The sixteenth and seventeenth centuries were the Golden Age of Goa, which ran a flourishing trade and came to have administrative privileges similar to those of Lisbon.
+                                                </p> 
+                                                
+                                                <p>
+                                                    In the first two centuries of the Portuguese presence most of the churches and monasteries were erected that still populate the city, earning the admiration of travelers who pass through Goa.
+                                                    These monuments reflect the cultural exchange and legacy of the Portuguese: while the architectural forms follow the European canon, the internal decoration of altars, altarpieces, paintings and furniture reflect the labour, the work of local artists.
+                                                    This was made possible by the presence of native Goan artists and labourers, which made it not necessary to import European artists or African slave labour (unlike in contemporary colonial Brazil).
+                                                </p>`
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://th.bing.com/th/id/R.0edc4db6d641c5553752eaa2eac2852c?rik=HnCs8Ui0Qmillw&riu=http%3a%2f%2fwww.freeworldmaps.net%2fasia%2findia%2fgoa%2fgoa-location.jpg&ehk=9RT8CZ1%2be11tbMHgaXzrcllyf2%2bCMDbCW924daTiTpE%3d&risl=&pid=ImgRaw&r=0"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Churches and convents of Goa in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Churches_and_Convents_of_Goa-109273.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Goa-RosarioChurch.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Church of the Rosary</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Goa_Velha_Basilica_Bom_Jesus.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Basilica of Bom Jesus</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Goa-BomJesus-Nave1.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Main altar (nave) of the Basilica of Bom Jesus</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Goa-BomJesus-FXavierTomb2.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The silver casket of St. Francis Xavier inside the Basilica of Bom Jesus</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Goa-StFrancis-Facade1.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Facade of the Church of St. Francis of Assisi</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Goa-StFrancis-MainChapel1.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Main altar of the Church of St. Francis of Assisi</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Goa-StFrancis-Nave1.jpg"  style="width:100%; height:250px">
+                                                    <figcaption> The interiors of the Church of St. Francis</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Capela_de_Santa_Catarina%2C_Velha_Goa%2C_2.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Chapel of Santa Catarina</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/S%C3%A9_de_Santa_Catarina.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Tuscan Cathedral of Santa Catarina (Saint Catherine) </figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Old_Goa%2C_Interiors_of_Se_Cathedral.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Interior of the Santa Catarina (Saint Catherine) </figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Ruins_of_Church_of_St_Augustine.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Ruins of the bell tower of the Church of St. Augustine</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Church_of_St_Cajetan.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Church of Divine Providence (St. Cajetan)</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Goa_vecchia%2C_cappella_reale_di_sant%27antonio%2C_interno_04.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Interior of the Royal Chapel of St. Anthony </figcaption>
+                                                </figure>
+                                            
+                                                
+                                                
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

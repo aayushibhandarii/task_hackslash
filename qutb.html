@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QUTB MINAR AND ITS MONUMENTS</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Qutb Minar and its Monuments
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        Built in the early 13th century a few kilometres south of Delhi, the red sandstone tower of Qutb Minar is 72.5 m high, tapering from 2.75 m in diameter at its peak to 14.32 m at its base, and alternating angular and rounded flutings. 
+                        The surrounding archaeological area contains funerary buildings, notably the magnificent Alai-Darwaza Gate, the masterpiece of Indo-Muslim art (built in 1311), and two mosques, including the Quwwatu'l-Islam, the oldest in northern India, built of materials reused from some 20 Brahman temples.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Qutb_Minar_2011.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <p>
+                        The Qutb Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and "victory tower" that forms part of the Qutb complex, which lies at the site of Delhi's oldest fortified city, Lal Kot, founded by the Tomar Rajputs. 
+                        It consists of 399 steps 
+                        It is a UNESCO World Heritage Site in the Mehrauli area of South Delhi, India.
+                        It is one of the most visited tourist spots in the city, mostly built between 1199 and 1220.
+                    </p>
+                    <h1>
+                        History
+                    </h1>
+                    <p>
+                        The Qutb Minar was built over the ruins of the Lal Kot, the citadel of Dhillika.
+                        Qutub Minar was begun after the Quwwat-ul-Islam Mosque. 
+                        Drawing references from their Ghurid homeland, Qutub-ud-Din Aibak and Shamsu'd-Din Iltutmish constructed a minar (minaret) at the south-eastern corner of the Quwwatu'l-Islam between 1199 and 1503.
+                    </p>   
+                    <p>
+                        The Minar is surrounded by several historically significant monuments of the Qutb complex. Quwwat-ul-Islam Mosque, to the north-east of the Minar was built by Qutub-ud-Din Aibak in A.D. 1199. 
+                        It is the earliest extant - mosque built by the Delhi Sultans. 
+                        It consists of a rectangular courtyard enclosed by cloisters, erected with the carved columns and architectural members of 27 Jain and Hindu temples, which were demolished by Qutub-ud-Din Aibak as recorded in his inscription on the main eastern entrance.
+                        Later, a lofty arched screen was erected, and the mosque was enlarged, by Shams-ud- Din Itutmish (A.D. 1210-35) and Ala-ud-Din Khalji. 
+                        The Iron Pillar in the courtyard bears an inscription in Sanskrit in Brahmi script of fourth century A.D., according to which the pillar was set up as a Vishnudhvaja (standard of god Vishnu) on the hill known as Vishnupada in memory of a mighty king named Chandra.
+                    </p> 
+                    <h1>
+                        Architecture
+                    </h1>
+                    <p>
+                        Persian-Arabic and Nagari in different sections of the Qutb Minar reveal the history of its construction and the later restorations and repairs by Firoz Shah Tughluq (1351-88) and Sikandar Lodi (1489-1517).<br>
+                        The height of Qutb Minar is 72.5 meters, making it the tallest minaret in the world built of bricks.
+                        The tower tapers, and has a 14.3 metres (47 feet) base diameter, reducing to 2.7 metres (9 feet) at the top of the peak.
+                        It contains a spiral staircase of 379 steps.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    Built in the early 13th century a few kilometres south of Delhi, the red sandstone tower of Qutb Minar is 72.5 m high, tapering from 2.75 m in diameter at its peak to 14.32 m at its base, and alternating angular and rounded flutings. 
+                                                    The surrounding archaeological area contains funerary buildings, notably the magnificent Alai-Darwaza Gate, the masterpiece of Indo-Muslim art (built in 1311), and two mosques, including the Quwwatu'l-Islam, the oldest in northern India, built of materials reused from some 20 Brahman temples.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Qutb_Minar_2011.jpg" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <p>
+                                                    The Qutb Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and "victory tower" that forms part of the Qutb complex, which lies at the site of Delhi's oldest fortified city, Lal Kot, founded by the Tomar Rajputs. 
+                                                    It consists of 399 steps 
+                                                    It is a UNESCO World Heritage Site in the Mehrauli area of South Delhi, India.
+                                                    It is one of the most visited tourist spots in the city, mostly built between 1199 and 1220.
+                                                </p>
+                                                <h1>
+                                                    History
+                                                </h1>
+                                                <p>
+                                                    The Qutb Minar was built over the ruins of the Lal Kot, the citadel of Dhillika.
+                                                    Qutub Minar was begun after the Quwwat-ul-Islam Mosque. 
+                                                    Drawing references from their Ghurid homeland, Qutub-ud-Din Aibak and Shamsu'd-Din Iltutmish constructed a minar (minaret) at the south-eastern corner of the Quwwatu'l-Islam between 1199 and 1503.
+                                                </p>   
+                                                <p>
+                                                    The Minar is surrounded by several historically significant monuments of the Qutb complex. Quwwat-ul-Islam Mosque, to the north-east of the Minar was built by Qutub-ud-Din Aibak in A.D. 1199. 
+                                                    It is the earliest extant - mosque built by the Delhi Sultans. 
+                                                    It consists of a rectangular courtyard enclosed by cloisters, erected with the carved columns and architectural members of 27 Jain and Hindu temples, which were demolished by Qutub-ud-Din Aibak as recorded in his inscription on the main eastern entrance.
+                                                    Later, a lofty arched screen was erected, and the mosque was enlarged, by Shams-ud- Din Itutmish (A.D. 1210-35) and Ala-ud-Din Khalji. 
+                                                    The Iron Pillar in the courtyard bears an inscription in Sanskrit in Brahmi script of fourth century A.D., according to which the pillar was set up as a Vishnudhvaja (standard of god Vishnu) on the hill known as Vishnupada in memory of a mighty king named Chandra.
+                                                </p> 
+                                                <h1>
+                                                    Architecture
+                                                </h1>
+                                                <p>
+                                                    Persian-Arabic and Nagari in different sections of the Qutb Minar reveal the history of its construction and the later restorations and repairs by Firoz Shah Tughluq (1351-88) and Sikandar Lodi (1489-1517).<br>
+                                                    The height of Qutb Minar is 72.5 meters, making it the tallest minaret in the world built of bricks.
+                                                    The tower tapers, and has a 14.3 metres (47 feet) base diameter, reducing to 2.7 metres (9 feet) at the top of the peak.
+                                                    It contains a spiral staircase of 379 steps.
+                                                </p>  `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://th.bing.com/th/id/OIP.GBDWUxvv3URuOMihlrV8EgHaJA?rs=1&pid=ImgDetMain"  style="width:100%; border-style: solid; height: 600px">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Qutb Minar and its Monuments  in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Qutub_Minar_07.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Decorative motifs on upper levels</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Qutub_Minar_Inscriptions_2022.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Inscriptions near the base</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Details_of_the_balcony%2C_Qutub_Minar.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Close-up of balcony</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Qutub_minar_and_a_tomb.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Entrance to Minar</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Qutub_Minar_932.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Qutb Minar</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/QutbMinar_AlaiDarzawa.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Left to Right:Alai Darwaza, Qutb Minar, Imam Zamin's tomb</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Qutb_Minar_2011.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Qutb Minar, Delhi, India</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

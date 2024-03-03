@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KHAJURAHO GROUP OF MONUMENTS </title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Khajuraho Group of Monuments
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        The temples at Khajuraho were built during the Chandella dynasty, which reached its apogee between 950 and 1050. 
+                        Only about 20 temples remain; they fall into three distinct groups and belong to two different religions - Hinduism and Jainism. 
+                        They strike a perfect balance between architecture and sculpture. 
+                        The Temple of Kandariya is decorated with a profusion of sculptures that are among the greatest masterpieces of Indian art.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Khajuraho_Group_of_Monuments_4.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        The Khajuraho group of monuments was built during the rule of the Chandela dynasty. 
+                        The building activity started almost immediately after the rise of their power, throughout their kingdom to be later known as Bundelkhand. 
+                        Most temples were built during the reigns of the Hindu kings Yashovarman and Dhanga. 
+                        Yashovarman's legacy is best exhibited by the Lakshmana Temple. 
+                        Vishvanatha temple best highlights King Dhanga's reign.
+                        The largest and currently most famous surviving temple is Kandariya Mahadeva built in the reign of King Vidyadhara.
+                        The temple inscriptions suggest many of the currently surviving temples were complete between 970 and 1030 AD, with further temples completed during the following decades.
+                    </p>   
+                    <p>
+                        The Khajuraho temples were built about 35 miles from the medieval city of Mahoba, the capital of the Chandela dynasty, in the Kalinjar region. 
+                        In ancient and medieval literature, their kingdom has been referred to as Jijhoti, Jejahoti, Chih-chi-to and Jejakabhukti.
+                    </p> 
+                    <h2>
+                        Chronology
+                    </h2>
+                    <p>
+                        The Khajuraho group of temples belong to Vaishnavism school of Hinduism, Saivism school of Hinduism and Jainism - nearly a third each. 
+                        Archaeological studies suggest all three types of temples were under construction at about the same time in the late 10th century, and in use simultaneously. 
+                        Will Durant states that this aspect of Khajuraho temples illustrates the tolerance and respect for different religious viewpoints in the Hindu and Jain traditions.
+                        In each group of Khajuraho temples, there were major temples surrounded by smaller temples - a grid style that is observed to varying degrees in Hindu temples in Angkor Wat, Parambaran and South India.<br>
+                        The largest surviving Shiva temple is Khandarya Mahadeva, while the largest surviving Vaishnava group includes Chaturbhuja and Ramachandra.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    The temples at Khajuraho were built during the Chandella dynasty, which reached its apogee between 950 and 1050. 
+                                                    Only about 20 temples remain; they fall into three distinct groups and belong to two different religions - Hinduism and Jainism. 
+                                                    They strike a perfect balance between architecture and sculpture. 
+                                                    The Temple of Kandariya is decorated with a profusion of sculptures that are among the greatest masterpieces of Indian art.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Khajuraho_Group_of_Monuments_4.jpg" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <h2>
+                                                    History
+                                                </h2>
+                                                <p>
+                                                    The Khajuraho group of monuments was built during the rule of the Chandela dynasty. 
+                                                    The building activity started almost immediately after the rise of their power, throughout their kingdom to be later known as Bundelkhand. 
+                                                    Most temples were built during the reigns of the Hindu kings Yashovarman and Dhanga. 
+                                                    Yashovarman's legacy is best exhibited by the Lakshmana Temple. 
+                                                    Vishvanatha temple best highlights King Dhanga's reign.
+                                                    The largest and currently most famous surviving temple is Kandariya Mahadeva built in the reign of King Vidyadhara.
+                                                    The temple inscriptions suggest many of the currently surviving temples were complete between 970 and 1030 AD, with further temples completed during the following decades.
+                                                </p>   
+                                                <p>
+                                                    The Khajuraho temples were built about 35 miles from the medieval city of Mahoba, the capital of the Chandela dynasty, in the Kalinjar region. 
+                                                    In ancient and medieval literature, their kingdom has been referred to as Jijhoti, Jejahoti, Chih-chi-to and Jejakabhukti.
+                                                </p> 
+                                                <h2>
+                                                    Chronology
+                                                </h2>
+                                                <p>
+                                                    The Khajuraho group of temples belong to Vaishnavism school of Hinduism, Saivism school of Hinduism and Jainism - nearly a third each. 
+                                                    Archaeological studies suggest all three types of temples were under construction at about the same time in the late 10th century, and in use simultaneously. 
+                                                    Will Durant states that this aspect of Khajuraho temples illustrates the tolerance and respect for different religious viewpoints in the Hindu and Jain traditions.
+                                                    In each group of Khajuraho temples, there were major temples surrounded by smaller temples - a grid style that is observed to varying degrees in Hindu temples in Angkor Wat, Parambaran and South India.<br>
+                                                    The largest surviving Shiva temple is Khandarya Mahadeva, while the largest surviving Vaishnava group includes Chaturbhuja and Ramachandra.
+                                                </p> `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://assets.shortpedia.com/Voices/wp-content/uploads/2021/03/Location-of-khajuraho-on-map.jpg"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Khajuraho Group of Monuments in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Architecture_of_the_Khajuraho_temples.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Sections and orientation of Khajuraho temples.</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Khajuraho%2CChausath-Yogini-Tempel2.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Khajuraho, Chausath-Yogini-Tempel</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Lalguan_Mahadev_Temple_Khajuraho.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Lalguan Mahadev temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Western_group_of_temples_khajuraho_22.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Brahma Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/India-5679_-_Flickr_-_archer10_%28Dennis%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Lakshmana temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/India-5595_-_Flickr_-_archer10_%28Dennis%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Varaha Temple</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Le_temple_de_Parshvanath_%28Khajuraho%29_%288638423582%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Parshvanatha Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/A_ruin%2C_pillars_at_Khajuraho%2C_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Ghantai Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/India-5749_-_Visvanatha_Temple_-_Flickr_-_archer10_%28Dennis%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Vishvanatha Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/India-5772_-_Flickr_-_archer10_%28Dennis%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Matangeshwar Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Khajuraho_Devi_Jagadambi_Temple_2010.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Jagadambi Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/India-5707_-_Flickr_-_archer10_%28Dennis%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Chitragupta Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Krajuraho_Adinath_temple_2010.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Adinath Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Khajuraho_60_2015in03kjrh_115_%2839831278274%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Shantinatha temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Temple_at_Khajuraho%2C_Madhya_Pradesh%2C_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Kandariya Mahadeva Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Khajuraho_Vaman_Temple_2010.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Vamana Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Khajuraho_Jeveri_Temple_2010.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Javeri Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Khajuraho_Chaturbhuja_Temple.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Chaturbhuja Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Khajuraho_Dulhadeo_2010.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Duladeo (Duladeva) Temple</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

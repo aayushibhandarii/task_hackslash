@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AGRA FORT</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Agra Fort
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        Near the gardens of the Taj Mahal stands the important 16th-century Mughal monument known as the Red Fort of Agra. 
+                        This powerful fortress of red sandstone encompasses, within its 2.5-km-long enclosure walls, the imperial city of the Mughal rulers. 
+                        It comprises many fairy-tale palaces, such as the Jahangir Palace and the Khas Mahal, built by Shah Jahan; audience halls, such as the Diwan-i-Khas; and two very beautiful mosques.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Taj_and_jamuna_river_from_Agra_Fort.jpg" style="object-fit: cover;height:700px; width: 100%; ">
+        
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        After the First Battle of Panipat in 1526, Babur stayed in the fort, in the palace of Ibrahim Lodi. 
+                        He later built a baoli (step well) in it. 
+                        His successor, Humayun, was crowned in the fort in 1530. 
+                        He was defeated at Bilgram in 1540 by Sher Shah Suri. 
+                        The fort remained with the Suris till 1555, when Humayun recaptured it. 
+                        Adil Shah Suri's general, Hemu, recaptured Agra in 1556 and pursued its fleeing governor to Delhi where he met the Mughals in the Battle of Tughlaqabad.
+                    </p>   
+                    <p>
+                        Realising the importance of its central situation, Akbar made it his capital and arrived in Agra in 1558. 
+                        His historian, Abul Fazl, recorded that this was a brick fort known as 'Badalgarh'. 
+                        It was in a ruined condition and Akbar had it rebuilt with red sandstone from Barauli area Dhaulpur district, in Rajasthan.
+                        Architects laid the foundation and it was built with bricks in the inner core with sandstone on external surfaces. 
+                        Some 4,000 builders worked on it daily for eight years, completing it in 1573.
+                    </p> 
+
+                    <h2>
+                        Historical sites
+                    </h2>
+                    
+                    <ul > 
+                            <li><p> Jahangir's Hauz (tank) (1610 AD)</p></li>
+                            <li><p>Shahjahani Mahal (1628 - 35 AD)</p></li>
+                            <li><p>Ghaznin Gate (1030 AD)</p></li>
+                            <li><p>Jahangir's Chain of Justice (c. 1605 AD)</p></li>
+                            <li><p>The Muthamman Burj (Shah-Burj) & Jharokha (1632 - 1640 AD)</p></li>
+                            <li><p>Shish Mahal (1631 - 40 AD)</p></li>
+                    </ul>          
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    Near the gardens of the Taj Mahal stands the important 16th-century Mughal monument known as the Red Fort of Agra. 
+                                                    This powerful fortress of red sandstone encompasses, within its 2.5-km-long enclosure walls, the imperial city of the Mughal rulers. 
+                                                    It comprises many fairy-tale palaces, such as the Jahangir Palace and the Khas Mahal, built by Shah Jahan; audience halls, such as the Diwan-i-Khas; and two very beautiful mosques.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Taj_and_jamuna_river_from_Agra_Fort.jpg" style="object-fit: cover; width: 100%;height: 700px; ">
+                                    
+                                                <h2>
+                                                    History
+                                                </h2>
+                                                <p>
+                                                    After the First Battle of Panipat in 1526, Babur stayed in the fort, in the palace of Ibrahim Lodi. 
+                                                    He later built a baoli (step well) in it. 
+                                                    His successor, Humayun, was crowned in the fort in 1530. 
+                                                    He was defeated at Bilgram in 1540 by Sher Shah Suri. 
+                                                    The fort remained with the Suris till 1555, when Humayun recaptured it. 
+                                                    Adil Shah Suri's general, Hemu, recaptured Agra in 1556 and pursued its fleeing governor to Delhi where he met the Mughals in the Battle of Tughlaqabad.
+                                                </p>   
+                                                <p>
+                                                    Realising the importance of its central situation, Akbar made it his capital and arrived in Agra in 1558. 
+                                                    His historian, Abul Fazl, recorded that this was a brick fort known as 'Badalgarh'. 
+                                                    It was in a ruined condition and Akbar had it rebuilt with red sandstone from Barauli area Dhaulpur district, in Rajasthan.
+                                                    Architects laid the foundation and it was built with bricks in the inner core with sandstone on external surfaces. 
+                                                    Some 4,000 builders worked on it daily for eight years, completing it in 1573.
+                                                </p> 
+
+                                                <h2>
+                                                    Historical sites
+                                                </h2>
+                                                
+                                                <ul > 
+                                                        <li><p> Jahangir's Hauz (tank) (1610 AD)</p></li>
+                                                        <li><p>Shahjahani Mahal (1628 - 35 AD)</p></li>
+                                                        <li><p>Ghaznin Gate (1030 AD)</p></li>
+                                                        <li><p>Jahangir's Chain of Justice (c. 1605 AD)</p></li>
+                                                        <li><p>The Muthamman Burj (Shah-Burj) & Jharokha (1632 - 1640 AD)</p></li>
+                                                        <li><p>Shish Mahal (1631 - 40 AD)</p></li>
+                                                </ul> `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://th.bing.com/th/id/OIP.gGhvvXAPm0OoqLhTVg0dtQHaIp?rs=1&pid=ImgDetMain"  style="width:100%; border-style: solid;>
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Agra Fort in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Uttar-Pradesh-Agra-Agra-Fort-Jahangiri-mahal-Apr-2004-00.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>The Agra Fort</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Agrafortushnish2.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Agra Fort insides</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Amar_Singh_Gate%2C_Agra.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Amar Singh Gate</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Agra_Fort_Shish_Mahal-Agra-Uttar_Pradesh-N-UP-A1-y.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Agra Fort: Shish Mahal</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Diwan-E-Aam_Inside.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Diwan-i-Aam (Audience Hall)</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Diwan-i-Aam_Hallways.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Diwan-i-Aam, interior</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0251_0003-360-360-20110920200600.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Khas Mahal (Marble Pavillon)</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0251_0004-360-360-20110920200601.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Carved marble window in the Khas Mahal</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Agra_Fort_Rempart.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Rampart of Agra Fort</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0251_0001-1000-664-20110920200557.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Walls of the Red Fort</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0251_0031-1000-750-20151105103449.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0251_0030-1000-1333-20151105103448.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0251_0035-1000-667-20151105103452.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0251_0022-1000-750-20151105103443.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KEOLADEO NATIONAL PARK</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Keoladeo National Park
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        This former duck-hunting reserve of the Maharajas is one of the major wintering areas for large numbers of aquatic birds from Afghanistan, Turkmenistan, China and Siberia. 
+                        Some 364 species of birds, including the rare Siberian crane, have been recorded in the park.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Great_Egret_at_Keoladeo_Ghana_National_Park%2C_Bharatpur%2C_India.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h1>
+                        History
+                    </h1>
+                    <p>
+                        The sanctuary was created 250 years ago and is named after a Keoladeo (Shiva) temple within its boundaries. 
+                        Initially, it was a natural depression; and was flooded after the Ajan Bund was constructed by Maharaja Suraj Mal, then the ruler of the princely state of Bharatpur, between 1726 and 1763. 
+                        The bund was created at the confluence of two rivers, the Gambhir and Banganga. 
+                        The park was a hunting ground for the Maharajas of Bharatpur, a tradition dating back to 1850, and duck shoots were organised yearly in honour of the British viceroys. 
+                        In one shoot alone in 1938, over 4,273 birds such as mallards and teals were killed by Lord Linlithgow, then Viceroy of India.<br>
+                        This park was established as a national park on 10 March 1982. 
+                        Previously the private duck shooting preserve of the Maharaja of Bharatpur since the 1850s, the area was designated as a bird sanctuary on 13 March 1976 and a Ramsar site under the Ramsar Convention in October 1981.<br>
+                        Keoladeo Ghana National Park was made a World Heritage Site in 1985.
+                    </p>  
+                    <h1>
+                        Geography
+                    </h1>
+                    <p>
+                        Keoladeo National Park is 2 km (1.2 mi) south-east of Bharatpur and 55 km (34 mi) west of Agra. 
+                        It is spread over approx 29 km2 (11 sq mi). 
+                        One third of the Keoladeo National Park is wetland with mounds, dykes, and open water with or without submerged or emergent plants. 
+                        The uplands have grasslands with tall grass species together with scattered trees and shrubs present in varying density.
+                        A similar habitat with short grasses, such as Cynodon dactylon and Dichanthium annulatum also exists. 
+                        Woodlands with thickets of huge Kadam trees (Neolamarckia cadamba) are distributed in scattered pockets. 
+                        The park's flora consists of 379 species of flowering plants of which 96 are wetland species. 
+                        The wetland is a part of the Indo-Gangetic Great Plains.
+                    </p>  
+                    <h1>
+                        Fauna
+                    </h1>  
+                    <p>
+                        Macro invertebrates such as worms, insects, and mollusks, though more abundant in variety and numbers than any other group of organisms, are present mostly in aquatic habitats. 
+                        They are food for many fish and birds, as well as some animal species, and hence, constitute a major link in the food chain and functioning of the ecosystem. 
+                        Land insects are in abundance and have a positive effect on the breeding of land birds.<br>
+                        Keoladeo National Park is known as a "bird paradise", since more than 370 bird species have been recorded in the park.<br>
+                        Mammalian fauna of Keoladeo National Park is equally rich with 27 identified species.<br>
+                        Fish fauna of the park comprises 43 species, of which 37 enter the park along with the water from Ajan Bund, and six species are breeding residents. 
+                        During a good rainy season the park receives around 65 million fish fry and fingerlings.
+                    </p>        
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    This former duck-hunting reserve of the Maharajas is one of the major wintering areas for large numbers of aquatic birds from Afghanistan, Turkmenistan, China and Siberia. 
+                                                    Some 364 species of birds, including the rare Siberian crane, have been recorded in the park.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Great_Egret_at_Keoladeo_Ghana_National_Park%2C_Bharatpur%2C_India.jpg" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <h1>
+                                                    History
+                                                </h1>
+                                                <p>
+                                                    The sanctuary was created 250 years ago and is named after a Keoladeo (Shiva) temple within its boundaries. 
+                                                    Initially, it was a natural depression; and was flooded after the Ajan Bund was constructed by Maharaja Suraj Mal, then the ruler of the princely state of Bharatpur, between 1726 and 1763. 
+                                                    The bund was created at the confluence of two rivers, the Gambhir and Banganga. 
+                                                    The park was a hunting ground for the Maharajas of Bharatpur, a tradition dating back to 1850, and duck shoots were organised yearly in honour of the British viceroys. 
+                                                    In one shoot alone in 1938, over 4,273 birds such as mallards and teals were killed by Lord Linlithgow, then Viceroy of India.<br>
+                                                    This park was established as a national park on 10 March 1982. 
+                                                    Previously the private duck shooting preserve of the Maharaja of Bharatpur since the 1850s, the area was designated as a bird sanctuary on 13 March 1976 and a Ramsar site under the Ramsar Convention in October 1981.<br>
+                                                    Keoladeo Ghana National Park was made a World Heritage Site in 1985.
+                                                </p>  
+                                                <h1>
+                                                    Geography
+                                                </h1>
+                                                <p>
+                                                    Keoladeo National Park is 2 km (1.2 mi) south-east of Bharatpur and 55 km (34 mi) west of Agra. 
+                                                    It is spread over approx 29 km2 (11 sq mi). 
+                                                    One third of the Keoladeo National Park is wetland with mounds, dykes, and open water with or without submerged or emergent plants. 
+                                                    The uplands have grasslands with tall grass species together with scattered trees and shrubs present in varying density.
+                                                    A similar habitat with short grasses, such as Cynodon dactylon and Dichanthium annulatum also exists. 
+                                                    Woodlands with thickets of huge Kadam trees (Neolamarckia cadamba) are distributed in scattered pockets. 
+                                                    The park's flora consists of 379 species of flowering plants of which 96 are wetland species. 
+                                                    The wetland is a part of the Indo-Gangetic Great Plains.
+                                                </p>  
+                                                <h1>
+                                                    Fauna
+                                                </h1>  
+                                                <p>
+                                                    Macro invertebrates such as worms, insects, and mollusks, though more abundant in variety and numbers than any other group of organisms, are present mostly in aquatic habitats. 
+                                                    They are food for many fish and birds, as well as some animal species, and hence, constitute a major link in the food chain and functioning of the ecosystem. 
+                                                    Land insects are in abundance and have a positive effect on the breeding of land birds.<br>
+                                                    Keoladeo National Park is known as a "bird paradise", since more than 370 bird species have been recorded in the park.<br>
+                                                    Mammalian fauna of Keoladeo National Park is equally rich with 27 identified species.<br>
+                                                    Fish fauna of the park comprises 43 species, of which 37 enter the park along with the water from Ajan Bund, and six species are breeding residents. 
+                                                    During a good rainy season the park receives around 65 million fish fry and fingerlings.
+                                                </p> `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://s3mn.mnimgs.com/img/shared/discuss_editlive/1591785/2012_02_21_11_44_31/India_2691204971842566685.png"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Keoladeo National Park in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Keoladeo_Ghana_National_Park_%2850750508661%29.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Painted_stork.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Painted stork </figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://whc.unesco.org/uploads/thumbs/site_0340_0010-1000-667-20150602111130.jpg"  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Eurasian_spoonbill01.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Eurasian spoonbill</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Family_Breakfast.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Group of painted storks</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Common_Parakeet_at_Keoladeo_National_Park%2C_Bharatpur_Rajasthan%2C_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Common parakeet</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Great_Egret_at_Keoladeo_Ghana_National_Park%2C_Bharatpur%2C_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Great egret</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Knob-billed_Duck%2C_Bharatpur.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Knob-billed duck alongside Eurasian coot</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Indian_Saras_crane01.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Saurus Crane</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Bar-headed_Geese-_Bharatpur_I_IMG_8335.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A group of Bar-headed goose</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Sambhars_are_common_sight_at_Keoladeo_Ghana_National_Park_Bharatpur_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Sambar deer in Keoladeo Ghana National Park</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Neel_gai_02.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A nilgai inside Keoladeo National Park</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

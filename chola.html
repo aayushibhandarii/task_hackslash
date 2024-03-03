@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GREAT LIVING CHOLA TEMPLES</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Great Living Chola Temples
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        The Great Living Chola Temples were built by kings of the Chola Empire, which stretched over all of south India and the neighbouring islands. 
+                        The site includes three great 11th- and 12th-century Temples: the Brihadisvara Temple at Thanjavur, the Brihadisvara Temple at Gangaikondacholisvaram and the Airavatesvara Temple at Darasuram. 
+                        The Temple of Gangaikondacholisvaram, built by Rajendra I, was completed in 1035. 
+                        Its 53-m vimana (sanctum tower) has recessed corners and a graceful upward curving movement, contrasting with the straight and severe tower at Thanjavur. 
+                        The Airavatesvara temple complex, built by Rajaraja II, at Darasuram features a 24-m vimana and a stone image of Shiva. 
+                        The temples testify to the brilliant achievements of the Chola in architecture, sculpture, painting and bronze casting.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/An_elephant_relief_on_the_Brihadisvara_Temple%2C_Thanjavur.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h2>
+                        Temples
+                    </h2>
+                    <p>
+                        The great Cholas established a powerful monarchy in the 9th CE at Thanjavur and in its surroundings. 
+                        They enjoyed a long, eventful rule lasting for four and a half centuries with great achievements in all fields of royal endeavour such as military conquest, efficient administration, cultural assimilation and promotion of art. 
+                        All three temples, the Brihadisvara at Thanjavur, the Brihadisvara at Gangaikondacholapuram and Airavatesvara at Darasuram, are living temples. 
+                        The tradition of temple worship and rituals established and practised over a thousand years ago, based on still older Agamic texts, continues daily, weekly and annually, as an inseparable part of life of the people.
+                    </p>   
+                    <p>
+                       <b>The Brihadisvara temple</b><br>
+                        At Gangaikondacholapuram in the Perambalur district was built for Siva by Rajendra I (1012-1044 CE). 
+                        The temple has sculptures of exceptional quality. 
+                        The bronzes of Bhogasakti and Subrahmanya are masterpieces of Chola metal icons. 
+                        The Saurapitha (Solar altar), the lotus altar with eight deities, is considered auspicious.
+                    </p> 
+                    <p>
+                        <b>The Airavatesvara temple</b><br> 
+                        At Tanjavur was built by the Chola king Rajaraja II (1143-1173 CE.): it is much smaller in size as compared to the Brihadisvara temple at Tanjavur and Gangaikondacholapuram.  
+                        It differs from themin itshighly ornate execution. 
+                        The temple consists of a sanctum without a circumambulatory path and axial mandapas. 
+                        The front mandapa known in the inscriptions as Rajagambhiran tirumandapam, is unique as it was conceptualized as a chariot with wheels. 
+                        The pillars of this mandapa are highly ornate. 
+                        The elevation of all the units is elegant with sculptures dominating the architecture. 
+                        A number of sculptures from this temple are the masterpieces of Chola art. 
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    The Great Living Chola Temples were built by kings of the Chola Empire, which stretched over all of south India and the neighbouring islands. 
+                                                    The site includes three great 11th- and 12th-century Temples: the Brihadisvara Temple at Thanjavur, the Brihadisvara Temple at Gangaikondacholisvaram and the Airavatesvara Temple at Darasuram. 
+                                                    The Temple of Gangaikondacholisvaram, built by Rajendra I, was completed in 1035. 
+                                                    Its 53-m vimana (sanctum tower) has recessed corners and a graceful upward curving movement, contrasting with the straight and severe tower at Thanjavur. 
+                                                    The Airavatesvara temple complex, built by Rajaraja II, at Darasuram features a 24-m vimana and a stone image of Shiva. 
+                                                    The temples testify to the brilliant achievements of the Chola in architecture, sculpture, painting and bronze casting.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/An_elephant_relief_on_the_Brihadisvara_Temple%2C_Thanjavur.jpg" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <h2>
+                                                    Temples
+                                                </h2>
+                                                <p>
+                                                    The great Cholas established a powerful monarchy in the 9th CE at Thanjavur and in its surroundings. 
+                                                    They enjoyed a long, eventful rule lasting for four and a half centuries with great achievements in all fields of royal endeavour such as military conquest, efficient administration, cultural assimilation and promotion of art. 
+                                                    All three temples, the Brihadisvara at Thanjavur, the Brihadisvara at Gangaikondacholapuram and Airavatesvara at Darasuram, are living temples. 
+                                                    The tradition of temple worship and rituals established and practised over a thousand years ago, based on still older Agamic texts, continues daily, weekly and annually, as an inseparable part of life of the people.
+                                                </p>   
+                                                <p>
+                                                <b>The Brihadisvara temple</b><br>
+                                                    At Gangaikondacholapuram in the Perambalur district was built for Siva by Rajendra I (1012-1044 CE). 
+                                                    The temple has sculptures of exceptional quality. 
+                                                    The bronzes of Bhogasakti and Subrahmanya are masterpieces of Chola metal icons. 
+                                                    The Saurapitha (Solar altar), the lotus altar with eight deities, is considered auspicious.
+                                                </p> 
+                                                <p>
+                                                    <b>The Airavatesvara temple</b><br> 
+                                                    At Tanjavur was built by the Chola king Rajaraja II (1143-1173 CE.): it is much smaller in size as compared to the Brihadisvara temple at Tanjavur and Gangaikondacholapuram.  
+                                                    It differs from themin itshighly ornate execution. 
+                                                    The temple consists of a sanctum without a circumambulatory path and axial mandapas. 
+                                                    The front mandapa known in the inscriptions as Rajagambhiran tirumandapam, is unique as it was conceptualized as a chariot with wheels. 
+                                                    The pillars of this mandapa are highly ornate. 
+                                                    The elevation of all the units is elegant with sculptures dominating the architecture. 
+                                                    A number of sculptures from this temple are the masterpieces of Chola art. 
+                                                </p> `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://smarthistory.org/wp-content/uploads/2020/05/2CholaMap-scaled.jpg"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Great Living Chola Temples in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Brihadisvara_Temple%2C_Thanjavur%2C_Tamil_Nadu%2C_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Thanjavur temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/%22A_low_angle_of_Brihadisvara_Temple_of_Gangaikonda_Cholapuram_%22.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Gangaikonda Cholapuram Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Airavatesvara_Temple_Chariot.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Airavatesvara Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/A_Dravidian_architecture_Pillar_in_Airavatesvara_Temple%2C_Darasuram_%40_Thanjavur_district..JPG"  style="width:100%; height:250px">
+                                                    <figcaption>A pillar in Dravidian architectural-style in Airavatesvara Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Chariot_detail%2C_Airavatesvara%2C_Tamil_Nadu.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Chariot detail of the Airavatesvara Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/MainGopuram-BrihadisvaraTemple-Thanjavur%2CIndia.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Temple at Thanjavur</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Brihadeeswara_Temple_Entrance_Gopurams%2C_Thanjavur.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Temple entrance gopurams at Thanjavur</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/An_elephant_relief_on_the_Brihadisvara_Temple%2C_Thanjavur.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>An elephant relief on the Thanjavur temple</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Darasuram%2C_Airavatesvara_Temple%2C_Mandapa_at_night%2C_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Altar</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Darasuram%2C_Airavatesvara_Temple%2C_Inner_halls%2C_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Pillars</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

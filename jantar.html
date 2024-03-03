@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JANTAR MANTAR</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                The Jantar Mantar
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        The Jantar Mantar, in Jaipur, is an astronomical observation site built in the early 18th century. 
+                        It includes a set of some 20 main fixed instruments. 
+                        They are monumental examples in masonry of known instruments but which in many cases have specific characteristics of their own. 
+                        Designed for the observation of astronomical positions with the naked eye, they embody several architectural and instrumental innovations. 
+                        This is the most significant, most comprehensive, and the best preserved of India's historic observatories.
+                        It is an expression of the astronomical skills and cosmological concepts of the court of a scholarly prince at the end of the Mughal period.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Yantramandir01.jpg" style="object-fit: cover; width: 100%; ">
+                    <p>
+                        The Jantar Mantar, Jaipur is a collection of 19 astronomical instruments built by the Rajput king Sawai Jai Singh, the founder of Jaipur, Rajasthan. 
+                        The monument was completed in 1734.
+                        It features the world's largest stone sundial, and is a UNESCO World Heritage Site. 
+                        It is near City Palace and Hawa Mahal. 
+                        The instruments allow the observation of astronomical positions with the naked eye.
+                        The observatory is an example of the Ptolemaic positional astronomy which was shared by many civilizations.
+                    </p>
+                    <h1>
+                        History
+                    </h1>
+                    <p>
+                        Exactly when Raja Jai Singh began construction in Jaipur is unknown, but several instruments had been built by 1728, and the construction of the instruments in Jaipur continued until 1738. 
+                        During 1735, when construction was at its peak, at least 23 astronomers were employed in Jaipur, and due to the changing political climate, Jaipur replaced Delhi as Raja Jai Singh's main observatory and remained Jai Singh's central observatory until his death in 1743. 
+                        The observatory lost support under Isvari Singh (r.1743-1750) because of a succession war between him and his brother. 
+                        However, Mado Singh (r. 1750-1768), Isvari Singh's successor, supported the observatory, although it did not see the same level of activity as under Jai Singh. 
+                        Although some restorations were made to the Jantar Mantar under Pratap Singh (r.1778-1803), activity at the observatory died down again.
+                        During this time, a temple was constructed and Pratap Singh turned the site of the observatory into a gun factory.
+                    </p>   
+                    <h1>
+                       Purpose
+                    </h1>
+                    <p>
+                        Jai Singh noticed that the Zij, which was used for determining the position of celestial objects, did not match the positions calculated on the table. 
+                        He constructed five new observatories in different cities in order to create a more accurate Zij. 
+                        The astronomical tables Jai Singh created, known as the Zij-i Muhammad Shahi, were continuously used in India for a century. (However, the table had little significance outside of India.)
+                        Also, it was used to measure time.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    The Jantar Mantar, in Jaipur, is an astronomical observation site built in the early 18th century. 
+                                                    It includes a set of some 20 main fixed instruments. 
+                                                    They are monumental examples in masonry of known instruments but which in many cases have specific characteristics of their own. 
+                                                    Designed for the observation of astronomical positions with the naked eye, they embody several architectural and instrumental innovations. 
+                                                    This is the most significant, most comprehensive, and the best preserved of India's historic observatories.
+                                                    It is an expression of the astronomical skills and cosmological concepts of the court of a scholarly prince at the end of the Mughal period.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Yantramandir01.jpg" style="object-fit: cover; width: 100%; ">
+                                                <p>
+                                                    The Jantar Mantar, Jaipur is a collection of 19 astronomical instruments built by the Rajput king Sawai Jai Singh, the founder of Jaipur, Rajasthan. 
+                                                    The monument was completed in 1734.
+                                                    It features the world's largest stone sundial, and is a UNESCO World Heritage Site. 
+                                                    It is near City Palace and Hawa Mahal. 
+                                                    The instruments allow the observation of astronomical positions with the naked eye.
+                                                    The observatory is an example of the Ptolemaic positional astronomy which was shared by many civilizations.
+                                                </p>
+                                                <h1>
+                                                    History
+                                                </h1>
+                                                <p>
+                                                    Exactly when Raja Jai Singh began construction in Jaipur is unknown, but several instruments had been built by 1728, and the construction of the instruments in Jaipur continued until 1738. 
+                                                    During 1735, when construction was at its peak, at least 23 astronomers were employed in Jaipur, and due to the changing political climate, Jaipur replaced Delhi as Raja Jai Singh's main observatory and remained Jai Singh's central observatory until his death in 1743. 
+                                                    The observatory lost support under Isvari Singh (r.1743-1750) because of a succession war between him and his brother. 
+                                                    However, Mado Singh (r. 1750-1768), Isvari Singh's successor, supported the observatory, although it did not see the same level of activity as under Jai Singh. 
+                                                    Although some restorations were made to the Jantar Mantar under Pratap Singh (r.1778-1803), activity at the observatory died down again.
+                                                    During this time, a temple was constructed and Pratap Singh turned the site of the observatory into a gun factory.
+                                                </p>   
+                                                <h1>
+                                                Purpose
+                                                </h1>
+                                                <p>
+                                                    Jai Singh noticed that the Zij, which was used for determining the position of celestial objects, did not match the positions calculated on the table. 
+                                                    He constructed five new observatories in different cities in order to create a more accurate Zij. 
+                                                    The astronomical tables Jai Singh created, known as the Zij-i Muhammad Shahi, were continuously used in India for a century. (However, the table had little significance outside of India.)
+                                                    Also, it was used to measure time.
+                                                </p> `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://www.hillmanwonders.com/z_location_map/india/map_jantar_mantar_obs.gif"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Jantar Mantar in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Jantar_Mantar_at_Jaipur.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Jantar Mantar </figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Jantar_Mantar%2C_Jaipur_India.jpg  style="width:100%; height:250px">
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Bhairav_Temple_Jantar_Mantar_Jaipur.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Bhairav Temple - located within the Jantar Mantar Complex</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Kapali_Yantra.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Kapali Yantra</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Laghu_samrat_yantra.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Laghu samrat yantra</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Unnatamsa_Yantra.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Unnatamsa Yantra</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Yantra_Raj.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Yantra Raj</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/JaiPrakashYantraJaipur20080213-3.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Jai Prakash Yantra</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Jantar_Mantar_in_Jaipur_giant_sundial.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Observation deck of the vrihat samrat yantra (the world's largest sundial)</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SUNDARBANS NATIONAL PARK</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Sundarbans National Park
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        The Sundarbans covers 10,000 km<sup>2</sup> of land and water (more than half of it in India, the rest in Bangladesh) in the Ganges delta. 
+                        It contains the world's largest area of mangrove forests. A number of rare or endangered species live in the park, including tigers, aquatic mammals, birds and reptiles.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Tiger_Palm_in_Sundarban.jpg" style="object-fit: cover; width: 100%; ">
+                    <p>
+                        The Sundarbans National Park is a national park, tiger reserve and biosphere reserve in West Bengal, India. 
+                        It is part of the Sundarbans on the Ganges Delta and adjacent to the Sundarban Reserve Forest in Bangladesh. 
+                        It is located to south-west of the Bangladesh. 
+                        The delta is densely covered by mangrove forests, and is one of the largest reserves for the Bengal tiger. 
+                        It is also home to a variety of bird, reptile and invertebrate species, including the salt-water crocodile. 
+                        The present Sundarban National Park was declared as the core area of Sundarban Tiger Reserve in 1973 and a wildlife sanctuary in 1977. 
+                        On 4 May 1984 it was declared a national park. 
+                        It is a UNESCO World Heritage Site inscribed in 1987, and it has been designated as a Ramsar site since 2019.
+                        It is considered as a World Network of Biosphere Reserve (Man and Biosphere Reserve) from 1989.
+                    </p>
+                    <h1>
+                        Geography
+                    </h1>
+                    <p>
+                        The Sundarban National Park is located between 21° 432' - 21° 55' N latitude and between 88° 42' - 89° 04' E longitude. 
+                        The average altitude of the park is 7.5 m above sea level. 
+                        The park is composed of 54 small islands and intersected by several distributaries of the Ganges river.
+                    </p>
+                    <h1>
+                        Flora and fauna
+                    </h1>
+                    <p>
+                        The coastal active delta of Sundarban at the mouth of Bay of Bengal in Bangladesh, having a complex geomorphologic and hydrological character with climatic hazards, has a vast area of mangrove forests with a variety of flora and diverse fauna in a unique ecosystem. 
+                        The natural environment and coastal ecosystem of this Biosphere Reserve and World Heritage Site is under threat of physical disaster due to unscientific and excessive human interferences. 
+                        Conservation and environmental management plan for safeguarding this unique coastal ecology and ecosystem is urgently required.
+                    </p>   
+                    <p>
+                        <b>Flora</b><br>
+                        Sundarban has achieved its name from the Sundari tree. 
+                        The word, "Sundari", comes from the Sanskrit word "Sundara". 
+                        It is the most exquisite variety of tree that are found in this area, a special kind of mangrove tree. 
+                        It has specialised roots called pneumatophores which emerge above ground and help in gaseous exchange i.e. respiration. 
+                        During the rainy season when the entire forest is waterlogged, the spikes rising from the ground has their peak in the air and helps in the respiration process.
+                    </p> 
+                    <p>
+                        <b>Endangered species</b><br>
+                        The endangered species that lives within the Sundarbans are royal Bengal tiger, saltwater crocodile, river terrapin, olive ridley turtle, Ganges river dolphin, hawksbill turtle and mangrove horseshoe crab.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    The Sundarbans covers 10,000 km<sup>2</sup> of land and water (more than half of it in India, the rest in Bangladesh) in the Ganges delta. 
+                                                    It contains the world's largest area of mangrove forests. A number of rare or endangered species live in the park, including tigers, aquatic mammals, birds and reptiles.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Tiger_Palm_in_Sundarban.jpg" style="object-fit: cover; width: 100%; ">
+                                                <p>
+                                                    The Sundarbans National Park is a national park, tiger reserve and biosphere reserve in West Bengal, India. 
+                                                    It is part of the Sundarbans on the Ganges Delta and adjacent to the Sundarban Reserve Forest in Bangladesh. 
+                                                    It is located to south-west of the Bangladesh. 
+                                                    The delta is densely covered by mangrove forests, and is one of the largest reserves for the Bengal tiger. 
+                                                    It is also home to a variety of bird, reptile and invertebrate species, including the salt-water crocodile. 
+                                                    The present Sundarban National Park was declared as the core area of Sundarban Tiger Reserve in 1973 and a wildlife sanctuary in 1977. 
+                                                    On 4 May 1984 it was declared a national park. 
+                                                    It is a UNESCO World Heritage Site inscribed in 1987, and it has been designated as a Ramsar site since 2019.
+                                                    It is considered as a World Network of Biosphere Reserve (Man and Biosphere Reserve) from 1989.
+                                                </p>
+                                                <h1>
+                                                    Geography
+                                                </h1>
+                                                <p>
+                                                    The Sundarban National Park is located between 21° 432' - 21° 55' N latitude and between 88° 42' - 89° 04' E longitude. 
+                                                    The average altitude of the park is 7.5 m above sea level. 
+                                                    The park is composed of 54 small islands and intersected by several distributaries of the Ganges river.
+                                                </p>
+                                                <h1>
+                                                    Flora and fauna
+                                                </h1>
+                                                <p>
+                                                    The coastal active delta of Sundarban at the mouth of Bay of Bengal in Bangladesh, having a complex geomorphologic and hydrological character with climatic hazards, has a vast area of mangrove forests with a variety of flora and diverse fauna in a unique ecosystem. 
+                                                    The natural environment and coastal ecosystem of this Biosphere Reserve and World Heritage Site is under threat of physical disaster due to unscientific and excessive human interferences. 
+                                                    Conservation and environmental management plan for safeguarding this unique coastal ecology and ecosystem is urgently required.
+                                                </p>   
+                                                <p>
+                                                    <b>Flora</b><br>
+                                                    Sundarban has achieved its name from the Sundari tree. 
+                                                    The word, "Sundari", comes from the Sanskrit word "Sundara". 
+                                                    It is the most exquisite variety of tree that are found in this area, a special kind of mangrove tree. 
+                                                    It has specialised roots called pneumatophores which emerge above ground and help in gaseous exchange i.e. respiration. 
+                                                    During the rainy season when the entire forest is waterlogged, the spikes rising from the ground has their peak in the air and helps in the respiration process.
+                                                </p> 
+                                                <p>
+                                                    <b>Endangered species</b><br>
+                                                    The endangered species that lives within the Sundarbans are royal Bengal tiger, saltwater crocodile, river terrapin, olive ridley turtle, Ganges river dolphin, hawksbill turtle and mangrove horseshoe crab.
+                                                </p>`
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://magikindia.com/wp-content/uploads/2015/12/sundarbans-map.jpg"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Sundarbans National Park in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Sundarban_Tiger.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Tiger from Sundarbans Tiger Reserve</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Sundarban_mangrove.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Mangrove trees in Sundarban</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Tiger_Palm_in_Sundarban.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A tiger looks out from a forest of mangrove date palms</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

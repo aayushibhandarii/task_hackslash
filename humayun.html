@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HUMAYUN'S TOMB</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Humayun's Tomb
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        This tomb, built in 1570, is of particular cultural significance as it was the first garden-tomb on the Indian subcontinent. 
+                        It inspired several major architectural innovations, culminating in the construction of the Taj Mahal.<br>
+                        Humayun's Tomb, Delhi is the first of the grand dynastic mausoleums that were to become synonyms of Mughal architecture with the architectural style reaching its zenith 80 years later at the later Taj Mahal. 
+                        Humayun's Tomb stands within a complex of 27.04 ha. that includes other contemporary, 16th century Mughal garden-tombs such as Nila Gumbad, Isa Khan, Bu Halima, Afsarwala, Barber's Tomb and the complex where the craftsmen employed for the Building of Humayun's Tomb stayed, the Arab Serai.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Tomb_of_Humayun%2C_Delhi.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        After his death on 27 January 1556, Humayun's body was first buried in his palace in Purana Quila at Delhi. 
+                        Thereafter it was taken to Sirhind, in Punjab by Khanjar Beg and, in 1558, it was seen by Humayun's son, the then Mughal Emperor, Akbar. 
+                        Akbar subsequently visited the tomb in 1571, when it was about to be completed. <br>
+                        The tomb of Humayun was built by the orders of his first wife and chief consort, Empress Bega Begum (also known as Haji Begum). 
+                        Construction began in 1565 and was completed in 1572; it cost 1.5 million rupees, paid entirely by the Empress.
+                        Bega Begum had been so grieved over her husband's death that she had thenceforth dedicated her life to a sole purpose: the construction of a memorial to him that would be the most magnificent mausoleum in the Empire, at a site near the Yamuna River in Delhi.
+                        According to Ain-i-Akbari, a 16th-century detailed document written during the reign of Akbar, Bega Begum supervised the construction of the tomb after returning from Mecca and undertaking the Hajj pilgrimage.
+                    </p>   
+                    <p>
+                        During the Partition of India, in August 1947 the Purana Qila together with Humayun's Tomb, became major refugee camps for Muslims migrating to the newly founded Pakistan, and was later managed by the government of India. 
+                        These camps stayed open for about five years, and caused considerable damage not only to the extensive gardens, but also to the water channels and the principal structures. 
+                        The camps were raided many times by jathas which caused vandalism to occur during the early partition days in 1947. 
+                        Eventually, to avoid vandalism, the cenotaphs within the mausoleum were encased in brick. 
+                        In the coming years, the Archaeological Survey of India (ASI) took on responsibility for the preservation of heritage monuments in India, and gradually the building and its gardens were restored. 
+                        Until 1985, four unsuccessful attempts were made to reinstate the original water features.<br>
+                        An important phase in the restoration of the complex began around 1993, when the monument was declared a World Heritage Site. 
+                        This brought new interest to its restoration, and a detailed research and excavation process began under the aegis of the Aga Khan Trust and the ASI. 
+                        This culminated in 2003, when much of the complex and gardens were restored, with the historic fountains running once again after several centuries of disuse. 
+                        The restoration has been a continuous process ever since, with subsequent phases addressing various aspects and monuments of the complex.
+                    </p> 
+                    <h1>
+                        Architecture
+                    </h1>
+                    <p>
+                        Turkic and Mughal rule in the Indian subcontinent also introduced Central Asian and Persian styles of Islamic architecture in the region, and by the late 12th century early monuments in this style were appearing in and around Delhi, the capital of Delhi Sultanate. 
+                        Starting with the Turkic Slave dynasty which built the Qutb Minar (1192) and its adjacent Quwwat-ul-Islam mosque (1193 CE). 
+                        North India was successively ruled by foreign dynasties in the coming centuries, giving rise to the Indo-Islamic architecture. 
+                        While the prevailing style of architecture was trabeate, employing pillars, beams and lintels, this brought in the arcuate style of construction, with its arches and beams, which flourished under Mughal patronage and by incorporating elements of Indian architecture,
+                        especially Rajasthani architecture including decorative corbel brackets, balconies, pendentive decorations and indeed kiosks or chhatris, to develop a distinct Mughal architecture style, which was to become a lasting legacy of the Mughal rule.
+                        The combination of red sandstone and white marble was previously seen in Delhi Sultanate period tombs and mosques, most distinctively in the highly decorative Alai Darwaza gatehouse in the Qutub complex, Mehrauli, built in 1311, under the Khalji dynasty.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    This tomb, built in 1570, is of particular cultural significance as it was the first garden-tomb on the Indian subcontinent. 
+                                                    It inspired several major architectural innovations, culminating in the construction of the Taj Mahal.<br>
+                                                    Humayun's Tomb, Delhi is the first of the grand dynastic mausoleums that were to become synonyms of Mughal architecture with the architectural style reaching its zenith 80 years later at the later Taj Mahal. 
+                                                    Humayun's Tomb stands within a complex of 27.04 ha. that includes other contemporary, 16th century Mughal garden-tombs such as Nila Gumbad, Isa Khan, Bu Halima, Afsarwala, Barber's Tomb and the complex where the craftsmen employed for the Building of Humayun's Tomb stayed, the Arab Serai.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Tomb_of_Humayun%2C_Delhi.jpg" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <h2>
+                                                    History
+                                                </h2>
+                                                <p>
+                                                    After his death on 27 January 1556, Humayun's body was first buried in his palace in Purana Quila at Delhi. 
+                                                    Thereafter it was taken to Sirhind, in Punjab by Khanjar Beg and, in 1558, it was seen by Humayun's son, the then Mughal Emperor, Akbar. 
+                                                    Akbar subsequently visited the tomb in 1571, when it was about to be completed. <br>
+                                                    The tomb of Humayun was built by the orders of his first wife and chief consort, Empress Bega Begum (also known as Haji Begum). 
+                                                    Construction began in 1565 and was completed in 1572; it cost 1.5 million rupees, paid entirely by the Empress.
+                                                    Bega Begum had been so grieved over her husband's death that she had thenceforth dedicated her life to a sole purpose: the construction of a memorial to him that would be the most magnificent mausoleum in the Empire, at a site near the Yamuna River in Delhi.
+                                                    According to Ain-i-Akbari, a 16th-century detailed document written during the reign of Akbar, Bega Begum supervised the construction of the tomb after returning from Mecca and undertaking the Hajj pilgrimage.
+                                                </p>   
+                                                <p>
+                                                    During the Partition of India, in August 1947 the Purana Qila together with Humayun's Tomb, became major refugee camps for Muslims migrating to the newly founded Pakistan, and was later managed by the government of India. 
+                                                    These camps stayed open for about five years, and caused considerable damage not only to the extensive gardens, but also to the water channels and the principal structures. 
+                                                    The camps were raided many times by jathas which caused vandalism to occur during the early partition days in 1947. 
+                                                    Eventually, to avoid vandalism, the cenotaphs within the mausoleum were encased in brick. 
+                                                    In the coming years, the Archaeological Survey of India (ASI) took on responsibility for the preservation of heritage monuments in India, and gradually the building and its gardens were restored. 
+                                                    Until 1985, four unsuccessful attempts were made to reinstate the original water features.<br>
+                                                    An important phase in the restoration of the complex began around 1993, when the monument was declared a World Heritage Site. 
+                                                    This brought new interest to its restoration, and a detailed research and excavation process began under the aegis of the Aga Khan Trust and the ASI. 
+                                                    This culminated in 2003, when much of the complex and gardens were restored, with the historic fountains running once again after several centuries of disuse. 
+                                                    The restoration has been a continuous process ever since, with subsequent phases addressing various aspects and monuments of the complex.
+                                                </p> 
+                                                <h1>
+                                                    Architecture
+                                                </h1>
+                                                <p>
+                                                    Turkic and Mughal rule in the Indian subcontinent also introduced Central Asian and Persian styles of Islamic architecture in the region, and by the late 12th century early monuments in this style were appearing in and around Delhi, the capital of Delhi Sultanate. 
+                                                    Starting with the Turkic Slave dynasty which built the Qutb Minar (1192) and its adjacent Quwwat-ul-Islam mosque (1193 CE). 
+                                                    North India was successively ruled by foreign dynasties in the coming centuries, giving rise to the Indo-Islamic architecture. 
+                                                    While the prevailing style of architecture was trabeate, employing pillars, beams and lintels, this brought in the arcuate style of construction, with its arches and beams, which flourished under Mughal patronage and by incorporating elements of Indian architecture,
+                                                    especially Rajasthani architecture including decorative corbel brackets, balconies, pendentive decorations and indeed kiosks or chhatris, to develop a distinct Mughal architecture style, which was to become a lasting legacy of the Mughal rule.
+                                                    The combination of red sandstone and white marble was previously seen in Delhi Sultanate period tombs and mosques, most distinctively in the highly decorative Alai Darwaza gatehouse in the Qutub complex, Mehrauli, built in 1311, under the Khalji dynasty.
+                                                </p>  `
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://th.bing.com/th/id/OIP.h_DK5a0K7uB9YqHGnR0HDwDiET?rs=1&pid=ImgDetMain"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Humayun's Tomb in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Humayun%27s_tomb_by_Shagil_Kannur_2.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Humayun's Tomb</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Humayun%27s_Tomb_Monument.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>View of the Southwestern Corner of Humayun's Tomb</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/The_white_marble_dome_and_chhatris_on_the_roof_of_Humayun%27s_tomb.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Six-pointed Stars on One of Humayun's Tomb's Pishtaqs</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Details_of_Entrance_portal_into_Humayuns_Tomb%2C_Delhi.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>The Western Facade of the West Gate at Humayun's Tomb</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Humayun%27s_Tomb_from_the_entrance%2C_Delhi.jpg/300px-Humayun%27s_Tomb_from_the_entrance%2C_Delhi.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Humayun's Tomb Seen from Inside the West Gate</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Humayun%27s_Tomb%2C_with_the_Barber%27s_Tomb_in_the_foreground%2C_Delhi%2C_1858_photograph.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Tomb of Humayun, with his barber's tomb</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Humayun_tomb_interior.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Humayun's cenotaph</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Roof_of_entrance_of_Humayun%27s_tomb.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Ceiling of entrance chamber inside</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Tomb_of_Barber%28Nai_Ka_Gumbad%29.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Tomb of Barber (Nai Ka Gumbad)</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Chillah_Nizamuddin.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Chillah Nizamuddin</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Isha_Khan_Niyazi%27s_tomb_-_Delhi_297_HT.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Isa Khan Niyazi's Tomb</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Bu_Halima%27s_Garden_and_Tomb_view.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Bu Halima's Garden and tomb view</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Isa_Khan%27s_mosque%2C_built_ca_1547_AD%2C_near_Humayun%27s_tomb.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Isa Khan's mosque, across his tomb</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Gateway_into_Arab_Sarai%2C_near_Humayun%27s_tomb_complex%2C_Delhi.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Gateway into Araba Sarai</figcaption>
+                                                </figure>
+                                                
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>

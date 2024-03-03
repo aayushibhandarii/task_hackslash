@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SUN TEMPLE</title> 
+        <style>
+            button{
+                width: fit-content;
+                background-color: white;
+                color: rgb(0, 191, 255);
+                border: none;
+                border-bottom-color:grey ;
+                margin:0;
+                padding: 15px 25px;
+                font-size: 17px;
+                cursor: pointer;
+                border-style: solid ;
+                border-width: 1px;
+                border-top:none ;
+                border-left:none ;
+                border-right:none ;
+                border-bottom-color: rgb(220, 220, 220);
+                margin-bottom: 30px;
+            }
+            button:hover{
+                border-style: solid ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            p{
+                font-family: Arial;
+                font-size: 20px;
+                line-height: 25px;
+            }
+            .clicked{
+                border-style: solid ;
+                border-bottom:none ;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-width: 1px;
+                border-top-color: rgb(220, 220, 220);
+                border-left-color: rgb(220, 220, 220);
+                border-right-color: rgb(220, 220, 220);
+            }
+            .gallery-container figure{
+                background-color: rgb(240, 237, 237);
+            }
+            figure {
+                margin: 0;
+                
+            }
+            .gallery-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ; 
+                column-gap: 30px; 
+                row-gap: 30px;
+                
+            }
+            @media (max-width: 700px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1300px){
+                .gallery-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div style="display: grid;grid-template-columns: 1fr; justify-content: space-around; margin-left: 10%; margin-right: 10%;">
+            <h1>
+                Sun Temple, Konârak
+            </h1>
+            <div>
+                <button class="clicked description" onclick="show('description')">
+                    Description
+                </button>
+        
+                <button class="map" onclick="show('map')">
+                    Map
+                </button>
+        
+                <button class="gallery" onclick="show('gallery')">
+                    Gallery
+                </button>
+            </div>
+            
+    
+            <div class="container">
+                    <p>
+                        On the shores of the Bay of Bengal, bathed in the rays of the rising sun, the temple at Konarak is a monumental representation of the sun god Surya's chariot; 
+                        its 24 wheels are decorated with symbolic designs and it is led by a team of six horses. 
+                        Built in the 13th century, it is one of India's most famous Brahman sanctuaries.
+                    </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Konarka_Temple.jpg" style="object-fit: cover; width: 100%; ">
+        
+                    <h2>
+                        History
+                    </h2>
+                    <p>
+                        The Konark Sun Temple was built in 1250 CE during the reign of the Eastern Ganga King Narsimhadeva-1 from stone in the form of a giant ornamented chariot dedicated to the Sun god, Surya. 
+                        In Hindu Vedic iconography Surya is represented as rising in the east and traveling rapidly across the sky in a chariot drawn by seven horses. 
+                        He is described typically as a resplendent standing person holding a lotus flower in both his hands, riding the chariot marshaled by the charioteer Aruna.
+                        The seven horses are named after the seven meters of Sanskrit prosody: Gayatri, Brihati, Ushnih, Jagati, Trishtubha, Anushtubha, and Pankti. 
+                        Typically seen flanking Surya are two females who represent the dawn goddesses, Usha and Pratyusha. 
+                        The goddesses are shown to be shooting arrows, a symbol of their initiative in challenging the darkness.
+                        The architecture is also symbolic, with the chariot's twelve pairs of wheels corresponding to the 12 months of the Hindu calendar, each month paired into two cycles (Shukla and Krishna).<br>
+                        The Konark temple presents this iconography on a grand scale. 
+                        It has 24 elaborately carved stone wheels which are nearly 12 feet (3.7 m) in diameter and are pulled by a set of seven horses.
+                        When viewed from inland during the dawn and sunrise, the chariot-shaped temple appears to emerge from the depths of the blue sea carrying the sun.
+                    </p>   
+                    <p>
+                        <b>construction</b><br>
+                        The current temple is attributed to Narasimhadeva I of the Eastern Ganga dynasty,1238 - 1264 CE. 
+                        It is one of the few Hindu temples whose planning and construction records written in Sanskrit in the Odia script have been preserved in the form of palm leaf manuscripts that were discovered in a village in the 1960s and subsequently translated.
+                        The temple was sponsored by the king, and its construction was overseen by Shiva Samantaraya Mahapatra. 
+                        It was built near an old Surya temple. 
+                        The sculpture in the older temple's sanctum was re-consecrated and incorporated into the newer larger temple. 
+                        This chronology of temple site's evolution is supported by many copper plate inscriptions of the era in which the Konark temple is referred to as the "great cottage".
+                    </p> 
+                    <p>
+                        <b>Style</b><br>
+                        The temple follows the traditional style of Kalinga architecture. 
+                        It is oriented towards the east so that the first rays of the sunrise strike the main entrance. 
+                        The temple, built from Khondalite rocks, was originally constructed at the mouth of the river Chandrabhaga, but the waterline has receded since then.
+                        The wheels of the temple are sundials, which can be used to calculate time accurately to a minute.
+                    </p>            
+            </div>
+        </div>
+        
+        <script>
+            let divElement = document.querySelector('.container')
+
+            function show(buttonClicked){
+                console.log(buttonClicked)
+                if (buttonClicked === "description"){
+                    console.log(buttonClicked)
+                    divElement.innerHTML = `    <p>
+                                                    On the shores of the Bay of Bengal, bathed in the rays of the rising sun, the temple at Konarak is a monumental representation of the sun god Surya's chariot; 
+                                                    its 24 wheels are decorated with symbolic designs and it is led by a team of six horses. 
+                                                    Built in the 13th century, it is one of India's most famous Brahman sanctuaries.
+                                                </p>
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Konarka_Temple.jpg" style="object-fit: cover; width: 100%; ">
+                                    
+                                                <h2>
+                                                    History
+                                                </h2>
+                                                <p>
+                                                    The Konark Sun Temple was built in 1250 CE during the reign of the Eastern Ganga King Narsimhadeva-1 from stone in the form of a giant ornamented chariot dedicated to the Sun god, Surya. 
+                                                    In Hindu Vedic iconography Surya is represented as rising in the east and traveling rapidly across the sky in a chariot drawn by seven horses. 
+                                                    He is described typically as a resplendent standing person holding a lotus flower in both his hands, riding the chariot marshaled by the charioteer Aruna.
+                                                    The seven horses are named after the seven meters of Sanskrit prosody: Gayatri, Brihati, Ushnih, Jagati, Trishtubha, Anushtubha, and Pankti. 
+                                                    Typically seen flanking Surya are two females who represent the dawn goddesses, Usha and Pratyusha. 
+                                                    The goddesses are shown to be shooting arrows, a symbol of their initiative in challenging the darkness.
+                                                    The architecture is also symbolic, with the chariot's twelve pairs of wheels corresponding to the 12 months of the Hindu calendar, each month paired into two cycles (Shukla and Krishna).<br>
+                                                    The Konark temple presents this iconography on a grand scale. 
+                                                    It has 24 elaborately carved stone wheels which are nearly 12 feet (3.7 m) in diameter and are pulled by a set of seven horses.
+                                                    When viewed from inland during the dawn and sunrise, the chariot-shaped temple appears to emerge from the depths of the blue sea carrying the sun.
+                                                </p>   
+                                                <p>
+                                                    <b>construction</b><br>
+                                                    The current temple is attributed to Narasimhadeva I of the Eastern Ganga dynasty,1238 - 1264 CE. 
+                                                    It is one of the few Hindu temples whose planning and construction records written in Sanskrit in the Odia script have been preserved in the form of palm leaf manuscripts that were discovered in a village in the 1960s and subsequently translated.
+                                                    The temple was sponsored by the king, and its construction was overseen by Shiva Samantaraya Mahapatra. 
+                                                    It was built near an old Surya temple. 
+                                                    The sculpture in the older temple's sanctum was re-consecrated and incorporated into the newer larger temple. 
+                                                    This chronology of temple site's evolution is supported by many copper plate inscriptions of the era in which the Konark temple is referred to as the "great cottage".
+                                                </p> 
+                                                <p>
+                                                    <b>Style</b><br>
+                                                    The temple follows the traditional style of Kalinga architecture. 
+                                                    It is oriented towards the east so that the first rays of the sunrise strike the main entrance. 
+                                                    The temple, built from Khondalite rocks, was originally constructed at the mouth of the river Chandrabhaga, but the waterline has receded since then.
+                                                    The wheels of the temple are sundials, which can be used to calculate time accurately to a minute.
+                                                </p>`
+                                    console.log(divElement)
+                                    document.querySelector('.description').classList.add('clicked')
+                                    document.querySelector('.map').classList.remove('clicked')
+                                    document.querySelector('.gallery').classList.remove('clicked')
+                } else if (buttonClicked === 'map'){
+                    divElement.innerHTML = `<div style="display: grid;grid-template-columns: 1fr; justify-content: center; margin-left: 10%; margin-right: 10%;">
+                                                <figure>
+                                                    <img src="https://kanoonirangardan.ir/wp-content/uploads/2020/07/Sun-Temple07.jpg"  style="width:100%; border-style: solid;">
+                                                    <figcaption style="font-size: 20px; text-align: center;">Location of Sun Temple in India</figcaption>
+                                                </figure>
+                                            </div>`
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.add('clicked')
+                    document.querySelector('.gallery').classList.remove('clicked')
+                    
+                } else {
+                    divElement.innerHTML = `<div class="gallery-container">
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Konark_sun_temple_06.jpg"  style="width:100%; height:250px">
+                                                    <figcaption> Main Temple Structure</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Konark_Temple_Panorama2.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Konark Sun Temple panoramic view</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Stone_wheel_engraved_in_the_13th_century_built_Konark_Sun_Temple_in_Orissa%2C_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A stone wheel engraved in the walls of the temple.</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Closeup_of_the_center_of_a_stone_wheel_-_Konark_Sun_Temple%2C_Orissa%2C_India.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Closeup of the motif at the center of a stone wheel</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Back_Side_View_of_Konark_Sun_Temple.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Back Side View of Konark Sun Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Dance_Pavilion%2C_Kon%C3%A2rak_-_Lion.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A simha-gaja at the entrance</figcaption>
+                                                </figure>
+                                                
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Statues_around_Konark_Temple..jpg"  style="width:100%; height:250px">
+                                                    <figcaption>A weathered horse sculpture</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Konark_Sun_Temple_-_Elephant.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Elephant Sculpture</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Dance_Pavilion%2C_Kon%C3%A2rak_01.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Nata Mandir</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Mayadevi_Temple.JPG"  style="width:100%; height:250px">
+                                                    <figcaption>Mayadevi Mandir</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Vaishnava_Temple%2C_Kon%C3%A2rak_01.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Vaishnava Temple</figcaption>
+                                                </figure>
+                                                <figure style="border-style: solid; border-color:rgb(220, 220, 220); padding: 10px 10px 10px 10px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Konarka_Temple_Kitchen.jpg"  style="width:100%; height:250px">
+                                                    <figcaption>Rosasala or kitchen of the temple complex</figcaption>
+                                                </figure>
+                                            </div>`
+                                             
+                    document.querySelector('.description').classList.remove('clicked')
+                    document.querySelector('.map').classList.remove('clicked')
+                    document.querySelector('.gallery').classList.add('clicked')
+                }
+            }
+        </script>
+    </body>
+</html>
