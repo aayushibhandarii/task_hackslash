@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Website Clone
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <style>
+            
+                body{
+                    font-family: Roboto Slab;
+                    font-weight: 300;
+
+                }
+                p{
+                    margin-top: 0;
+                }
+                .heading{
+                    font-size: 45px;
+                    padding: 6.4px 30px 0 0;
+                    margin-bottom: 50px;
+                    cursor : pointer;
+                    transition: 0.1S;
+                }
+
+                .heading:hover{
+                    box-shadow: 0 0.1px 0 gray;
+                    margin-bottom : 47.11px;
+                    font-size: 47px;
+                }
+                .header {
+                    cursor: pointer;
+                    height: 50px;
+                    padding-left: 22px;
+                    margin-bottom: 30px;
+                    transition: padding-left 0.3s;
+                }
+                .header:hover{
+                    opacity: 0.5;
+                    padding-left: 15px;
+                }
+                .new-page:hover {
+                    opacity: 0.5;
+                }
+                .new-page {
+                    margin-right: 30px;
+                    cursor: pointer;
+                }
+                button{
+                    width: fit-content;
+                    background-color: rgb(14, 14, 14);
+                    color: white;
+                    border-color: rgb(241, 247, 249);
+                    border-style: solid;
+                    padding: 15px 25px;
+                    font-size: 17px;
+                    cursor: pointer;
+                }
+                button:hover{
+                    background-color: rgb(63, 63, 63);
+                }
+                .dayMode {
+                    
+                    background-color: rgb(241, 247, 249);
+                    transition: background-color 1s ease;
+                    
+                } 
+                .nightMode{
+                    
+                    background-color: rgb(21, 18, 18);
+                    color: white;
+                    transition: background-color 1s ease;
+                }
+                .main-image{
+                    cursor: pointer;
+                }
+                .main-image:hover{
+                    animation-name: flip;
+                    animation-duration: 1.5s;
+                    animation-fill-mode: both;
+                }
+                .main-image{
+                    animation: reverseflip 1.5s ease;
+                }
+                .main-div{
+                    margin: 30px 0 100px 200px;
+
+                    animation: margin-left ease;
+                }
+                @keyframes flip {
+                    from{transform: rotateY(0deg)}
+                    to{transform: rotateY(180deg)}
+                }
+                @keyframes reverseflip {
+                    from{transform: rotateY(180deg)}
+                    to{transform: rotateY(0deg)}
+                }
+        </style>
+    </head>
+    
+    <body class="dayMode" >
+        <div class="main-div">
+                <h2 class="header">
+                    Lets Collaborate
+                </h2>
+
+            <div style="display: grid; grid-template-columns: 400px 500px; column-gap: 100px; justify-content: start;">
+                <div>
+                    <p class="heading" style="padding: 6.4px 30px 0 0;">
+                        AI + RPA is what we do
+                    </p>
+                    <p style="font-weight: 500; font-size: 17px; margin-bottom: 40px;">
+                        Future-Proof your business. Drive efficiency, profitability and deliver on customer experience
+                    </p>
+                    <div>
+                        <h1 class="new-page" style="display: inline-block; font-size: 20px;">
+                            AI + RPA Automation
+                        </h1>
+                        <img class="new-page" src="https://lets-collab-rust.vercel.app/static/media/pointer.d3b0698f3ee3843a2a593e5683680e53.svg">
+                    </div>
+                </div>
+                <div>
+                    <img class="main-image" style="width: 100%; height: 100%;" src="https://lets-collab-rust.vercel.app/static/media/s1-image.d6d4b7703bc14f99bb7e.jpg">
+                </div>
+            
+                <div>
+                    <p class="heading">
+                        Make Bolder Choices
+                    </p>
+                    <p style="font-weight: 500; font-size: 15px;">
+                        Digital focused strategies to realize market-changing ideas  
+                    </p>
+                    <div>
+                        <h1 class="new-page" style="display: inline-block; font-size: 20px;">
+                            Build Better Apps
+                        </h1>
+                        <img class="new-page" src="https://lets-collab-rust.vercel.app/static/media/pointer.d3b0698f3ee3843a2a593e5683680e53.svg">
+                    </div>
+                </div>
+                <div >
+                    <img class="main-image" style="width: 100%; height: 100%;" src="https://lets-collab-rust.vercel.app/static/media/s2-image.e0b53b689fd9881066ec.png">
+                </div>
+            
+                <div>
+                    <p class="heading">
+                        Innovate With Speed
+                    </p>
+                    <p style="font-weight: 500; font-size: 15px;">
+                        Create higher quality software, deliver on customer expectations and business goals
+                    </p>
+                    <div>
+                        <h1 class="new-page" style="display: inline-block; font-size: 20px;">
+                            DevOps
+                        </h1>
+                        <img class="new-page" src="https://lets-collab-rust.vercel.app/static/media/pointer.d3b0698f3ee3843a2a593e5683680e53.svg">
+                    </div>
+                </div>
+                <div>
+                    <img class="main-image" style="width: 100%; height: 100%;" src="https://lets-collab-rust.vercel.app/static/media/s3-image.8bc14b86ce6eff22c3cb.jpg">
+                </div>
+            
+                <div>
+                    <p class="heading">
+                        Embrace Cloud
+                    </p>
+                    <p style="font-weight: 500; font-size: 15px;">
+                        With Cloud-First accelerate innovation and optimize performance
+                    </p>
+                    <div>
+                        <h1 class="new-page" style="display: inline-block; font-size: 20px;">
+                            Cloud Services
+                        </h1>
+                        <img class="new-page" src="https://lets-collab-rust.vercel.app/static/media/pointer.d3b0698f3ee3843a2a593e5683680e53.svg">
+                    </div>
+                </div>
+                <div>
+                    <img class="main-image" style="width: 100%; height: 100%;" src="https://lets-collab-rust.vercel.app/static/media/s4-image.e02e593de8014f43f419.jpg" style="width: 100%;">
+                </div>
+                <button class="dayButton" onclick="backgroundChange()">
+                    Toggle Night Mode
+                </button>
+            </div>
+        </div>
+        
+        <script>
+            function backgroundChange(){
+                let bodyElement = document.querySelector('body');
+                let buttonElement  = document.querySelector('button');
+
+                if (bodyElement.classList.contains('nightMode')){
+                    buttonElement = `<button class="dayButton" onclick="backgroundChange('night')">
+                                        Toggle Night Mode
+                                    </button>`
+                    bodyElement.classList.add('dayMode');
+                    bodyElement.classList.remove('nightMode');
+                    
+                }else {
+                    buttonElement = `<button class="nightButton" onclick="backgroundChange('day')">
+                                        Toggle Night Mode
+                                    </button>`
+                    bodyElement.classList.add('nightMode');
+                    bodyElement.classList.remove('dayMode');
+                }
+            }
+        </script>
+    </body>
+</html>
