@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UNESCO sites in India</title>
+
+        <style>
+            body{
+                background-color: rgb(217, 223, 225);
+            }
+            .image-container img{
+                cursor: pointer;
+                 animation-name: reversezoom;
+                 animation-duration: 0.5s;
+                 animation-timing-function: ease;
+            }
+            .image-container img:hover{
+                animation-name: zoom;
+                animation-fill-mode: both;
+                animation-timing-function: ease;
+            }
+            .sites{
+                cursor: pointer;
+                display: flex; 
+                flex-direction: column;
+            }
+            .sites:hover{
+                box-shadow: 0px 0px 10px black;
+            }
+            .main{
+                display: grid; 
+                grid-template-columns: 300px 300px 300px 300px ; 
+                justify-content: space-around; 
+                column-gap: 40px; 
+                row-gap: 50px;
+                margin-left: 4%;
+                margin-right: 4%;
+            }
+            .brief{
+                background-color:white ;
+                height: 285x; 
+                position: relative;
+            }
+            .brief:hover {
+                background-color: rgb(224, 221, 221);
+            }
+            
+            @keyframes zoom {
+                from{
+                    
+                        transform: scale(1);
+                    
+                }
+                to {
+                    
+                        transform: scale(1.3);
+                    
+                }
+            }
+            @keyframes reversezoom {
+                from{
+                    
+                        transform: scale(1.3);
+                
+                }
+                to {
+                    
+                        transform: scale(1);
+                    
+                }
+            }
+            @media (max-width:800px) {
+                .main{
+                    display: grid; 
+                    grid-template-columns: 1fr ; 
+                    justify-content: center; 
+                    column-gap: 40px; 
+                    row-gap: 50px;
+                }
+            }
+            @media (min-width:800px) and (max-width:1350px) {
+                .main{
+                    display: grid; 
+                    grid-template-columns: 1fr 1fr ; 
+                    justify-content: center; 
+                    column-gap: 40px; 
+                    row-gap: 50px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div style="position: relative; margin-bottom: 30px;">
+            <img  src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Humayun%27s_tomb_by_Shagil_Kannur_4.jpg" style="width: 100%; height:350px">
+            <div style="position: absolute; bottom:10px; left: 50px;">
+                <p style="color: white; font-size: 30px">
+                    <span style="font-size: 100px; color:red">|</span>
+                    <span style="font-size: 80px;">42</span> 
+                    UNESCO Sites in India
+                </p>
+            </div>
+
+        </div>
+        <div class="main"> 
+            <a href="http://127.0.0.1:5500/page2/ajantacaves.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites" >
+                
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Ajanta_%2863%29.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Ajanta Caves
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                                Maharashtra
+                            </p>
+                        </div>
+                        
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial;">
+                            Year-listed: 1983<br>
+                            The first Buddhist cave monuments at Ajanta date from the 2nd and 1st centuries B.C. During the Gupta period (5th and 6th centuries A.D.), many more richly decorated caves were added to the original group. The paintings and sculptures of Ajanta, considered masterpieces of Buddhist religious art.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/elloracaves.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/3/37/Stone_Pillar_-_Cave_16.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Ellora Caves
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                                Maharashtra
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial;">
+                            Year-listed: 1983<br>
+                            The Ellora Caves comprise 34 temples and monasteries that were cut into a 2 km long basalt cliff between the 7th and 11th centuries.
+                            As they were built by followers of Buddhism, Hinduism, and Jainism, they illustrate the religious tolerance of the period when they were constructed.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/agrafort.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/7/71/Uttar-Pradesh-Agra-Agra-Fort-Jahangiri-mahal-Apr-2004-00.JPG">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Agra Fort
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                                Uttar Pradesh
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial;">
+                            Year-listed: 1983<br>
+                            Agra Fort is a 16th-century Mughal imperial fortress in Agra. 
+                            It got its present layout under the Emperor Akbar.
+                            The complex contains several palaces (Jahangiri Mahal pictured), audience halls, and two mosques. Stylistically, it is one of the high points of Indo-Islamic architecture, with influences of Persian and Timurid architecture.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/tajmahal.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Taj Mahal
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                                Uttar Pradesh
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial;">
+                            Year-listed: 1983<br>
+                            The Taj Mahal is considered the finest example of Indo-Islamic architecture. 
+                            It was built in Agra on the bank of the Yamuna river as a mausoleum of Mumtaz Mahal, the Persian wife of the Mughal emperor Shah Jahan, between 1631 and 1648. 
+                            It was designed by Ustad Ahmad Lahori and built in white marble inlaid with precious and semi-precious stones. 
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="http://127.0.0.1:5500/page2/suntemple.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/4/47/Konarka_Temple.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Sun Temple
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Odisha
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial;">
+                            Year-listed: 1984<br>
+                            This Hindu temple was built in the 13th century and is one of the finest examples of Kalinga architecture.
+                            It represents the chariot of the solar deity Surya: on the outer sides, it has 24 wheels carved of stone and richly decorated, being pulled by six horses.
+                            Other decorative motifs include lions
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/suntemple.html" target="_blank" style="text-decoration: none; color:black">
+                <div  class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/7/74/Shore_Temple_-Mamallapuram_-Tamil_Nadu_-N-TN-C55.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Group of Monuments at Mahabalipuram
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Tamil Nadu
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 1984<br>
+                            The monuments around the town of Mamallapuram were built in the 7th and 8th centuries, under the Pallava dynasty.
+                            The artistic expression of the monuments was influential in the broader region, including Cambodia
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="http://127.0.0.1:5500/page2/Kaziranga.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Kaziranga-National-Park-in-Assam.webp">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Kaziranga National Park
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Assam
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 21px;">
+                            Year-listed: 1985<br>
+                            Kaziranga is located in the floodplains of the Brahmaputra River. 
+                            It is one of the best wildlife sanctuaries in the world, home to the world's largest population of the Indian rhinoceros, as well as tigers, Asian elephants, wild water buffalo, and the Ganges river dolphin. 
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="http://127.0.0.1:5500/page2/Kaziranga.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/8/81/Herd_of_Elephant_in_Manas.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Manas Wildlife Sanctuary
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Assam
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial;margin-bottom: 21px;">
+                            Year-listed: 1984<br>
+                            The sanctuary along the Manas River covers grasslands on floodplains and forests, both in lowlands and in hills. 
+                            The area is a biodiversity hotspot and home to several endangered species, including the Indian rhinoceros, Asian elephant
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/keoladeo.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/9/95/Bar-headed_Geese-_Bharatpur_I_IMG_8335.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Keoladeo National Park
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Rajasthan
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial;">
+                            Year-listed: 1985<br>
+                            Initially a duck-hunting reserve for Maharajas, Keoladeo is a man-made and man-maintained wetland. 
+                            It is important both for migratory and resident birds, especially waterbirds. 
+                            Over 350 species of birds have been recorded, including 15 species of herons, the Siberian crane.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/churches.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Basilika_Bom_Jesus.jpeg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Churches and Convents of Goa
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Goa
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 1986<br>
+                            Old Goa was the capital of Portuguese India, a colony that lasted for 450 years until 1961. 
+                            The site comprises seven churches and convents that were built in the 16th and 17th centuries in the Gothic, Manueline, Mannerist
+                            
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/Khajuraho.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/9/92/Lakshmana_Temple_24.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Khajuraho Group of Monuments
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Madhya Pradesh
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 1986<br>
+                            This site comprises 23 temples, both Hindu and Jain, that were built in the 10th and 11th centuries, during the Chandela dynasty. 
+                            The temples are built in the Nagara style.                     </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/hampi.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/b/b2/The_elegant_stone_chariot.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Group of Monuments at Hampi
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Karnataka
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 1986<br>
+                            Hampi was the capital of the Vijayanagara Empire until its abandonment after its sacking and pillaging by the Deccan sultanates in 1565. 
+                        </p>
+                    </div>
+                </div>
+            </a>
+           
+            <a href="http://127.0.0.1:5500/page2/fatehpur.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Fatehpur Sikri
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Uttar Pradesh
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial;">
+                            Year-listed: 1986<br>
+                            For about a decade in the second half of the 16th century, Fatehpur Sikri was the capital of the Mughal Empire under Emperor Akbar.
+                            The site comprises a large collection of monuments and temples in the Mughal style, such as the Jama Masjid the gate to the mosque, the Buland Darwaza.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/pattadakal.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/0/03/Pattadakal_000.JPG">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Group of Monuments at Pattadakal
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Karnataka
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 1987<br>
+                            This site comprises nine Hindu temples and one Jain temple that were built in the 7th and 8th centuries under the Chalukya dynasty. 
+                            They were constructed in the Badami Chalukya style.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/ElephantaCaves.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/9/96/Trimurti%2C_Cave_No._1%2C_Elephanta_Caves_-_1.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Elephanta Caves
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Maharashtra
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial;">
+                            Year-listed: 1987<br>
+                            The cave complex, located on Elephanta Island in Mumbai Harbour, was constructed mainly in the 5th and 6th centuries, with remains of human occupation dating back to the 2nd century BCE. 
+                            The temples are dedicated to Shiva. 
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/ElephantaCaves.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/7/77/Le_temple_de_Brihadishwara_%28Tanjore%2C_Inde%29_%2814354574611%29.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Great Living Chola Temples
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Tamil Nadu
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 1987<br>
+                            This site comprises three Hindu temples built in the 11th and 12th centuries under the Chola dynasty. 
+                            They represent some of the best examples of Dravidian architecture of the Chola period. 
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/sundarbans.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/2/23/Sundarban_Tiger.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Sundarbans National Park
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               West Bengal
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial;">
+                            Year-listed: 1987<br>
+                            The national park covers the Indian part of the Sundarbans, the delta of the Ganges and Brahmaputra rivers. 
+                            It is the world's largest and richest mangrove forest, with about 78 recorded mangrove species. 
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/nandadevi.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/6/63/Valley_of_flowers_uttaranchal_full_view.JPG">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Nanda Devi and Valley of Flowers National Parks
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Uttarakhand
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 1988<br>
+                            This site comprises two areas in the West Himalayas, the Valley of Flowers National Park (pictured) and the Nanda Devi National Park. 
+                            There are different types of high-altitude habitats, from high mountain peaks.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/sanchi.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Sanchi1_N-MP-220.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Buddhist Monuments at Sanchi
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Madhya Pradesh 
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 1989<br>
+                            Sanchi is one of the oldest extant Buddhist sanctuaries and was instrumental in the spread of the religion through the Indian subcontinent. 
+                            It became important under Emperor Ashoka of the Maurya . 
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/humayun.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Tomb_of_Humayun%2C_Delhi.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Humayun's Tomb
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Delhi
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 1993<br>
+                            The tomb of the Mughal emperor Humayun was constructed in the 1560s and represents the first example of a garden tomb on the Indian subcontinent, introducing the elements of Persian gardens. 
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/qutb.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Qutab_Minar_mausoleum.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Qutb Minar and its Monuments
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Delhi
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 1993<br>
+                            The complex comprises several early Islamic India monuments from the 13th and 14th centuries when the Delhi Sultanate established power there. 
+                            They include the Qutb Minar, the Alai Darwaza gateway.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+
+            <a href="http://127.0.0.1:5500/page2/railway.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/d/d8/KSR_Train_on_a_big_bridge_05-02-12_71.jpeg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Mountain Railways Of India
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               West Bengal, Tamil Nadu, Himachal Pradesh
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 1999<br>
+                            This site comprises three mountain railways built in the late 19th and early 20th centuries to provide access to towns in the highlands. 
+                            They represent a technology transfer in a colonial setting; 
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+
+            <a href="http://127.0.0.1:5500/page2/mahabodhi.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mahabodhitemple.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Mahabodhi Temple Complex at Bodh Gaya 
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Bihar
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 2002<br>
+                            The Buddhist temple complex marks the site where Buddha is said to have attained enlightenment under the Bodhi Tree. 
+                            The present temple dates to the 5th and 6th centuries CE (during the Gupta period) .
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+
+            <a href="http://127.0.0.1:5500/page2/rock.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/9/91/Rock_Shelter_8%2C_Bhimbetka_02.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Rock Shelters of Bhimbetka
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Madhya Pradesh
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 2003br>
+                            This site comprises five clusters of rock shelters in the foothills of the Vindhya Range. 
+                            They contain rock paintings from the hunter-gatherer societies of the Mesolithic to the historical period. 
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/shivaji.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Chhatrapati_shivaji_terminus%2C_esterno_01.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Chhatrapati Shivaji Terminus
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Maharashtra
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 2004<br>
+                            The historic terminal train station in Mumbai was built in the late 19th century. 
+                            It was designed by Frederick William Stevens in the Victorian Gothic style.
+                            It symbolized the wealth of Mumbai as a major commercial port.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="http://127.0.0.1:5500/page2/champaner.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/2/20/Jama_masjid_in_Champaner.JPG">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Champaner- Pavagadh Archeological Park
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Gujarat
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 2004<br>
+                            The site contains remains from several periods, from the Chalcolithic to the remains of Champaner, a short-lived capital of the Gujarat Sultanate in the 16th century. 
+                            Important buildings include the Hindu temple.
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+
+            <a href="http://127.0.0.1:5500/page2/redfort.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Sanchi1_N-MP-220.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            Red Fort Complex
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Delhi
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px;margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 2007<br>
+                            The Red Fort was built under Mughal emperor Shah Jahan in the mid-17th century. 
+                            It represents the zenith of Mughal architecture, blending the elements of Indo-Persian culture with Timurid elements. 
+                        </p>
+                    </div>
+                </div>
+            </a>
+            
+
+            <a href="http://127.0.0.1:5500/page2/jantar.html" target="_blank" style="text-decoration: none; color:black">
+                <div class="sites">
+                    <div class="image-container" style=" height: 250px; overflow: hidden;">
+                        <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Yantramandir01.jpg">
+                    </div>
+                    <div class="brief">
+                        <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                            The Jantar Mantar
+                        </p>
+                        <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                            <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                            <p style="color: grey; font-size: small;">
+                               Rajasthan
+                            </p>
+                        </div>
+                        <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                            Year-listed: 2010<br>
+                            The Jantar Mantar in Jaipur is India's most significant historic astronomical observatory. 
+                            It was built by Rajput king Sawai Jai Singh. 
+                            There are about 20 astronomical instruments that were designed and built for naked eye observations.
+                        </p>
+                    </div>
+                </div>
+            </a>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Pampadumshola.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                        Western Ghats
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Maharashtra, Karnataka, Kerela, Tamil Nadu
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2012<br>
+                        The Western Ghats is a mountain range that runs along the western coast of the Indian subcontinent. 
+                        It is covered with montane forests. 
+                        The area is a biodiversity hotspot and home to endangered species such as the Bengal tiger, lion-tailed macaque.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Amber_Fort_%28%E0%A4%86%E0%A4%AE%E0%A5%87%E0%A4%B0_%E0%A4%95%E0%A4%BE_%E0%A4%95%E0%A4%BF%E0%A4%B2%E0%A4%BE_%29.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                       Hill Forts of Rajasthan
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Rajasthan
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2013<br>
+                        This site comprises six forts: the Chittor Fort, Kumbhalgarh Fort, Ranthambore Fort, Gagron Fort, Amber Fort (pictured), and Jaisalmer Fort, which were constructed between the 8th and 18th centuries by Rajput kingdoms. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Rani_ki_vav_02.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                        Rani-ki-Vav
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Gujarat
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2014<br>
+                        Rani-ki-Vav is one of the finest examples of a stepwell, an elaborate type of well where groundwater is accessed through several levels of stairs. 
+                        It was constructed in the 11th century, during the Chaulukya dynasty, on the banks of the Saraswati River 
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Great_Himalayan_National_Park_Mountain_View.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                       Great Himalayan National Park
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Himachal Pradesh
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2014<br>
+                        The national park covers habitats from alpine peaks of the Himalayas above 6,000 m (20,000 ft) to alpine meadows and riverine forests below 2,000 m (6,600 ft). 
+                        In total, there are 25 types of forests recorded. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Temple_No.-_3%2C_Nalanda_Archaeological_Site.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                       Archeological Site of Nalanda Mahavihara 
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Bihar
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2016<br>
+                        Nalanda Mahavihara was a Buddhist ancient higher-learning institution established in the 5th century and lasting until its sacking in the 13th century. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Abhishek532_SamitiReflections.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                       Khangchendzonga National Park
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Sikkim
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2016<br>
+                        The national park is located around Mount Khangchendzonga, the world's third highest mountain (8,586 m (28,169 ft)). 
+                        It is a sacred mountain in Tibetan Buddhism, where the area is considered a beyul.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Palace_of_Assembly_Chandigarh_2006.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 20px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                        The Architectural Work of Le Corbusier, an Outstanding Contribution to the Modern Movement 
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Chandigarh
+                        </p>
+                    </div>
+                    <p style="margin-top: 25px; margin-left: 10px; font-family: arial; margin-bottom: 20px; ">
+                        Year-listed: 2016<br>
+                        This transnational site (shared with Argentina, Belgium, France, Germany, Switzerland, and Japan) encompasses 17 works of Franco-Swiss architect Le Corbusier. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/3/31/Sidi_Saiyyed_Mosque%2C_Ahmedabad.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                       Historic City of Ahemdabad
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Gujarat
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2017<br>
+                        The city of Ahmedabad was founded by Ahmad Shah I in 1411 to serve as the capital of the Gujarat Sultanate. 
+                        It was the meeting place of many religions, which resulted in a unique urban fabric. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/5/54/Mumbai_03-2016_40_Bombay_High_Court.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 20px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                        The Victorian Gothic and Art Deco Ensembles of Bombay
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Maharashtra
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2018<br>
+                        This site comprises two assemblies of buildings in Mumbai from the British Empire era. 
+                        Public buildings in the Victorian Gothic style from the second half of the 19th century adapted Gothic Revival elements.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/b/b4/20191218_Pa%C5%82ac_Wiatr%C3%B3w_w_Jaipurze_1129_9124.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                       Jaipur City
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Rajasthan
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2019<br>
+                        Jaipur was founded by the Rajput ruler Jai Singh II in 1727. 
+                        The city was built with a grid plan, inspired by ancient Hindu and Western ideals, in a departure from the medieval architecture of the region. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Abhishek532_SamitiReflections.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                       Kakatiya Rudreshwara
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Telangana
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2021<br>
+                        The Hindu temple, dedicated to Shiva, was constructed in the first half of the 13th century under the Kakatiya dynasty. 
+                        It is decorated with stone carvings and sculptures in granite and dolerite that depict regional dance customs. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/5/53/Dholavira-1.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                       Dholavira
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Gujarat
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2021<br>
+                        Dholavira was one of the centres of the Harappan Civilisation from the 3rd to mid-2nd millennium BCE, in the Bronze Age. 
+                        The remains include a walled city and a cemetery, and there are remains of buildings and water management systems. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/0/09/Santiniketan_Prayer_Hall.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 30px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                       Santiniketan
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           West Bengal
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2023<br>
+                        Santiniketan was founded as an ashram by Debendranath Tagore in the second half of the 19th century and then developed into a university town for Visva-Bharati University. 
+                        It is connected to the life and philosophy of Rabindranath Tagore.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sites">
+                <div class="image-container" style=" height: 250px; overflow: hidden;">
+                    <img style="object-fit: cover; width:100%; height: 250px;"  src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Le_temple_de_Chennakesava_%28Somanathapura%2C_Inde%29_%2814465165685%29.jpg">
+                </div>
+                <div class="brief">
+                    <p style="font-size: 25px; margin: 0;font-family: Roboto; font-weight: bold; margin-left: 10px;">
+                       Sacred Ensembles of the Hoysalas
+                    </p>
+                    <div style="display: flex;align-items: center; position: absolute; left: 10px;">
+                        <img style="height: 20px;width: 20px; border-radius: 50px; margin-right: 5px; background-color: black;" src="https://p2.hiclipart.com/preview/867/660/1/location-icon-gps-icon-symbol-circle-logo-png-clipart.jpg">
+                        <p style="color: grey; font-size: small;">
+                           Karnataka
+                        </p>
+                    </div>
+                    <p style="margin-top: 30px; margin-left: 10px; font-family: arial; margin-bottom: 27px; ">
+                        Year-listed: 2023<br>
+                        Three Hoysala temples - the Chennakeshava Temple in Belur, the Hoysaleswara Temple in Halebidu and the Keshava temple (pictured) in Somanathapura, dating between the 12th and 14th centuries. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            
+        </script>
+    </body>
+</html>
